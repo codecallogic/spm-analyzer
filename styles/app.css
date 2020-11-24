@@ -1,31 +1,140 @@
 .nav {
+  grid-column: 1/-1;
+  grid-row: 1/1;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   padding: 2rem 0;
-  background-color: transparent;
-  color: white; }
+  width: 100%;
+  color: var(--color-gray-light);
+  height: 12rem;
+  background-image: linear-gradient(90deg, var(--color-primary), var(--color-primary-medium-dark));
+  transition: all 0.7s cubic-bezier(0.42, 0, 0.15, 1.4); }
+  .nav-sticky {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 8rem;
+    background-image: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark)); }
   .nav-container {
     grid-column: 2/8;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     padding: 0rem 8rem; }
   .nav-logo {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    font-size: 1.6rem; }
+    .nav-logo:hover {
+      cursor: pointer; }
+    .nav-logo-strong {
+      font-weight: 800;
+      margin-right: 0.5rem; }
     .nav-logo-image {
       height: 5rem;
       width: 5rem; }
   .nav-menu-list {
     display: flex;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    align-items: center; }
     .nav-menu-list-item {
-      margin-right: 1.9rem; }
+      margin-right: 1.9rem;
+      text-transform: uppercase; }
+      .nav-menu-list-item:hover {
+        color: white;
+        cursor: pointer; }
+      .nav-menu-list-item-download {
+        border: 0.1rem solid white;
+        padding: 0.3rem 1.5rem;
+        border-radius: 0.5rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        transition: background-color 0.5s ease-in, color 0.2s ease-in; }
+        .nav-menu-list-item-download:hover {
+          background-color: white;
+          border-color: white;
+          color: #c9b2c3;
+          cursor: pointer; }
+
+.home {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); }
+
+.main-container {
+  background-image: linear-gradient(90deg, var(--color-primary), var(--color-primary-medium-dark));
+  height: 100%;
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  color: white; }
+
+.header {
+  grid-column: 3/7; }
+  .header-title {
+    font-size: 4rem;
+    font-weight: 800;
+    text-align: center; }
+  .header-subheading {
+    color: black;
+    font-size: 2rem;
+    text-align: center; }
+  .header-download {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-transform: uppercase; }
+    .header-download-badge {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 2rem;
+      background-color: white;
+      padding: 0.5rem 2rem;
+      color: var(--color-light-orange);
+      font-weight: 1000;
+      font-size: 1.4rem;
+      transition: all 0.5s; }
+      .header-download-badge:hover {
+        color: black;
+        background-color: var(--color-gray-light); }
+      .header-download-badge > img {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem; }
+  .header-image {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+    .header-image > img {
+      width: 30rem; }
+
+.video {
+  grid-column: 3/7;
+  text-align: center;
+  padding: 3rem 0; }
+  .video-title {
+    font-size: 1.4rem;
+    text-transform: uppercase; }
+  .video-subheading {
+    font-size: 3rem;
+    font-family: futura-pt-book, sans-serif;
+    font-weight: 400;
+    color: var(--color-light-orange); }
+
+.active {
+  border-bottom: 0.2rem solid black;
+  color: white;
+  font-weight: 800; }
 
 :root {
   --color-primary: #72bab4;
-  --color-primary-dark: #4b9a97; }
+  --color-primary-medium-dark: #4b9a97;
+  --color-primary-dark: #4f8080;
+  --color-gray-light: #e2e2e2;
+  --color-gray-dark: #c0bdbd;
+  --color-light-orange: #dd8364; }
 
 *,
 *::before,
@@ -36,15 +145,13 @@
 
 html {
   box-sizing: border-box;
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
 
 body {
   font-family: "futura-pt", sans-serif;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   color: black;
-  font-weight: 300;
-  line-height: 1.6; }
-
-.home {
-  background-color: var(--color-primary); }
+  line-height: 1.6;
+  height: 1000px; }

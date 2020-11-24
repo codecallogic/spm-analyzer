@@ -1,11 +1,13 @@
 import Head from 'next/head'
-import Nav from '../components/nav'
+import Header from '../components/header'
+import Video from '../components/video'
 
 const Home = ({}) => {
   
   return (
-    <div className="home">
-      <Nav></Nav>
+    <div className='home'>
+      <Header></Header>
+      <Video></Video>
     </div>
   )
 }

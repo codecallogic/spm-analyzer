@@ -1,3 +1,4 @@
 .home {
-  background-color: var(--color-primary);
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
 }

@@ -1,6 +1,10 @@
 :root {
   --color-primary: #72bab4;
-  --color-primary-dark: #4b9a97;
+  --color-primary-medium-dark: #4b9a97;
+  --color-primary-dark: #4f8080;
+  --color-gray-light: #e2e2e2;
+  --color-gray-dark: #c0bdbd;
+  --color-light-orange: #dd8364;
 }
 
 $font-primary: 'futura-pt', sans-serif;
@@ -16,13 +20,14 @@ $font-primary: 'futura-pt', sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: $font-primary;
-  font-weight: 300;
+  font-weight: 500;
   font-style: normal;
   color: black;
-  font-weight: 300;
   line-height: 1.6;
+  height: 1000px;
 }

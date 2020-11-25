@@ -122,11 +122,48 @@
     font-family: futura-pt-book, sans-serif;
     font-weight: 400;
     color: var(--color-light-orange); }
+  .video-wrap {
+    height: 50rem; }
+  .video-player {
+    width: 100%;
+    height: 50rem;
+    border: none;
+    outline: none; }
+    .video-player video {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      border: none;
+      outline: none;
+      object-fit: cover; }
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
+.features {
+  grid-column: 3/7; }
 
 .active {
   border-bottom: 0.2rem solid black;
   color: white;
   font-weight: 800; }
+
+.sticky {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  width: 30rem;
+  height: 23rem;
+  transform: translateY(100%);
+  animation: fade-in-up 0.25s ease forwards; }
+  .sticky-video {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
 
 :root {
   --color-primary: #72bab4;
@@ -154,4 +191,4 @@ body {
   font-style: normal;
   color: black;
   line-height: 1.6;
-  height: 1000px; }
+  height: 2000px; }

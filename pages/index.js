@@ -1,13 +1,15 @@
 import Head from 'next/head'
 import Header from '../components/header'
 import Video from '../components/video'
+import Features from '../components/features'
 
 const Home = ({}) => {
   
   return (
     <div className='home'>
-      <Header></Header>
-      <Video></Video>
+      <Header />
+      <Video />
+      <Features />
     </div>
   )
 }

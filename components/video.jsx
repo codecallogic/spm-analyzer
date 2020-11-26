@@ -22,9 +22,8 @@ const Video = ({}) => {
   const handleScroll = (e) => {
     const wrappedElement = document.getElementById('video-trigger');
     const stream = document.getElementById('stream');
-
+      
     if(isBottom(wrappedElement) && !stream.paused){
-      console.log('3')
       setState({...state, videoWrap: true});
     }else{
       setState({...state, videoWrap: false});

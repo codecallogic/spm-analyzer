@@ -178,8 +178,8 @@
       .features-list-item:not(:first-child) {
         margin-left: 2.5rem; }
       .features-list-item svg {
-        flex: 1 0 23%;
-        height: 6rem;
+        flex: 1 0.2 20%;
+        height: 5rem;
         width: 10rem;
         fill: white;
         stroke: var(--color-light-orange);
@@ -197,6 +197,40 @@
         .features-list-item-description-text {
           color: black;
           font-size: 1.4rem; }
+
+.discover {
+  grid-column: 3/7;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 4rem 0; }
+  .discover-app {
+    display: flex;
+    justify-content: space-between; }
+    .discover-app-container-right {
+      flex: 0 45%;
+      display: flex;
+      flex-flow: column; }
+    .discover-app-item {
+      margin-bottom: 1.2rem; }
+    .discover-app-title {
+      font-size: 3.2rem;
+      color: var(--color-light-orange);
+      font-family: 'futura-pt-book';
+      font-weight: 800; }
+    .discover-app-description {
+      font-size: 1.4rem; }
+    .discover-app-icon {
+      width: 5rem;
+      height: 6rem;
+      fill: var(--color-light-orange);
+      box-shadow: 0.2rem 0.2rem 1rem rgba(0, 0, 0, 0.4);
+      padding: 1rem 0.2rem; }
+  .discover-image {
+    margin-left: -20rem;
+    margin-top: -5rem; }
+    .discover-image img {
+      width: 100%;
+      height: 100%; }
 
 .active {
   border-bottom: 0.2rem solid black;

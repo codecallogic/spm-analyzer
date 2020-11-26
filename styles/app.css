@@ -174,7 +174,10 @@
       align-content: center;
       background-color: white;
       padding: 1.5rem 1.3rem 1.5rem 2rem;
-      border-left: 0.2rem solid var(--color-light-orange); }
+      border-left: 0.2rem solid var(--color-light-orange);
+      transition: all 0.5s; }
+      .features-list-item:hover {
+        transform: translateY(-5%); }
       .features-list-item:not(:first-child) {
         margin-left: 2.5rem; }
       .features-list-item svg {
@@ -238,7 +241,9 @@
   .app-container {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(12, 1fr); }
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #f7f5f7;
+    padding: 8rem 0; }
   .app-title {
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -281,6 +286,31 @@
       color: var(--color-primary); }
     .app-content-description {
       padding: 2rem 0;
+      font-size: 1.4rem; }
+
+.launch {
+  grid-column: 2/8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6rem 0;
+  align-items: center; }
+  .launch img {
+    width: 100%;
+    padding: 0 2rem; }
+  .launch-content {
+    padding: 0 2rem; }
+    .launch-content-icon {
+      fill: white;
+      stroke: var(--color-light-orange);
+      width: 5rem;
+      height: 5rem;
+      padding: 0.6rem;
+      box-shadow: 0.2rem 0.3rem 3rem rgba(0, 0, 0, 0.2); }
+    .launch-content-title {
+      font-size: 3.5rem;
+      color: var(--color-light-orange);
+      font-weight: 400; }
+    .launch-content-description {
       font-size: 1.4rem; }
 
 .active {

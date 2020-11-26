@@ -1,0 +1,35 @@
+.launch {
+  grid-column: 2/8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 6rem 0;
+  align-items: center;
+
+  img {
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  &-content {
+    padding: 0 2rem;
+
+    &-icon {
+      fill: white;
+      stroke: var(--color-light-orange);
+      width: 5rem;
+      height: 5rem;
+      padding: 0.6rem;
+      box-shadow: 0.2rem 0.3rem 3rem rgba(0, 0, 0, 0.2);
+    }
+
+    &-title {
+      font-size: 3.5rem;
+      color: var(--color-light-orange);
+      font-weight: 400;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -36,6 +36,11 @@
       background-color: white;
       padding: 1.5rem 1.3rem 1.5rem 2rem;
       border-left: 0.2rem solid var(--color-light-orange);
+      transition: all 0.5s;
+
+      &:hover {
+        transform: translateY(-5%);
+      }
 
       &:not(:first-child) {
         margin-left: 2.5rem;

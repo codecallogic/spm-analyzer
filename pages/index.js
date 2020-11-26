@@ -4,6 +4,7 @@ import Video from '../components/video'
 import Features from '../components/features'
 import Discover from '../components/discover'
 import App from '../components/app'
+import Launch from '../components/launch'
 
 const Home = ({}) => {
   
@@ -14,7 +15,7 @@ const Home = ({}) => {
       <Features />
       <Discover />
       <App />
-      <Discover />
+      <Launch />
     </div>
   )
 }

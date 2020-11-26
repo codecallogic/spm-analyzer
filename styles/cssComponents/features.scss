@@ -1,3 +1,73 @@
 .features {
-  grid-column: 3/7;
+  grid-column: 3/11;
+
+  &-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #f7f5f7;
+    padding: 6rem 0;
+  }
+
+  &-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+  }
+
+  &-subheading {
+    text-align: center;
+    color: var(--color-light-orange);
+    font-size: 2.8rem;
+    font-family: 'futura-pt-book';
+    font-weight: 800;
+    padding: 1rem;
+  }
+
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      background-color: white;
+      padding: 1.5rem 1.3rem 1.5rem 2rem;
+      border-left: 0.2rem solid var(--color-light-orange);
+
+      &:not(:first-child) {
+        margin-left: 2.5rem;
+      }
+
+      & svg {
+        flex: 1 0 23%;
+        height: 6rem;
+        width: 10rem;
+        fill: white;
+        stroke: var(--color-light-orange);
+        stroke-width: 2;
+        margin-right: 1.5rem;
+        margin-top: -1rem;
+      }
+
+      &-description {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        &-heading {
+          color: var(--color-light-orange);
+          font-size: 2rem;
+          font-weight: 800;
+          font-family: 'futura-pt-book';
+        }
+
+        &-text {
+          color: black;
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
 }

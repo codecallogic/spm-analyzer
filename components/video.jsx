@@ -1,13 +1,15 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 
 const Video = ({}) => {
 
   const [state, setState] = useState({
     videoWrap: false,
-    videoClose: false
+    videoSticky: true
   })
 
-  const {videoWrap, videoClose} = state
+  const {videoWrap, videoSticky} = state
+
+  const vidRef = useRef(null)
 
   useEffect( () => {
     window.addEventListener('scroll', handleScroll);
@@ -19,10 +21,20 @@ const Video = ({}) => {
 
   const handleScroll = (e) => {
     const wrappedElement = document.getElementById('video-trigger');
-    if(isBottom(wrappedElement) && !videoClose){
+    const stream = document.getElementById('stream');
+
+    if(isBottom(wrappedElement) && !stream.paused){
+      console.log('3')
       setState({...state, videoWrap: true});
     }else{
       setState({...state, videoWrap: false});
+    }
+  }
+
+  const handleSticky = () => {
+    setState({...state, videoWrap: false, videoSticky: false});
+    if(!vidRef.current.paused){
+      vidRef.current.pause()
     }
   }
   
@@ -30,10 +42,12 @@ const Video = ({}) => {
     <div className="video">
       <div className="video-title">What is SPM?</div>
       <div className="video-subheading">See the Video Below</div>
-      <div className={videoWrap ? 'video-wrap' : ''}>
+      <div className={videoWrap ? 'video-wrap' : ''} >
         <div className={`video-player ` + ( videoWrap ? 'sticky': '')}>
-          {/* <iframe className={videoWrap ? 'sticky-video' : ''} src="/media/video.mp4" frameBorder="0" gesture="media" allowFullScreen></iframe> */}
-          <video controls><source src="/media/video.mp4" type="video/mp4"/></video>
+          <svg className={ videoWrap ? 'sticky-icon-show': 'sticky-icon-hide'} onClick={handleSticky} >
+            <use xlinkHref="/media/sprite.svg#icon-cross"></use>
+          </svg>
+          <video ref={vidRef} id="stream" poster="/media/image-overlay.png" controls><source src="/media/video.mp4" type="video/mp4" frameBorder="0" gesture="media" allowFullScreen/></video>
         </div>
       </div>
       <div id="video-trigger"></div>

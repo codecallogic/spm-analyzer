@@ -2,10 +2,52 @@
 const Features = ({}) => {
   
   return (
+    <div className="features-container">
     <div className="features">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius illum ex maxime totam repellat libero nisi molestias, tempora hic quis et odio illo nam beatae debitis, sequi dicta adipisci aliquam!
-      Quo repudiandae facilis officiis blanditiis numquam voluptatem facere pariatur atque incidunt reprehenderit nesciunt hic dolorem omnis eos vel ratione, ipsa quaerat minus obcaecati modi aliquid ut earum, praesentium dolor. Reiciendis.
-      Tempora alias officiis ex recusandae quia quisquam magnam soluta excepturi doloremque exercitationem. Excepturi tempora dolorem sit cum magnam aut labore incidunt quidem reprehenderit adipisci. Eos in repellendus quasi deserunt corrupti!
+      <div className="features-title">Highlights</div>
+      <div className="features-subheading">Features you love</div>
+      <div className="features-list">
+        <div className="features-list-item">
+          <svg>
+            <use xlinkHref="/media/sprite.svg#icon-happy2"></use>
+          </svg>
+          <div className="features-list-item-description">
+            <div className="features-list-item-description-heading">
+              Simple
+            </div>
+            <div className="features-list-item-description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+            </div>
+          </div>
+        </div>
+        <div className="features-list-item">
+          <svg>
+            <use xlinkHref="/media/sprite.svg#icon-cog"></use>
+          </svg>
+          <div className="features-list-item-description">
+            <div className="features-list-item-description-heading">
+              Simple
+            </div>
+            <div className="features-list-item-description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+            </div>
+          </div>
+        </div>
+        <div className="features-list-item">
+        <svg>
+            <use xlinkHref="/media/sprite.svg#icon-lock"></use>
+          </svg>
+          <div className="features-list-item-description">
+            <div className="features-list-item-description-heading">
+              Secure
+            </div>
+            <div className="features-list-item-description-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
   )
 }

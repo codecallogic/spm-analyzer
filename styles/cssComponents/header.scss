@@ -2,7 +2,7 @@
   background-image: linear-gradient(
     90deg,
     var(--color-primary),
-    var(--color-primary-medium-dark)
+    var(--color-primary-dark)
   );
   height: 100%;
   grid-column: 1/-1;
@@ -23,6 +23,7 @@
   &-subheading {
     color: black;
     font-size: 2rem;
+    font-weight: 300;
     text-align: center;
   }
 

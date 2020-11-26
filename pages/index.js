@@ -3,6 +3,7 @@ import Header from '../components/header'
 import Video from '../components/video'
 import Features from '../components/features'
 import Discover from '../components/discover'
+import App from '../components/app'
 
 const Home = ({}) => {
   
@@ -11,6 +12,8 @@ const Home = ({}) => {
       <Header />
       <Video />
       <Features />
+      <Discover />
+      <App />
       <Discover />
     </div>
   )

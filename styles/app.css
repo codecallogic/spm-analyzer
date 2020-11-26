@@ -232,10 +232,66 @@
       width: 100%;
       height: 100%; }
 
+.app {
+  grid-column: 3/11;
+  margin-bottom: 5rem; }
+  .app-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); }
+  .app-title {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-align: center; }
+  .app-subheading {
+    color: var(--color-light-orange);
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'futura-pt-book';
+    text-align: center;
+    padding: 1rem 0 2rem 0; }
+  .app-menu {
+    display: flex;
+    padding: 0 5rem; }
+    .app-menu-item {
+      color: #ead4cc;
+      padding: 1rem 0;
+      flex: 1;
+      background-color: #f4eeeb;
+      font-size: 2rem;
+      text-align: center; }
+      .app-menu-item:hover {
+        cursor: pointer; }
+  .app-content {
+    display: none; }
+    .app-content-container {
+      display: flex;
+      padding: 2rem 5rem; }
+    .app-content img {
+      width: 25rem;
+      height: 100%;
+      padding: 0.5rem 3rem; }
+    .app-content-title {
+      font-size: 3.5rem;
+      color: var(--color-light-orange);
+      font-family: 'futura-op-book';
+      font-weight: 400; }
+    .app-content-subheading {
+      font-size: 2rem;
+      color: var(--color-primary); }
+    .app-content-description {
+      padding: 2rem 0;
+      font-size: 1.4rem; }
+
 .active {
   border-bottom: 0.2rem solid black;
   color: white;
   font-weight: 800; }
+
+.active-2 {
+  border-top: 0.3rem solid var(--color-light-orange);
+  background-color: white;
+  color: var(--color-light-orange); }
 
 .sticky {
   position: fixed;
@@ -274,6 +330,16 @@
     .sticky-overlay-show:hover {
       background-color: rgba(226, 226, 226, 0.4); }
 
+.show {
+  display: block;
+  animation: fadeIn ease 2s; }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 :root {
   --color-primary: #72bab4;
   --color-primary-medium-dark: #4b9a97;
@@ -299,5 +365,4 @@ body {
   font-weight: 300;
   font-style: normal;
   color: black;
-  line-height: 1.6;
-  height: 2000px; }
+  line-height: 1.6; }

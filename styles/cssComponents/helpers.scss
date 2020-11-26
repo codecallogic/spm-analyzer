@@ -4,6 +4,12 @@
   font-weight: 800;
 }
 
+.active-2 {
+  border-top: 0.3rem solid var(--color-light-orange);
+  background-color: white;
+  color: var(--color-light-orange);
+}
+
 .sticky {
   position: fixed;
   bottom: 30px;
@@ -50,5 +56,19 @@
     &:hover {
       background-color: rgba(226, 226, 226, 0.4);
     }
+  }
+}
+
+.show {
+  display: block;
+  animation: fadeIn ease 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

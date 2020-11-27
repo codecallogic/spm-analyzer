@@ -4,9 +4,15 @@
   grid-template-columns: repeat(2, 1fr);
   padding: 6rem 0;
   align-items: center;
+  justify-content: center;
+
+  &-container {
+    display: flex;
+    justify-content: flex-end;
+  }
 
   img {
-    width: 100%;
+    width: 70%;
     padding: 0 2rem;
   }
 

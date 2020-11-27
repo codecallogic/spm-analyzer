@@ -3,7 +3,9 @@ const Launch = ({}) => {
   
   return (
     <div className="launch">
-      <img src="/media/iphone-launch.png" alt="iPhone"/>
+      <div className="launch-container">
+        <img src="/media/iphone-x.png" alt="iPhone"/>
+      </div>
       <div className="launch-content">
         <svg className="launch-content-icon">
           <use xlinkHref="/media/sprite.svg#icon-rocket"></use>

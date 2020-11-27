@@ -1,0 +1,82 @@
+.reviews {
+  grid-column: 2/8;
+  padding: 0 5rem;
+
+  &-slider {
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    grid-template-rows: minmax(50rem, 1fr);
+    justify-content: center;
+    padding: 5rem 0;
+
+    &-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0 3rem;
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+        fill: #bbbbbb;
+        cursor: pointer;
+      }
+    }
+
+    &-slide {
+      grid-column: 2/3;
+      text-align: center;
+      animation: fade-in-up 2s ease forwards;
+
+      &-title {
+        font-size: 1.4rem;
+        text-transform: uppercase;
+      }
+
+      &-subheading {
+        font-size: 3.5rem;
+        font-weight: 600;
+        font-family: 'futura-pt-book';
+        color: var(--color-light-orange);
+      }
+
+      &-image {
+        img {
+          background: transparent scroll no-repeat 0 0;
+          box-sizing: conten-box;
+          background-size: cover;
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
+          border: 3px solid white;
+          object-fit: cover;
+        }
+      }
+
+      &-text {
+        padding: 2rem 0;
+        font-size: 1.8rem;
+      }
+
+      &-name {
+        color: var(--color-light-orange);
+        font-weight: 300;
+        font-size: 2.5rem;
+      }
+
+      &-country {
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

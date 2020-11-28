@@ -9,6 +9,7 @@ import Steps from '../components/steps'
 import Reviews from '../components/reviews'
 import Gallery from '../components/gallery'
 import Questions from '../components/questions'
+import Download from '../components/download'
 
 const Home = ({}) => {
   
@@ -24,6 +25,7 @@ const Home = ({}) => {
       <Reviews />
       <Gallery />
       <Questions />
+      <Download />
     </div>
   )
 }

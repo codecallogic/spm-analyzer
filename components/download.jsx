@@ -2,7 +2,7 @@
 const Download = ({}) => {
   
   return (
-    <div className="download-container">
+    <div id="download" className="download-container">
     <div className="download">
       <svg className="download-icon">
         <use xlinkHref="/media/sprite.svg#icon-mobile"></use>

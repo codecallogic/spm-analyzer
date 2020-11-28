@@ -11,7 +11,7 @@ const Gallery = ({}) => {
   SwiperCore.use([Navigation, Pagination, A11y]);
   
   return (
-    <div className="gallery-container">
+    <div id="gallery" className="gallery-container">
     <div className="gallery">
       <div className="gallery-title">Gallery</div>
       <div className="gallery-subheading">App Screenshots</div>
@@ -21,9 +21,6 @@ const Gallery = ({}) => {
         slidesPerView={3}
         loop
         pagination={{ clickable: true }}
-       
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
         >
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-1.png" alt="Person image" />)}</SwiperSlide>
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-2.png" alt="Person image" />)}</SwiperSlide>

@@ -18,7 +18,7 @@ const Header = ({}) => {
       <Nav
         sticky={navSticky}
       />
-      <div className="header" style={ navSticky ? {padding: '15rem 0 0 0'} : {} }>
+      <div id="home" className="header" style={ navSticky ? {padding: '15rem 0 0 0'} : {} }>
         <div className="header-title">SPM ANALYZER</div>
         <div className="header-subheading">
           <p>A sales rank estimator application for Amazon sellers. </p>

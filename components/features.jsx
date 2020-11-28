@@ -2,7 +2,7 @@
 const Features = ({}) => {
   
   return (
-    <div className="features-container">
+    <div id="features" className="features-container">
     <div className="features">
       <div className="features-title">Highlights</div>
       <div className="features-subheading">Features you love</div>

@@ -2,7 +2,7 @@
 const Discover = ({}) => {
   
   return (
-    <div className="discover">
+    <div id="discover" className="discover">
       <div className="discover-app">
         <div className="discover-app-container-left"></div>
         <div className="discover-app-container-right">

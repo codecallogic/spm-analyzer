@@ -2,7 +2,7 @@
 const Contact = ({}) => {
   
   return (
-    <div className="contact-container">
+    <div id="contact" className="contact-container">
     <div className="contact">
       <div className="contact-info">
         <div className="contact-info-item">

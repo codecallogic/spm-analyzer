@@ -8,6 +8,7 @@ import Launch from '../components/launch'
 import Steps from '../components/steps'
 import Reviews from '../components/reviews'
 import Gallery from '../components/gallery'
+import Questions from '../components/questions'
 
 const Home = ({}) => {
   
@@ -22,6 +23,7 @@ const Home = ({}) => {
       <Steps />
       <Reviews />
       <Gallery />
+      <Questions />
     </div>
   )
 }

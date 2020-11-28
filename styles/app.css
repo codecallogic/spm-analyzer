@@ -476,6 +476,32 @@
       background-color: var(--color-light-orange) !important;
       opacity: 1 !important; }
 
+.questions {
+  grid-column: 3/7;
+  padding: 3rem 0;
+  display: flex;
+  flex-flow: column;
+  align-items: center; }
+  .questions-title {
+    font-size: 1.6rem;
+    text-transform: uppercase; }
+  .questions-subheading {
+    color: var(--color-light-orange);
+    font-size: 3rem;
+    font-weight: 800;
+    font-family: 'futura-pt-book'; }
+  .questions-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 3rem 0; }
+    .questions-list-title {
+      font-size: 1.8rem;
+      color: var(--color-light-orange);
+      font-weight: 600; }
+    .questions-list-content {
+      font-size: 1.4rem; }
+
 .active {
   border-bottom: 0.2rem solid black;
   color: white;

@@ -62,6 +62,26 @@
   display: grid;
   grid-template-columns: repeat(8, 1fr); }
 
+.copyright {
+  grid-column: 3/7;
+  padding: 4rem 0 8rem 0;
+  text-align: center;
+  font-size: 1.4rem; }
+  .copyright-reserved {
+    margin-bottom: 2rem; }
+  .copyright-appd {
+    margin-bottom: 2rem; }
+  .copyright-links {
+    display: flex;
+    justify-content: center; }
+    .copyright-links-link {
+      color: var(--color-primary);
+      text-transform: uppercase;
+      padding: 0 2rem 0 0;
+      font-weight: 400; }
+      .copyright-links-link:hover {
+        color: var(--color-primary-dark); }
+
 .main-container {
   background-image: linear-gradient(90deg, var(--color-primary), var(--color-primary-dark));
   height: 100%;
@@ -550,6 +570,56 @@
   .download-small-text {
     padding: 3rem 0;
     font-size: 1.2rem; }
+
+.contact {
+  grid-column: 3/7;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 4rem 0; }
+  .contact-container {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    background-color: #f7f5f7; }
+  .contact-info {
+    display: flex; }
+    .contact-info-item {
+      align-self: end; }
+      .contact-info-item-box {
+        display: flex;
+        align-items: center;
+        padding: 0.3rem 0; }
+        .contact-info-item-box-icon {
+          margin-left: 1rem;
+          margin-right: 1rem;
+          width: 2rem;
+          height: 2rem;
+          fill: transparent;
+          stroke: #b9b7ba; }
+        .contact-info-item-box-text-color {
+          font-size: 1.2rem;
+          color: var(--color-primary);
+          font-weight: 500; }
+  .contact-social-media {
+    align-self: end;
+    display: flex; }
+    .contact-social-media-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
+      width: 4rem;
+      height: 4rem;
+      box-shadow: 0.3rem 0.3rem 2rem rgba(0, 0, 0, 0.2); }
+      .contact-social-media-icon svg {
+        width: 2rem;
+        height: 2rem;
+        fill: var(--color-primary); }
+        .contact-social-media-icon svg:hover {
+          fill: var(--color-primary-dark);
+          cursor: pointer; }
 
 .active {
   border-bottom: 0.2rem solid black;

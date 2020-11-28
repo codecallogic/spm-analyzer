@@ -10,6 +10,7 @@ import Reviews from '../components/reviews'
 import Gallery from '../components/gallery'
 import Questions from '../components/questions'
 import Download from '../components/download'
+import Contact from '../components/contact'
 
 const Home = ({}) => {
   
@@ -26,6 +27,15 @@ const Home = ({}) => {
       <Gallery />
       <Questions />
       <Download />
+      <Contact />
+      <div className="copyright">
+        <div className="copyright-reserved">COPYRIGHT &copy; SPM ANALYZER APP 2018-2020 | All Rights Reserved</div>
+        <div className="copyright-appd">APPD | AP Prime Deliveries LLC</div>
+        <div className="copyright-links">
+          <a href="" className="copyright-links-link">Terms & Conditions</a>
+          <a href="" className="copyright-links-link">Privacy Policy</a>
+        </div>
+      </div>
     </div>
   )
 }

@@ -13,7 +13,7 @@ const Download = ({}) => {
           <a href="" className="download-buttons-badge"><img src="/media/apple-store-badge.png" alt="Apple Store Badge"/> App Store</a>
           <a href="" className="download-buttons-badge"><img src="/media/google-play-badge.png" alt="Google Play Badge"/> Google Play</a>
       </div>
-      <div className="download-small-text">"Works on iOS 10.0.5+. Android kit kat and above.</div>
+      <div className="download-small-text">Works on iOS 10.0.5+. Android kit kat and above.</div>
     </div>
     </div>
   )

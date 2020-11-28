@@ -70,16 +70,16 @@
 
 .active-slider {
   transform: scale(1);
-  transition: all 2s;
+  transition: all 1s;
 }
 
 .next {
-  transition: all 2s;
+  transition: all 1s;
   transform: translateY(-10%);
   transform: scale(1.2);
 
   &-prev {
-    transition: all 2s;
+    transition: all 1.4s;
     transform: scale(1);
   }
 }

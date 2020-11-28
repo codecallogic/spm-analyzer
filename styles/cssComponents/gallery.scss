@@ -32,13 +32,13 @@
 .swiper {
   &-container {
     width: 80rem;
-    height: 100%;
+    height: 70rem;
     cursor: pointer;
   }
 
   &-wrapper {
     cursor: pointer;
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
 
   &-slide {
@@ -48,12 +48,12 @@
 
     img {
       width: 95%;
-      height: 80%;
+      height: 70%;
     }
   }
 
   &-pagination {
-    margin: -1rem 0;
+    margin: 0 0 3rem 0;
 
     &-bullet {
       width: 4rem !important;

@@ -472,22 +472,22 @@
 
 .swiper-container {
   width: 80rem;
-  height: 100%;
+  height: 70rem;
   cursor: pointer; }
 
 .swiper-wrapper {
   cursor: pointer;
-  padding: 4rem 0; }
+  padding: 5rem 0; }
 
 .swiper-slide-active {
   transition: all 1s; }
 
 .swiper-slide img {
   width: 95%;
-  height: 80%; }
+  height: 70%; }
 
 .swiper-pagination {
-  margin: -1rem 0; }
+  margin: 0 0 3rem 0; }
   .swiper-pagination-bullet {
     width: 4rem !important;
     border-radius: 1rem !important;

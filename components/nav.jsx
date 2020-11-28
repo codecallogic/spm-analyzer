@@ -9,7 +9,6 @@ const Nav = (props) => {
   const {active} = state
   
   const executeScroll = (e) => {
-    console.log(e.target.textContent.toLowerCase())
     setState({...state, active: e.target.textContent.toLowerCase()})
   }
   

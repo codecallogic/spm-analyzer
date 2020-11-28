@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "watch:css": "node-sass styles/main.scss styles/app.css -w",
-    "heroku-postbuild": "npm run build",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@n8tb1t/use-scroll-position": "^2.0.3",

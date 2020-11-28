@@ -1,7 +1,8 @@
 const withCSS = require('@zeit/next-css')
+const withSASS = require('@zeit/next-sass') 
 const withVideos = require('next-videos')
  
-module.exports = withVideos(withCSS({
+module.exports = withVideos(withSASS(withCSS({
   devIndicators: {
     autoPrerender: false,
   },
@@ -11,4 +12,4 @@ module.exports = withVideos(withCSS({
     PRODUCTION: false,
     DOMAIN: 'http://localhost:3000',
   }
-}))
+})))

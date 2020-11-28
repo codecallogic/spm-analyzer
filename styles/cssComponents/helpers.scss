@@ -68,6 +68,22 @@
   display: none;
 }
 
+.active-slider {
+  transform: scale(1);
+  transition: all 2s;
+}
+
+.next {
+  transition: all 2s;
+  transform: translateY(-10%);
+  transform: scale(1.2);
+
+  &-prev {
+    transition: all 2s;
+    transform: scale(1);
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

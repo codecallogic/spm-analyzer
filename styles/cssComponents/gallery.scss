@@ -1,0 +1,46 @@
+.gallery {
+  grid-column: 2/8;
+  display: grid;
+  justify-content: center;
+  padding: 3rem 0;
+  text-align: center;
+
+  &-title {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+  }
+
+  &-subheading {
+    font-size: 3.5rem;
+    color: var(--color-light-orange);
+    font-weight: 800;
+    font-family: 'futura-pt-book';
+  }
+
+  &-slider {
+    padding: 5rem 0 1rem 0;
+  }
+}
+
+.swiper {
+  &-container {
+    width: 80rem;
+    height: 100%;
+  }
+
+  &-wrapper {
+    cursor: pointer;
+    padding: 4rem 0;
+  }
+
+  &-slide {
+    &-active {
+      transition: all 1s;
+    }
+
+    img {
+      width: 95%;
+      height: 80%;
+    }
+  }
+}

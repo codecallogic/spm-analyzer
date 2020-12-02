@@ -25,8 +25,8 @@ const Header = ({}) => {
           <p>Download today on the iOS ang Google Play Store</p>
         </div>
         <div className="header-download">
-          <a href="" className="header-download-badge"><img src="/media/apple-store-badge.png" alt="Apple Store Badge"/> App Store</a>
-          <a href="" className="header-download-badge"><img src="/media/google-play-badge.png" alt="Google Play Badge"/> Google Play</a>
+          <a href="https://apps.apple.com/us/app/spm-sales-rank-analyzer-tool/id1435825571" target="_blank" className="header-download-badge"><img src="/media/apple-store-badge.png" alt="Apple Store Badge"/> App Store</a>
+          <a href="https://play.google.com/store/apps/details?id=com.app.spmanalyzer&hl=en_US" target="_blank" className="header-download-badge"><img src="/media/google-play-badge.png" alt="Google Play Badge"/> Google Play</a>
         </div>
         <div className="header-image">
           <img src="/media/header-iphone-half.png" alt="iPhone App Example"/>

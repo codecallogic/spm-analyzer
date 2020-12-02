@@ -22,7 +22,7 @@ const Video = ({}) => {
   const handleScroll = (e) => {
     const wrappedElement = document.getElementById('video-trigger');
     const stream = document.getElementById('stream');
-      
+
     if(isBottom(wrappedElement) && !stream.paused){
       setState({...state, videoWrap: true});
     }else{
@@ -31,6 +31,7 @@ const Video = ({}) => {
   }
 
   const handleSticky = () => {
+    console.log('heLLO')
     setState({...state, videoWrap: false, videoSticky: false});
     if(!vidRef.current.paused){
       vidRef.current.pause()

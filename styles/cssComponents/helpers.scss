@@ -26,13 +26,14 @@
   }
 
   &:hover > svg {
-    fill: black;
+    fill: #72aaa6;
     cursor: pointer;
+    z-index: 100;
   }
 
   &-icon-show {
     position: absolute;
-    bottom: 20rem;
+    bottom: 19rem;
     right: 0.4rem;
     fill: transparent;
     border-radius: 1rem;

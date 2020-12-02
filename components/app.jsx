@@ -15,8 +15,8 @@ const MoreFeatures = ({}) => {
   return (
     <div className="app-container">
       <div className="app">
-        <div className="app-title">Features</div>
-        <div className="app-subheading">Do more with our app</div>
+        <div className="app-title">With SPM Analyzer PRO get even more features</div>
+        <div className="app-subheading">Get More Out of The App</div>
         <div className="app-menu">
           <div className={`app-menu-item ` + (show === 'communication' ? 'active-2': '')} onClick={itemClicked}>Communication</div>
           <div className={`app-menu-item ` + (show === 'scheduling' ? 'active-2': '')} onClick={itemClicked}>Scheduling</div>

@@ -5,44 +5,74 @@ const Features = ({}) => {
     <div id="features" className="features-container">
     <div className="features">
       <div className="features-title">Highlights</div>
-      <div className="features-subheading">Features you love</div>
+      <div className="features-subheading">Features</div>
       <div className="features-list">
         <div className="features-list-item">
           <svg>
-            <use xlinkHref="/media/sprite.svg#icon-happy2"></use>
+            <use xlinkHref="/media/sprite.svg#icon-shop"></use>
           </svg>
           <div className="features-list-item-description">
             <div className="features-list-item-description-heading">
-              Simple
+              All Markets
             </div>
             <div className="features-list-item-description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+              <span>Amazon USA</span>
+              <span>United Kingdom</span>
+              <span>Canada</span>
+              <span>Germany</span>
+              <span>France</span>
+              <span>Italy</span>
+              <span>Spain</span>
+              <span>India</span>
+              <span>Mexico</span>
             </div>
           </div>
         </div>
         <div className="features-list-item">
           <svg>
-            <use xlinkHref="/media/sprite.svg#icon-cog"></use>
+            <use xlinkHref="/media/sprite.svg#icon-list"></use>
           </svg>
           <div className="features-list-item-description">
             <div className="features-list-item-description-heading">
-              Simple
+              Each Category
             </div>
             <div className="features-list-item-description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+              <span>Baby</span>
+              <span>Beauty</span>
+              <span>Books</span>
+              <span>Camera & Photo</span>
+              <span>Clothing & Accessories</span>
+              <span>Consumer Electronics</span>
+              <span>Grocery & Gourmet Foods</span>
+              <span>Health & Personal Care</span>
+              <span>Home & Garden</span>
+              <span>Industrial & Scientific (BISS)</span>
+              <span>Kindle Accessories</span>
+              <span>Luggage & Travel Accessories</span>
+              <span>Musical Instruments</span>
+              <span>Office Products</span>
+              <span>Outdoors</span>
+              <span>Personal Computers</span>
+              <span>Pet Supplies Shoes</span>
+              <span>Handbags & Sunglasses</span>
+              <span>Software</span>
+              <span>Sports</span>
+              <span>Tools & Home Improvement</span>
+              <span>Toys</span>
+              <span>Video Games</span>
             </div>
           </div>
         </div>
         <div className="features-list-item">
         <svg>
-            <use xlinkHref="/media/sprite.svg#icon-lock"></use>
+            <use xlinkHref="/media/sprite.svg#icon-directions_run"></use>
           </svg>
           <div className="features-list-item-description">
             <div className="features-list-item-description-heading">
-              Secure
+              Instant Results
             </div>
             <div className="features-list-item-description-text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit quis temporibus.
+              <span>Literally.. well it takes about 2 seconds for our analyzing robots to crunch their numbers. Lets face it, being able to estimate sales in the palm of your hands at anytime is pretty darn convenient.</span>
             </div>
           </div>
         </div>

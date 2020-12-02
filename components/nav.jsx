@@ -26,7 +26,7 @@ const Nav = (props) => {
           <a href="#gallery" className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
           <a href="#home" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
           <a href="#contact" className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')}>Contact</a>
-          <a href="#download" className={`nav-menu-list-item-download` + (active === 'download' ? ' active' : '')} onClick={executeScroll}>Download</a>
+          <a href="#download" className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
         </div>
       </div>
     </div>

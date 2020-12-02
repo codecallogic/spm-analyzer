@@ -17,7 +17,7 @@
     height: 8rem;
     background-image: linear-gradient(90deg, var(--color-primary), var(--color-primary-medium-dark)); }
   .nav-container {
-    grid-column: 2/8;
+    grid-column: 2/9;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +26,7 @@
   .nav-logo {
     display: flex;
     align-items: center;
-    font-size: 1.6rem; }
+    font-size: 1.8rem; }
     .nav-logo:hover {
       cursor: pointer; }
     .nav-logo-strong {
@@ -41,7 +41,8 @@
     align-items: center; }
     .nav-menu-list-item {
       margin-right: 1.9rem;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      font-size: 1.5rem; }
       .nav-menu-list-item:hover {
         color: white;
         cursor: pointer; }
@@ -97,7 +98,7 @@
     font-weight: 800;
     text-align: center; }
   .header-subheading {
-    color: black;
+    color: white;
     font-size: 2rem;
     font-weight: 300;
     text-align: center; }
@@ -192,25 +193,25 @@
     padding: 1rem; }
     .features-list-item {
       display: flex;
-      justify-content: space-between;
       align-content: center;
+      align-items: flex-start;
       background-color: white;
-      padding: 1.5rem 1.3rem 1.5rem 2rem;
+      padding: 1.5rem 1.3rem 1.5rem 1rem;
       border-left: 0.2rem solid var(--color-light-orange);
       transition: all 0.5s; }
       .features-list-item:hover {
-        transform: translateY(-5%); }
+        transform: translateY(-3%); }
       .features-list-item:not(:first-child) {
         margin-left: 2.5rem; }
       .features-list-item svg {
-        flex: 1 0.2 20%;
+        flex: 0.5 0.4 30%;
         height: 5rem;
-        width: 10rem;
+        width: 5rem;
         fill: white;
         stroke: var(--color-light-orange);
-        stroke-width: 2;
-        margin-right: 1.5rem;
-        margin-top: -1rem; }
+        stroke-width: 1;
+        margin-right: 2rem;
+        margin-top: 0; }
       .features-list-item-description {
         display: grid;
         grid-template-columns: 1fr; }
@@ -219,7 +220,8 @@
           font-size: 2rem;
           font-weight: 800;
           font-family: 'futura-pt-book'; }
-        .features-list-item-description-text {
+        .features-list-item-description-text > span {
+          display: block;
           color: black;
           font-size: 1.4rem; }
 
@@ -252,7 +254,7 @@
       padding: 1rem 0.2rem; }
   .discover-image {
     margin-left: -30rem;
-    margin-top: -8rem; }
+    margin-top: -14rem; }
     .discover-image img {
       width: 100%;
       height: 100%; }
@@ -388,8 +390,8 @@
         .steps-list-item-content-text {
           font-size: 1.4rem; }
   .steps img {
-    width: 75%;
-    height: 100%; }
+    width: 80%;
+    height: 50rem; }
 
 .reviews {
   grid-column: 2/8;
@@ -644,11 +646,12 @@
     width: 100%;
     object-fit: cover; }
   .sticky:hover > svg {
-    fill: black;
-    cursor: pointer; }
+    fill: #72aaa6;
+    cursor: pointer;
+    z-index: 100; }
   .sticky-icon-show {
     position: absolute;
-    bottom: 20rem;
+    bottom: 19rem;
     right: 0.4rem;
     fill: transparent;
     border-radius: 1rem;

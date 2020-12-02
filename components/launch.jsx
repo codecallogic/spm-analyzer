@@ -11,7 +11,7 @@ const Launch = ({}) => {
           <use xlinkHref="/media/sprite.svg#icon-rocket"></use>
         </svg>
         <div className="launch-content-title">
-          Launch your App
+          How to calculate sales rank
         </div>
         <div className="launch-content-description">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit, ipsum dolor sit, amet consectetur.

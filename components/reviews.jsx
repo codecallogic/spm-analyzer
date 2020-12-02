@@ -51,9 +51,9 @@ const Reviews = ({}) => {
             <img src="/media/person-2.jpeg" alt="Person image" />
           </div>
           <div className="reviews-slider-slide-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laboriosam similique veritatis commodi quibusdam corporis at libero repudiandae ad amet officiis, natus enim, nobis tempora deleniti odio blanditiis! Soluta, omnis!Exercitationem maiores excepturi, dolor nesciunt iusto eum laudantium eaque. Eveniet possimus nisi fugiat quaerat suscipit voluptas iusto autem excepturi qui quo obcaecati sint, similique est quis magnam! Dolorum, commodi iusto!
+            Just downloaded it yesterday. Very impressed 
           </div>
-          <div className="reviews-slider-slide-name">Marcus Ryan</div>
+          <div className="reviews-slider-slide-name">Yafaservices</div>
           <div className="reviews-slider-slide-country">United States</div>
         </div>
         <div className="reviews-slider-slide slide-hide">
@@ -63,9 +63,9 @@ const Reviews = ({}) => {
             <img src="/media/person.jpeg" alt="Person image" />
           </div>
           <div className="reviews-slider-slide-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laboriosam similique veritatis commodi quibusdam corporis at libero repudiandae ad amet officiis, natus enim, nobis tempora deleniti odio blanditiis! Soluta, omnis!Exercitationem maiores excepturi, dolor nesciunt iusto eum laudantium eaque. Eveniet possimus nisi fugiat quaerat suscipit voluptas iusto autem excepturi qui quo obcaecati sint, similique est quis magnam! Dolorum, commodi iusto!
+            Great app for new amazon sellers! This app is very cool! I think it would be best for beginners to have a ballpark of estimated sales on Amazon. The interface is very easy to use and understand.
           </div>
-          <div className="reviews-slider-slide-name">Raymon Sanders</div>
+          <div className="reviews-slider-slide-name">dlacroix93</div>
           <div className="reviews-slider-slide-country">United States</div>
         </div>
         <div className="reviews-slider-slide slide-hide">
@@ -75,9 +75,9 @@ const Reviews = ({}) => {
             <img src="/media/person-3.jpeg" alt="Person image" />
           </div>
           <div className="reviews-slider-slide-text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima laboriosam similique veritatis commodi quibusdam corporis at libero repudiandae ad amet officiis, natus enim, nobis tempora deleniti odio blanditiis! Soluta, omnis!Exercitationem maiores excepturi, dolor nesciunt iusto eum laudantium eaque. Eveniet possimus nisi fugiat quaerat suscipit voluptas iusto autem excepturi qui quo obcaecati sint, similique est quis magnam! Dolorum, commodi iusto!
+            Product research tool. One of the best I've used actually I've never used another tool as great as SPM analyzer.
           </div>
-          <div className="reviews-slider-slide-name">Lucille Cruz</div>
+          <div className="reviews-slider-slide-name">JTS88</div>
           <div className="reviews-slider-slide-country">United States</div>
         </div>
         <div className="reviews-slider-arrow" onClick={nextSlides}>

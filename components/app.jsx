@@ -26,15 +26,13 @@ const MoreFeatures = ({}) => {
         <div className={`app-content ` + (show === 'communication' ? 'show' : '')}>
           <div className="app-content-container">
           <div>
-            <img className="app-content-image" src="/media/tab.png" alt="Tab Image"/> 
+            <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           <div>
             <div className="app-content-title">With SPM Analyzer PRO get even more features</div>
-            <div className="app-content-subheading">Uniquely underwhelm premium outsourcing with proactive leadership</div>
+            <div className="app-content-subheading"></div>
             <div className="app-content-description">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, voluptatibus illo quos commodi minus laboriosam eligendi veniam cumque similique quaerat, omnis vero inventore dignissimos nihil rerum consectetur corporis accusamus sit.
-              Est harum repellat rerum illo ullam veritatis totam maxime quisquam magnam reprehenderit, nobis ducimus praesentium temporibus porro provident a laborum. Dolore necessitatibus et atque assumenda excepturi, tempora magnam perspiciatis optio.
-              Itaque quo ipsam ad? Sit, labore vitae soluta ratione suscipit eius fuga nulla tempora. Nulla beatae consequuntur aliquid, dolor quidem quas autem reprehenderit aperiam enim architecto nam, nobis non nihil!
+              No more ads forever with unlimited searching, faster estimating with category sort options, new trending tab, and much more.
             </div>
           </div>
           </div>
@@ -51,14 +49,14 @@ const MoreFeatures = ({}) => {
             </div>
           </div>
           <div>
-            <img className="app-content-image" src="/media/tab.png" alt="Tab Image"/> 
+            <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           </div>
         </div>
         <div className={`app-content ` + (show === 'messages' ? 'show' : '')}>
           <div className="app-content-container">
           <div>
-            <img className="app-content-image" src="/media/tab.png" alt="Tab Image"/> 
+            <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           <div>
             <div className="app-content-title">Realtime Messaging Service</div>
@@ -83,7 +81,7 @@ const MoreFeatures = ({}) => {
             </div>
           </div>
           <div>
-            <img className="app-content-image" src="/media/tab.png" alt="Tab Image"/> 
+            <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           </div>
         </div>      

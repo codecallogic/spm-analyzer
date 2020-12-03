@@ -23,7 +23,7 @@ const Steps = ({}) => {
             </div>
             <div className="steps-list-item-content">
               <div className="steps-list-item-content-heading">Create an Account</div>
-              <div className="steps-list-item-content-text">Add your email and password to start.</div>
+              <div className="steps-list-item-content-text">Add your email and password to start</div>
             </div>
           </div>
           <div className="steps-list-item" onMouseOver={ () => changeImage('two')}>
@@ -40,7 +40,7 @@ const Steps = ({}) => {
               <div className="steps-list-item-step-number">3</div>
             </div>
             <div className="steps-list-item-content">
-              <div className="steps-list-item-content-heading">Calculate sales.</div>
+              <div className="steps-list-item-content-heading">Calculate Sales</div>
               <div className="steps-list-item-content-text">Type in the products current sales rank and click calculate sales to get the results!</div>
             </div>
           </div>

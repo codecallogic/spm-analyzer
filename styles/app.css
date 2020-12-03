@@ -142,7 +142,6 @@
     text-transform: uppercase; }
   .video-subheading {
     font-size: 3rem;
-    font-family: 'futura-pt-book';
     font-weight: 800;
     color: var(--color-light-orange); }
   .video-wrap {
@@ -184,7 +183,6 @@
     text-align: center;
     color: var(--color-light-orange);
     font-size: 2.8rem;
-    font-family: 'futura-pt-book';
     font-weight: 800;
     padding: 1rem; }
   .features-list {
@@ -192,8 +190,8 @@
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem; }
     .features-list-item {
-      display: flex;
-      align-content: center;
+      display: grid;
+      grid-template-columns: min-content 1fr;
       align-items: flex-start;
       background-color: white;
       padding: 1.5rem 1.3rem 1.5rem 1rem;
@@ -204,22 +202,17 @@
       .features-list-item:not(:first-child) {
         margin-left: 2.5rem; }
       .features-list-item svg {
-        flex: 0.5 0.4 30%;
         height: 5rem;
         width: 5rem;
-        fill: white;
-        stroke: var(--color-light-orange);
-        stroke-width: 1;
-        margin-right: 2rem;
-        margin-top: 0; }
+        fill: var(--color-light-orange);
+        margin-right: 2rem; }
       .features-list-item-description {
         display: grid;
         grid-template-columns: 1fr; }
         .features-list-item-description-heading {
           color: var(--color-light-orange);
           font-size: 2rem;
-          font-weight: 800;
-          font-family: 'futura-pt-book'; }
+          font-weight: 800; }
         .features-list-item-description-text > span {
           display: block;
           color: black;
@@ -242,7 +235,6 @@
     .discover-app-title {
       font-size: 3.2rem;
       color: var(--color-light-orange);
-      font-family: 'futura-pt-book';
       font-weight: 800; }
     .discover-app-description {
       font-size: 1.6rem; }
@@ -276,7 +268,6 @@
     color: var(--color-light-orange);
     font-size: 3rem;
     font-weight: 800;
-    font-family: 'futura-pt-book';
     text-align: center;
     padding: 1rem 0 2rem 0; }
   .app-menu {
@@ -324,8 +315,8 @@
     display: flex;
     justify-content: flex-end; }
   .launch img {
-    width: 80%;
-    height: 90vh;
+    width: 75%;
+    height: 100vh;
     padding: 0 2rem; }
   .launch-content {
     padding: 0 2rem; }
@@ -335,6 +326,7 @@
       width: 5rem;
       height: 5rem;
       padding: 0.6rem;
+      margin-top: 1rem;
       box-shadow: 0.2rem 0.3rem 3rem rgba(0, 0, 0, 0.2); }
     .launch-content-title {
       font-size: 3.5rem;
@@ -429,7 +421,6 @@
       .reviews-slider-slide-subheading {
         font-size: 3.5rem;
         font-weight: 600;
-        font-family: 'futura-pt-book';
         color: var(--color-light-orange); }
       .reviews-slider-slide-image img {
         background: transparent scroll no-repeat 0 0;
@@ -474,8 +465,7 @@
   .gallery-subheading {
     font-size: 3.5rem;
     color: var(--color-light-orange);
-    font-weight: 800;
-    font-family: 'futura-pt-book'; }
+    font-weight: 800; }
   .gallery-slider {
     padding: 5rem 0 1rem 0; }
 
@@ -517,8 +507,7 @@
   .questions-subheading {
     color: var(--color-light-orange);
     font-size: 3rem;
-    font-weight: 800;
-    font-family: 'futura-pt-book'; }
+    font-weight: 800; }
   .questions-list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -725,7 +714,7 @@ html {
   scroll-behavior: smooth; }
 
 body {
-  font-family: "futura-pt-book", sans-serif;
+  font-family: "futura-pt", sans-serif;
   font-weight: 300;
   font-style: normal;
   color: black;

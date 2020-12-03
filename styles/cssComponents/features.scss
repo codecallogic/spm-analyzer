@@ -19,7 +19,6 @@
     text-align: center;
     color: var(--color-light-orange);
     font-size: 2.8rem;
-    font-family: 'futura-pt-book';
     font-weight: 800;
     padding: 1rem;
   }
@@ -30,8 +29,9 @@
     padding: 1rem;
 
     &-item {
-      display: flex;
-      align-content: center;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      // align-content: center;
       align-items: flex-start;
       background-color: white;
       padding: 1.5rem 1.3rem 1.5rem 1rem;
@@ -47,14 +47,14 @@
       }
 
       & svg {
-        flex: 0.5 0.4 30%;
+        // flex: 0.5 0.4 30%;
         height: 5rem;
         width: 5rem;
-        fill: white;
-        stroke: var(--color-light-orange);
-        stroke-width: 1;
+        fill: var(--color-light-orange);
+        // stroke: var(--color-light-orange);
+        // stroke-width: 1;
         margin-right: 2rem;
-        margin-top: 0;
+        // margin-top: 0;
       }
 
       &-description {
@@ -65,7 +65,6 @@
           color: var(--color-light-orange);
           font-size: 2rem;
           font-weight: 800;
-          font-family: 'futura-pt-book';
         }
 
         &-text > span {

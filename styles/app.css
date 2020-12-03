@@ -324,7 +324,8 @@
     display: flex;
     justify-content: flex-end; }
   .launch img {
-    width: 70%;
+    width: 80%;
+    height: 90vh;
     padding: 0 2rem; }
   .launch-content {
     padding: 0 2rem; }
@@ -391,8 +392,12 @@
         .steps-list-item-content-text {
           font-size: 1.4rem; }
   .steps img {
-    width: 90%;
-    height: 80vh; }
+    width: 100%;
+    height: 100vh; }
+    @media only screen and (max-width: 1200px) {
+      .steps img {
+        width: 100%;
+        height: 80vh; } }
 
 .reviews {
   grid-column: 2/8;

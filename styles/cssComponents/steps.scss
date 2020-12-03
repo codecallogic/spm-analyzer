@@ -72,7 +72,12 @@
   }
 
   img {
-    width: 90%;
-    height: 80vh;
+    width: 100%;
+    height: 100vh;
+
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      height: 80vh;
+    }
   }
 }

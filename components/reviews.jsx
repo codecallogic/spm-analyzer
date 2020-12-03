@@ -17,8 +17,6 @@ const Reviews = ({}) => {
     slides.forEach( (slide) => {
       slide.style.display = 'none'
     })
-    console.log(slides)
-    console.log(index)
     slides[index].style.display = 'block'
   }
 
@@ -31,8 +29,6 @@ const Reviews = ({}) => {
     slides.forEach( (slide) => {
       slide.style.display = 'none'
     })
-    console.log(slides)
-    console.log(index)
     slides[index].style.display = 'block'
   }
   
@@ -46,7 +42,7 @@ const Reviews = ({}) => {
         </div>
         <div className="reviews-slider-slide">
           <div className="reviews-slider-slide-title">Testimonials</div>
-          <div className="reviews-slider-slide-subheading">What our customer says</div>
+          <div className="reviews-slider-slide-subheading">What our customer say</div>
           <div className="reviews-slider-slide-image">
             <img src="/media/person-2.jpeg" alt="Person image" />
           </div>
@@ -58,7 +54,7 @@ const Reviews = ({}) => {
         </div>
         <div className="reviews-slider-slide slide-hide">
           <div className="reviews-slider-slide-title">Testimonials</div>
-          <div className="reviews-slider-slide-subheading">What our customer says</div>
+          <div className="reviews-slider-slide-subheading">What our customer say</div>
           <div className="reviews-slider-slide-image">
             <img src="/media/person.jpeg" alt="Person image" />
           </div>
@@ -70,7 +66,7 @@ const Reviews = ({}) => {
         </div>
         <div className="reviews-slider-slide slide-hide">
           <div className="reviews-slider-slide-title">Testimonials</div>
-          <div className="reviews-slider-slide-subheading">What our customer says</div>
+          <div className="reviews-slider-slide-subheading">What our customer say</div>
           <div className="reviews-slider-slide-image">
             <img src="/media/person-3.jpeg" alt="Person image" />
           </div>

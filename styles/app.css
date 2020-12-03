@@ -142,7 +142,7 @@
     text-transform: uppercase; }
   .video-subheading {
     font-size: 3rem;
-    font-family: futura-pt-book, sans-serif;
+    font-family: 'futura-pt-book';
     font-weight: 800;
     color: var(--color-light-orange); }
   .video-wrap {
@@ -234,7 +234,7 @@
     display: flex;
     justify-content: space-between; }
     .discover-app-container-right {
-      flex: 0 45%;
+      flex: 0 40%;
       display: flex;
       flex-flow: column; }
     .discover-app-item {
@@ -245,7 +245,7 @@
       font-family: 'futura-pt-book';
       font-weight: 800; }
     .discover-app-description {
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
     .discover-app-icon {
       width: 5rem;
       height: 6rem;
@@ -254,7 +254,7 @@
       padding: 1rem 0.2rem; }
   .discover-image {
     margin-left: -30rem;
-    margin-top: -14rem; }
+    margin-top: -11rem; }
     .discover-image img {
       width: 100%;
       height: 100%; }
@@ -298,7 +298,7 @@
       padding: 2rem 5rem; }
     .app-content img {
       flex: 1;
-      width: 30rem;
+      width: 32rem;
       height: 50rem;
       padding: 0.5rem 3rem; }
     .app-content-title {
@@ -311,7 +311,7 @@
       color: var(--color-primary); }
     .app-content-description {
       padding: 2rem 0;
-      font-size: 1.4rem; }
+      font-size: 1.6rem; }
 
 .launch {
   grid-column: 2/8;

@@ -22,7 +22,7 @@ const Header = ({}) => {
         <div className="header-title">SPM ANALYZER</div>
         <div className="header-subheading">
           <p>A sales rank estimator application for Amazon sellers. </p>
-          <p>Download today on the iOS ang Google Play Store</p>
+          <p>Download today on the iOS and Google Play Store</p>
         </div>
         <div className="header-download">
           <a href="https://apps.apple.com/us/app/spm-sales-rank-analyzer-tool/id1435825571" target="_blank" className="header-download-badge"><img src="/media/apple-store-badge.png" alt="Apple Store Badge"/> App Store</a>

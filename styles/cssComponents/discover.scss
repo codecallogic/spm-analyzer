@@ -9,7 +9,7 @@
     justify-content: space-between;
 
     &-container-right {
-      flex: 0 45%;
+      flex: 0 40%;
       display: flex;
       flex-flow: column;
     }
@@ -26,7 +26,7 @@
     }
 
     &-description {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
     }
 
     &-icon {
@@ -40,7 +40,7 @@
 
   &-image {
     margin-left: -30rem;
-    margin-top: -14rem;
+    margin-top: -11rem;
 
     & img {
       width: 100%;

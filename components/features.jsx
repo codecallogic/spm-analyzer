@@ -8,7 +8,7 @@ const Features = ({}) => {
       <div className="features-subheading">Features</div>
       <div className="features-list">
         <div className="features-list-item">
-          <svg>
+          <svg className="features-list-item-1">
             <use xlinkHref="/media/sprite.svg#icon-shop"></use>
           </svg>
           <div className="features-list-item-description">
@@ -29,7 +29,7 @@ const Features = ({}) => {
           </div>
         </div>
         <div className="features-list-item">
-          <svg>
+          <svg className="features-list-item-2">
             <use xlinkHref="/media/sprite.svg#icon-list"></use>
           </svg>
           <div className="features-list-item-description">
@@ -64,7 +64,7 @@ const Features = ({}) => {
           </div>
         </div>
         <div className="features-list-item">
-        <svg>
+          <svg className="features-list-item-3">
             <use xlinkHref="/media/sprite.svg#icon-directions_run"></use>
           </svg>
           <div className="features-list-item-description">

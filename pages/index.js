@@ -29,7 +29,7 @@ const Home = ({}) => {
       <Download />
       <Contact />
       <div className="copyright">
-        <div className="copyright-reserved">COPYRIGHT &copy; SPM ANALYZER APP 2018-2020 | All Rights Reserved</div>
+        <div className="copyright-reserved">&copy; 2019 | All Rights Reserved</div>
         <div className="copyright-appd">APPD | AP Prime Deliveries LLC</div>
         <div className="copyright-links">
           <a href="" className="copyright-links-link">Terms & Conditions</a>

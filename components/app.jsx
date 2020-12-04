@@ -17,19 +17,19 @@ const MoreFeatures = ({}) => {
       <div className="app">
         <div className="app-title">Features</div>
         <div className="app-subheading">SPM Analyzer Pro</div>
-        <div className="app-menu">
+        {/* <div className="app-menu">
           <div className={`app-menu-item ` + (show === 'communication' ? 'active-2': '')} onClick={itemClicked}>Communication</div>
           <div className={`app-menu-item ` + (show === 'scheduling' ? 'active-2': '')} onClick={itemClicked}>Scheduling</div>
           <div className={`app-menu-item ` + (show === 'messages' ? 'active-2': '')} onClick={itemClicked}>Messages</div>
           <div className={`app-menu-item ` + (show === 'live chat' ? 'active-2': '')} onClick={itemClicked}>Live Chat</div>
-        </div>
+        </div> */}
         <div className={`app-content ` + (show === 'communication' ? 'show' : '')}>
           <div className="app-content-container">
           <div>
             <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           <div>
-            <div className="app-content-title">With SPM Analyzer PRO get even more features</div>
+            <div className="app-content-title">Get even more features with SPM Analyzer Pro</div>
             <div className="app-content-subheading"></div>
             <div className="app-content-description">
               No more ads forever with unlimited searching, faster estimating with category sort options, new trending tab, and much more.

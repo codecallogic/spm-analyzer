@@ -25,8 +25,9 @@ const Gallery = ({}) => {
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-1.png" alt="Person image" />)}</SwiperSlide>
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-2.png" alt="Person image" />)}</SwiperSlide>
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-3.png" alt="Person image" />)}</SwiperSlide>
-        <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-4.png" alt="Person image" />)}</SwiperSlide>
+        <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-4.jpg" alt="Person image" />)}</SwiperSlide>
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-5.png" alt="Person image" />)}</SwiperSlide>
+        <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')}src="/media/gallery-6.png" alt="Person image" />)}</SwiperSlide>
       </Swiper>
       </div>
     </div>

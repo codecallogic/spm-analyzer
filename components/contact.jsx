@@ -37,9 +37,11 @@ const Contact = ({}) => {
           </a>
         </div>
         <div className="contact-social-media-icon">
+          <a href="https://www.youtube.com/channel/UCcdEL8JbUja0jCsnaoDkdng" target="_blank">
           <svg>
-              <use xlinkHref="/media/sprite.svg#icon-twitter"></use>
+              <use xlinkHref="/media/sprite.svg#icon-youtube"></use>
           </svg>
+          </a>
         </div>
         <a href="https://www.instagram.com/spm_analyzer/?hl=en" target="_blank">
         <div className="contact-social-media-icon">

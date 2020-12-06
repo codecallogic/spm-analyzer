@@ -11,6 +11,7 @@ import Gallery from '../components/gallery'
 import Questions from '../components/questions'
 import Download from '../components/download'
 import Contact from '../components/contact'
+import Copyright from '../components/copyright'
 
 const Home = ({}) => {
   
@@ -28,14 +29,7 @@ const Home = ({}) => {
       <Questions />
       <Download />
       <Contact />
-      <div className="copyright">
-        <div className="copyright-reserved">&copy; 2019 | All Rights Reserved</div>
-        <div className="copyright-appd">APPD | AP Prime Deliveries LLC</div>
-        <div className="copyright-links">
-          <a href="" className="copyright-links-link">Terms & Conditions</a>
-          <a href="" className="copyright-links-link">Privacy Policy</a>
-        </div>
-      </div>
+      <Copyright />
     </div>
   )
 }

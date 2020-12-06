@@ -630,6 +630,43 @@
           fill: var(--color-primary-dark);
           cursor: pointer; }
 
+.privacy {
+  grid-column: 2/7;
+  padding: 5rem 0; }
+  .privacy-heading {
+    font-size: 5rem;
+    color: var(--color-light-orange); }
+  .privacy-date {
+    color: var(--color-primary);
+    font-size: 1.4rem; }
+  .privacy-subheading {
+    padding: 2rem 0;
+    font-size: 1.6rem; }
+  .privacy-content {
+    font-size: 1.4rem; }
+    .privacy-content p {
+      margin-top: 1rem; }
+
+.terms {
+  grid-column: 2/7;
+  padding: 5rem 0; }
+  .terms-heading {
+    font-size: 5rem;
+    color: var(--color-light-orange); }
+  .terms-date {
+    color: var(--color-primary);
+    font-size: 1.4rem; }
+  .terms-subheading {
+    padding: 2rem 0;
+    font-size: 1.6rem; }
+  .terms-content {
+    font-size: 1.4rem; }
+    .terms-content p {
+      margin-top: 1rem; }
+    .terms-content ol li {
+      margin-left: 2rem;
+      padding: 1rem 0; }
+
 .active {
   border-bottom: 0.2rem solid black;
   color: white;

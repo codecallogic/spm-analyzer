@@ -1,0 +1,32 @@
+.terms {
+  grid-column: 2/7;
+  padding: 5rem 0;
+
+  &-heading {
+    font-size: 5rem;
+    color: var(--color-light-orange);
+  }
+
+  &-date {
+    color: var(--color-primary);
+    font-size: 1.4rem;
+  }
+
+  &-subheading {
+    padding: 2rem 0;
+    font-size: 1.6rem;
+  }
+
+  &-content {
+    font-size: 1.4rem;
+
+    p {
+      margin-top: 1rem;
+    }
+
+    ol li {
+      margin-left: 2rem;
+      padding: 1rem 0;
+    }
+  }
+}

@@ -10,7 +10,10 @@ const Discover = ({}) => {
             <use xlinkHref="/media/sprite.svg#icon-mobile"></use>
           </svg>
           <div className="discover-app-title discover-app-item">An on The Go Research Tool</div>
-          <div className="discover-app-description discover-app-item">Quickly and easily estimate any products sales per month in the palm of your hands.</div>
+          <div className="discover-app-description discover-app-item">Quickly and easily estimate any products sales per month in the palm of your hands.
+          <br></br>
+          <br/>
+          <p>See below how you can locate the best seller rank on an Amazon product page, and how you can get more out of the app with our PRO mode version.</p></div>
         </div>
       </div>
       <div className="discover-image">

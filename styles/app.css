@@ -216,6 +216,19 @@
         width: 5rem;
         fill: var(--color-light-orange);
         margin-right: 2rem; }
+      .features-list-item-icon svg {
+        height: 5rem;
+        width: 5rem;
+        fill: var(--color-light-orange);
+        margin-right: 2rem;
+        border-bottom: 2px solid red; }
+      .features-list-item-instant {
+        justify-content: center;
+        text-align: center;
+        height: 4rem;
+        width: 4rem;
+        fill: var(--color-light-orange);
+        margin-right: 2rem; }
       .features-list-item-description {
         display: grid;
         grid-template-columns: 1fr; }
@@ -229,7 +242,7 @@
           font-size: 1.4rem; }
 
 .discover {
-  grid-column: 3/7;
+  grid-column: 3/8;
   display: grid;
   grid-template-columns: 1fr;
   padding: 4rem 0 0 0; }
@@ -243,7 +256,7 @@
     .discover-app-item {
       margin-bottom: 1.2rem; }
     .discover-app-title {
-      font-size: 3.2rem;
+      font-size: 3rem;
       color: var(--color-light-orange);
       font-weight: 800; }
     .discover-app-description {
@@ -256,7 +269,7 @@
       padding: 1rem 0.2rem; }
   .discover-image {
     margin-left: -30rem;
-    margin-top: -18rem; }
+    margin-top: -23rem; }
     .discover-image img {
       width: 100%;
       height: 100%; }
@@ -471,7 +484,8 @@
     background-color: #f7f5f7; }
   .gallery-title {
     font-size: 1.6rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding: 2rem 0 0 0; }
   .gallery-subheading {
     font-size: 3.5rem;
     color: var(--color-light-orange);
@@ -493,7 +507,7 @@
 
 .swiper-slide img {
   width: 95%;
-  height: 70%; }
+  height: 67%; }
 
 .swiper-pagination {
   margin: 0 0 3rem 0; }

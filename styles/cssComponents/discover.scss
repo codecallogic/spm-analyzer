@@ -1,5 +1,5 @@
 .discover {
-  grid-column: 3/7;
+  grid-column: 3/8;
   display: grid;
   grid-template-columns: 1fr;
   padding: 4rem 0 0 0;
@@ -19,7 +19,7 @@
     }
 
     &-title {
-      font-size: 3.2rem;
+      font-size: 3rem;
       color: var(--color-light-orange);
       font-weight: 800;
     }
@@ -39,7 +39,7 @@
 
   &-image {
     margin-left: -30rem;
-    margin-top: -18rem;
+    margin-top: -23rem;
 
     & img {
       width: 100%;

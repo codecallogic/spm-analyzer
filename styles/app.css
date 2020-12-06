@@ -662,7 +662,8 @@
   .terms-content {
     font-size: 1.4rem; }
     .terms-content p {
-      margin-top: 1rem; }
+      margin-top: 1rem;
+      margin-bottom: 1rem; }
     .terms-content ol li {
       margin-left: 2rem;
       padding: 1rem 0; }

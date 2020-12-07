@@ -30,7 +30,7 @@ const MoreFeatures = ({}) => {
           </div>
           <div>
             <div className="app-content-title">SPM Analyzer Pro</div>
-            <div className="app-content-title">Get even more features with SPM Analyzer Pro</div>
+            <div className="app-content-title-2">Get even more features with SPM Analyzer Pro</div>
             <div className="app-content-subheading"></div>
             <div className="app-content-description">
               No more ads forever with unlimited searching, faster estimating with category sort options, new trending tab, and much more.

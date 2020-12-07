@@ -31,7 +31,7 @@ const Features = ({}) => {
           </div>
         </div>
         <div className="features-list-item">
-          <div className="features-list-item-icon">
+          <div className="features-list-item-icon-drawer">
           <svg>
             <use xlinkHref="/media/sprite.svg#icon-drawer"></use>
           </svg>

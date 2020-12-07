@@ -222,6 +222,13 @@
         fill: var(--color-light-orange);
         margin-right: 2rem;
         border-bottom: 2px solid red; }
+      .features-list-item-icon-drawer svg {
+        height: 5rem;
+        width: 5rem;
+        fill: var(--color-light-orange);
+        margin-right: 2rem;
+        border-bottom: 2px solid red;
+        padding: 0 0 0.3rem 0; }
       .features-list-item-instant {
         justify-content: center;
         text-align: center;
@@ -683,7 +690,7 @@
       padding: 1rem 0; }
 
 .active {
-  border-bottom: 0.2rem solid black;
+  border-bottom: 0.2rem solid white;
   color: white;
   font-weight: 800; }
 

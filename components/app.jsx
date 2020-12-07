@@ -16,7 +16,7 @@ const MoreFeatures = ({}) => {
     <div className="app-container">
       <div className="app">
         <div className="app-title">Features</div>
-        <div className="app-subheading">SPM Analyzer Pro</div>
+        <div className="app-subheading"></div>
         {/* <div className="app-menu">
           <div className={`app-menu-item ` + (show === 'communication' ? 'active-2': '')} onClick={itemClicked}>Communication</div>
           <div className={`app-menu-item ` + (show === 'scheduling' ? 'active-2': '')} onClick={itemClicked}>Scheduling</div>
@@ -29,6 +29,7 @@ const MoreFeatures = ({}) => {
             <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           <div>
+            <div className="app-content-title">SPM Analyzer Pro</div>
             <div className="app-content-title">Get even more features with SPM Analyzer Pro</div>
             <div className="app-content-subheading"></div>
             <div className="app-content-description">

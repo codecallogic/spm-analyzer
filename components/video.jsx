@@ -40,8 +40,8 @@ const Video = ({}) => {
   
   return (
     <div className="video">
-      <div className="video-title">What is SPM?</div>
-      <div className="video-subheading">See the Video Below</div>
+      <div className="video-title">See the Video Below</div>
+      <div className="video-subheading">What is SPM?</div>
       <div className={videoWrap ? 'video-wrap' : ''} >
         <div className={`video-player ` + ( videoWrap ? 'sticky': '')}>
           <svg className={ videoWrap ? 'sticky-icon-show': 'sticky-icon-hide'} onClick={handleSticky} >

@@ -4,7 +4,7 @@ const Nav = (props) => {
 
   const [state, setState] = useState({
     active: 'home',
-    host: 'http://localhost:3000/',
+    host: 'https://spm-analyzer.herokuapp.com/',
   })
 
   const {active, localhost, host} = state

@@ -220,14 +220,12 @@
         height: 5rem;
         width: 5rem;
         fill: var(--color-light-orange);
-        margin-right: 2rem;
-        border-bottom: 2px solid red; }
+        margin-right: 2rem; }
       .features-list-item-icon-drawer svg {
         height: 5rem;
         width: 5rem;
         fill: var(--color-light-orange);
         margin-right: 2rem;
-        border-bottom: 2px solid red;
         padding: 0 0 0.3rem 0; }
       .features-list-item-instant {
         justify-content: center;

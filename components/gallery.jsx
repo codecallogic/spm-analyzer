@@ -17,7 +17,7 @@ const Gallery = ({}) => {
       <div className="gallery-subheading">App Screenshots</div>
       <div className="gallery-slider">
       <Swiper
-        spaceBetween={20}
+        spaceBetween={30}
         slidesPerView={3}
         loop
         autoplay={true}

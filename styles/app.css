@@ -277,7 +277,8 @@
     margin-top: -23rem; }
     .discover-image img {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      margin-left: -4rem; }
 
 .app {
   grid-column: 3/11;

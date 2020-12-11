@@ -10,6 +10,6 @@ module.exports = withVideos(withSASS(withCSS({
     APP_NAME: 'spm-analyzer',
     API: '',
     PRODUCTION: false,
-    DOMAIN: 'http://localhost:3000',
+    DOMAIN: 'https://ec2-13-52-78-41.us-west-1.compute.amazonaws.com/',
   }
 })))

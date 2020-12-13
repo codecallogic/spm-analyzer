@@ -1,11 +1,11 @@
 {
   "name": "spm-analyzer",
   "version": "0.1.0",
-  "private": true,
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p $PORT",
+    "start": "next start",
     "watch:css": "node-sass styles/main.scss styles/app.css -w",
     "heroku-postbuild": "npm run build"
   },

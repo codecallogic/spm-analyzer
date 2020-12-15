@@ -4,7 +4,7 @@ const Nav = (props) => {
 
   const [state, setState] = useState({
     active: 'home',
-    host: 'http://ec2-54-153-25-79.us-west-1.compute.amazonaws.com/',
+    host: 'https://spmanalyzer.com/',
   })
 
   const {active, localhost, host} = state
@@ -22,12 +22,12 @@ const Nav = (props) => {
       </a>
       <div className="nav-menu">
         <div className="nav-menu-list">
-          <a href='#home' className={`nav-menu-list-item` + (active === 'home' ? ' active' : '')} onClick={executeScroll}>Home</a>
-          <a href="#features" className={`nav-menu-list-item` + (active === 'features' ? ' active' : '')} onClick={executeScroll}>Features</a>
-          <a href='#gallery' className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
-          <a href='#home' className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
-          <a href='#contact' className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')}>Contact</a>
-          <a href='#download' className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
+          <a href={ host + `#home`} className={`nav-menu-list-item` + (active === 'home' ? ' active' : '')} onClick={executeScroll}>Home</a>
+          <a href={ host + `#features`} className={`nav-menu-list-item` + (active === 'features' ? ' active' : '')} onClick={executeScroll}>Features</a>
+          <a href={ host + `#gallery`} className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
+          <a href={ host + `#home`} className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
+          <a href={ host + `#contact`} className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a>
+          <a href={ host + `#download`} className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
         </div>
       </div>
     </div>

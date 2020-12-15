@@ -7,7 +7,7 @@ const Copy = ({}) => {
       <div className="copyright-appd">APPD | AP Prime Deliveries LLC</div>
       <div className="copyright-links">
         <a href="/terms" className="copyright-links-link">Terms & Conditions</a>
-        <a href="/privacy" className="copyright-links-link">Privacy Policy</a>
+        <a href="/privacy-policy" className="copyright-links-link">Privacy Policy</a>
       </div>
     </div>
   )

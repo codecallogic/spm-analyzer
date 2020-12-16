@@ -131,7 +131,8 @@
     justify-content: center;
     width: 100%; }
     .header-image > img {
-      width: 30rem; }
+      width: 30rem;
+      height: 100%; }
 
 .video {
   grid-column: 3/7;

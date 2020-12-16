@@ -16,7 +16,7 @@ const Nav = (props) => {
   return (
   <div className={`nav ` + (props.sticky ? 'nav-sticky': '')}>
     <div className="nav-container">
-      <a href='#home' className="nav-logo">
+      <a href='/#home' className="nav-logo">
         <img className="nav-logo-image" src="/media/logo.png" alt="SMP-Analyzer logo"/>
         <strong className="nav-logo-strong">SPM</strong><span>Analyzer</span>
       </a>

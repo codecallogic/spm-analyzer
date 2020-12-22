@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
   return <>
     <Head>
       <>
-        <title>SPM Analyzer</title>
+        <title>SPM Analyzer - iOS and Android App for Amazon Sellers - Sales Estimator - Rank Calculator</title>
         <link rel="stylesheet" href="/fonts/fonts.css"/>
         <link rel="stylesheet" href="https://use.typekit.net/fgb2wcm.css"></link>
         <link rel="stylesheet" href="https://use.typekit.net/fgb2wcm.css"></link>

@@ -1,0 +1,1409 @@
+[
+  {
+    "market": "USA",
+    "categories": [
+      {
+        "name": "Appliances",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Appliances"
+      },
+      {
+        "name": "Arts, Crafts & Sewing",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Arts, Crafts & Sewing"
+      },
+      {
+        "name": "Automotive",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Automotive"
+      },
+      {
+        "name": "Baby",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Baby"
+      },
+      {
+        "name": "Beauty",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Beauty & Personal Care"
+      },
+      {
+        "name": "Beauty & Personal Care",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Beauty & Personal Care"
+      },
+      {
+        "name": "Books",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Books"
+      },
+      {
+        "name": "Camera & Photo",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Camera & Photo"
+      },
+      {
+        "name": "Cell Phones & Accessories",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Cell Phones & Accessories"
+      },
+      {
+        "name": "Clothing, Shoes & Jewelry",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Clothing, Shoes & Jewelry"
+      },
+      {
+        "name": "Computers & Accessories",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Computers & Accessories"
+      },
+      {
+        "name": "Electronics",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Electronics"
+      },
+      {
+        "name": "Grocery & Gourmet Food",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Grocery & Gourmet Food"
+      },
+      {
+        "name": "Health & Household",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Health & Household"
+      },
+      {
+        "name": "Home & Garden",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Home & Garden"
+      },
+      {
+        "name": "Home & Kitchen",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Home & Kitchen"
+      },
+      {
+        "name": "Home Improvement",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": ""
+      },
+      {
+        "name": "Industrial & Scientific",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Industrial & Scientific"
+      },
+      {
+        "name": "Kindle Store",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Kindle Store"
+      },
+      {
+        "name": "Kitchen & Dining",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Kitchen & Dining"
+      },
+      {
+        "name": "Music",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": ""
+      },
+      {
+        "name": "Musical Instruments",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Musical Instruments"
+      },
+      {
+        "name": "Office Products",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Office Products"
+      },
+      {
+        "name": "Patio, Lawn & Garden",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Patio, Lawn & Garden"
+      },
+      {
+        "name": "Pet Supplies",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Pet Supplies"
+      },
+      {
+        "name": "Software",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Software"
+      },
+      {
+        "name": "Sports & Outdoors",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Sports & Outdoors"
+      },
+      {
+        "name": "Toys & Games",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Toys & Games"
+      },
+      {
+        "name": "Video Games",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Video Games"
+      },
+      {
+        "name": "Watches",
+        "countrycode": "us",
+        "domain": "COM",
+        "other": "Watches"
+      }
+    ]
+  },
+  {
+    "market": "Canada",
+    "categories": [
+      {
+        "name": "Automotive",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Automotive"
+      },
+      {
+        "name": "Baby",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Baby"
+      },
+      {
+        "name": "Beauty",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Beauty"
+      },
+      {
+        "name": "Books",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Clothing & Accessories",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Computer & Video Games",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "DVD",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Electronics",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Electronics"
+      },
+      {
+        "name": "Gift Cards",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Grocery & Gourmet Food",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Health & Personal Care",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Home & Kitchen",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Home & Kitchen"
+      },
+      {
+        "name": "Industrial & Scientific",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Jewelry",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Luggage & Bags",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Music",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Musical Instruments, Stage & Studio",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Musical Instruments, Stage & Studio"
+      },
+      {
+        "name": "Office Products",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Office Products"
+      },
+      {
+        "name": "Patio, Lawn & Garden",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Patio, Lawn & Garden"
+      },
+      {
+        "name": "Pet Supplies",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Pet Supplies"
+      },
+      {
+        "name": "Shoes & Handbags",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Sports & Outdoors",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Sports & Outdoors"
+      },
+      {
+        "name": "Tools & Home Improvement",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Tools & Home Improvement"
+      },
+      {
+        "name": "Toys & Games",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Toys & Games"
+      },
+      {
+        "name": "Video",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Watches",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Watches"
+      }
+    ]
+  },
+  {
+    "market": "Germany",
+    "categories": [
+      {
+        "name": "Auto",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Baby",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Baby"
+      },
+      {
+        "name": "Baumarkt",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Beauty",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Beauty"
+      },
+      {
+        "name": "Bekleidung",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Beleuchtung",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Bücher",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Bürobedarf & Schreibwaren",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Computer & Zubehör",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Drogerie & Körperpflege",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "DVD & Blu-ray",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Musik-CDs & Vinyl"
+      },
+      {
+        "name": "Elektro-Großgeräte",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Elektronik",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Elektronik"
+      },
+      {
+        "name": "Fremdsprachige Bücher",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Games",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Games"
+      },
+      {
+        "name": "Garten",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Gewerbe, Industrie & Wissenschaft",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Haustier",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Kamera",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Kamera"
+      },
+      {
+        "name": "Koffer, Rucksäcke & Taschen",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Küche & Haushalt",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Küche & Haushalt"
+      },
+      {
+        "name": "Lebensmittel & Getränke",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Motorrad",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Auto & Motorrad"
+      },
+      {
+        "name": "Musikinstrumente",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Musikinstrumente"
+      },
+      {
+        "name": "Schmuck",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Schuhe & Handtaschen",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": ""
+      },
+      {
+        "name": "Spielzeug",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Spielzeug"
+      },
+      {
+        "name": "Sport & Freizeit",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Sport & Freizeit"
+      },
+      {
+        "name": "Uhren",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Uhren"
+      }
+    ]
+  },
+  {
+    "market": "Spain",
+    "categories": [
+      {
+        "name": "Bebé",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Belleza",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bricolaje y herramientas",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Coche y moto",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Deportes y aire libre",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Electrónica",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Equipaje",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Hogar",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Iluminación",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Industria, empresas y ciencia",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Informática",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Instrumentos musicales",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Jardín",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Joyería",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Juguetes y juegos",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Libros",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Oficina y papelería",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Películas y TV",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Relojes",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Ropa y accesorios",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Salud y cuidado personal",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Supermercado",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Videojuegos",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Zapatos y complementos",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      }
+    ]
+  },
+  {
+    "market": "France",
+    "categories": [
+      {
+        "name": "Animalerie",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Auto et Moto",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bagages",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Beauté et Parfum",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bébés & Puériculture",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bijoux",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bricolage",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Chaussures et Sacs",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Commerce, Industrie & Science",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Cuisine & Maison",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "DVD & Blu-ray",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Epicerie",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Fournitures de bureau",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Gros électroménager",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "High-tech",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Hygiène et Soins du corps",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Informatique",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Instruments de musique",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Jardin",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Jeux et Jouets",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Jeux vidéo",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Livres",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Logiciels",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Luminaires et Eclairage",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Montres",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Sports et Loisirs",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Vêtements et accessoires",
+        "countrycode": "fr",
+        "domain": "",
+        "other": ""
+      }
+    ]
+  },
+  {
+    "market": "India",
+    "categories": [
+      {
+        "name": "Baby",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bags, Wallets & Luggage",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Beauty",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Books",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Car & Motorbike",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Clothing & Accessories",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Electronics",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Gift Cards",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Grocery & Gourmet Foods",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Health & Personal Care",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Home & Kitchen",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Industrial & Scientific",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Jewellery",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Movies & TV Shows",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Music",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Musical Instruments",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Office Products",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Pet Supplies",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Shoes & Handbags",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Sports, Fitness & Outdoors",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Toys & Games",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Video Games",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Watches",
+        "countrycode": "in",
+        "domain": "",
+        "other": ""
+      }
+    ]
+  },
+  {
+    "market": "Italy",
+    "categories": [
+      {
+        "name": "Abbigliamento",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Alimentari e cura della casa",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Auto e Moto",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Bellezza",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Casa e cucina",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "CD e Vinili",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Commercio, Industria e Scienza",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Elettronica",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Fai da te",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Film e TV",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Giardino e giardinaggio",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Giochi e giocattoli",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Gioielli",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Illuminazione",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Informatica",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Libri",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Orologi",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Prima infanzia",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Salute e cura della persona",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Scarpe e borse",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Sport e tempo libero",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Strumenti musicali e DJ",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Valigeria",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Videogiochi",
+        "countrycode": "it",
+        "domain": "",
+        "other": ""
+      }
+    ]
+  },
+  {
+    "market": "Mexico",
+    "categories": [
+      {
+        "name": "Bebé",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Deportes y Aire Libre",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Electrónicos",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Herramientas y Mejoras del Hogar",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Hogar y Cocina",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Industria, Empresas y Ciencia",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Juegos y juguetes",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Libros",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Mascotas",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Música",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Oficina y Papelería",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Ropa, Zapatos y Accesorios",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Salud, Belleza y Cuidado Personal",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Software",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Videojuegos",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      }
+    ]
+  },
+  {
+    "market": "United Kingdom",
+    "categories": [
+      {
+        "name": "Baby",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Baby"
+      },
+      {
+        "name": "Beauty",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Beauty"
+      },
+      {
+        "name": "Car & Motorbike",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Car & Motorbike"
+      },
+      {
+        "name": "Clothing",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Clothing"
+      },
+      {
+        "name": "Computers",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Computers"
+      },
+      {
+        "name": "DIY & Tools",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "DIY & Tools"
+      },
+      {
+        "name": "Electronics",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Electronics"
+      },
+      {
+        "name": "Garden & Outdoors",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Garden & Outdoors"
+      },
+      {
+        "name": "Grocery",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Grocery"
+      },
+      {
+        "name": "Health & Personal Care",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Health & Personal Care"
+      },
+      {
+        "name": "Jewellery",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Jewellery"
+      },
+      {
+        "name": "Kitchen & Home",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Home & Kitchen"
+      },
+      {
+        "name": "Large Appliances",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": ""
+      },
+      {
+        "name": "Lighting",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": ""
+      },
+      {
+        "name": "Luggage",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": ""
+      },
+      {
+        "name": "Musical Instruments",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Musical Instruments"
+      },
+      {
+        "name": "Office Products",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Office Products"
+      },
+      {
+        "name": "PC & Video Games",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "PC & Video Games"
+      },
+      {
+        "name": "Pet Supplies",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Pet Supplies"
+      },
+      {
+        "name": "Shoes & Bags",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Shoes"
+      },
+      {
+        "name": "Software",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": ""
+      },
+      {
+        "name": "Sports & Outdoors",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Sports & Outdoors"
+      },
+      {
+        "name": "Toys & Games",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Toys & Games"
+      },
+      {
+        "name": "Watches",
+        "countrycode": "uk",
+        "domain": "CO_UK",
+        "other": "Watches"
+      }
+    ]
+  }
+]

@@ -1,6 +1,10 @@
-import {useState} from 'react'
+import {useState, useEffect} from 'react'
+import { useRouter } from 'next/router'
+
 
 const Nav = (props) => {
+
+  const router = useRouter()
 
   const [state, setState] = useState({
     active: 'home',
@@ -8,6 +12,10 @@ const Nav = (props) => {
   })
 
   const {active, localhost, host} = state
+
+  useEffect( () => {
+    if(router.pathname.substr(1,) == 'sales-estimate') setState({...state, active: 'spm estimator'});
+  }, [])
   
   const executeScroll = (e) => {
     setState({...state, active: e.target.textContent.toLowerCase()})
@@ -25,7 +33,7 @@ const Nav = (props) => {
           <a href="/#home" className={`nav-menu-list-item` + (active === 'home' ? ' active' : '')} onClick={executeScroll}>Home</a>
           <a href="/#features" className={`nav-menu-list-item` + (active === 'features' ? ' active' : '')} onClick={executeScroll}>Features</a>
           <a href="#gallery" className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
-          <a href="/#home" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
+          <a href="" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')}>SPM Estimator</a>
           <a href="/#contact" className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a>
           <a href="/#download" className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
         </div>

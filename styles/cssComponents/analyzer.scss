@@ -1,0 +1,71 @@
+.analyzer {
+  display: grid;
+  grid-template-columns:
+    [full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end])
+    [center-end] 1fr [full-end];
+  font-weight: 300;
+  color: black;
+
+  &-container {
+    grid-column: center-start / center-end;
+  }
+
+  &-heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+  }
+
+  &-marketplace {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    &-market {
+      width: 12rem;
+      height: 12rem;
+      box-sizing: content-box;
+      background-size: cover;
+      object-fit: fill;
+      border-radius: 50%;
+      border: 0.1rem solid transparent;
+      transition: all 0.3s;
+      animation-name: slide;
+      animation-duration: 1.5s;
+
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        border: 0.1rem solid var(--color-light-orange);
+      }
+    }
+  }
+
+  &-categories {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+
+    &-category {
+      width: 10rem;
+      height: 10rem;
+      box-sizing: content-box;
+      background-size: cover;
+      object-fit: fill;
+      border-radius: 50%;
+      border: 0.1rem solid transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        border: 0.1rem solid var(--color-light-orange);
+      }
+    }
+  }
+}

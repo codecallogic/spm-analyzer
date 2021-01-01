@@ -695,6 +695,59 @@
       margin-left: 2rem;
       padding: 1rem 0; }
 
+.analyzer {
+  display: grid;
+  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end]) [center-end] 1fr [full-end];
+  font-weight: 300;
+  color: black; }
+  .analyzer-container {
+    grid-column: center-start / center-end; }
+  .analyzer-heading {
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem; }
+  .analyzer-marketplace {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
+    .analyzer-marketplace-market {
+      width: 12rem;
+      height: 12rem;
+      box-sizing: content-box;
+      background-size: cover;
+      object-fit: fill;
+      border-radius: 50%;
+      border: 0.1rem solid transparent;
+      transition: all 0.3s;
+      animation-name: slide;
+      animation-duration: 1.5s; }
+      .analyzer-marketplace-market:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        border: 0.1rem solid var(--color-light-orange); }
+  .analyzer-categories {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0; }
+    .analyzer-categories-category {
+      width: 10rem;
+      height: 10rem;
+      box-sizing: content-box;
+      background-size: cover;
+      object-fit: fill;
+      border-radius: 50%;
+      border: 0.1rem solid transparent;
+      transition: all 0.3s; }
+      .analyzer-categories-category:hover {
+        cursor: pointer;
+        border-radius: 50%;
+        border: 0.1rem solid var(--color-light-orange); }
+
 .active {
   border-bottom: 0.2rem solid white;
   color: white;
@@ -768,6 +821,14 @@
   100% {
     opacity: 1; } }
 
+@keyframes slide {
+  0% {
+    transform: translateY(100%);
+    opacity: 0; }
+  100% {
+    transform: translateY(0);
+    opacity: 1; } }
+
 :root {
   --color-primary: #72bab4;
   --color-primary-medium-dark: #4b9a97;
@@ -790,7 +851,7 @@ html {
 
 body {
   font-family: "futura-pt", sans-serif;
-  font-weight: 300;
+  font-weight: 400;
   font-style: normal;
   color: black;
   line-height: 1.6; }

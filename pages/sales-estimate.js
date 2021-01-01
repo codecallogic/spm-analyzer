@@ -45,10 +45,15 @@ const Estimate = ({}) => {
             <div className="analyzer-heading">Pick a category</div>
             <div className="analyzer-categories">
               {data && data.map( (m, i) =>
-                <div key={i}>
+                <div key={i} className="analyzer-categories-container">
                 { m.market == market && 
                   m.categories.map( (c, i) => 
-                  <img key={i} className="analyzer-categories-category" src={`/media/${market}/${c.name}.png`} alt={`${c.name}`} value={c.name}/>
+                  <div className="analyzer-categories-container-box"> 
+                    <div className="analyzer-categories-category">
+                      <img key={i} className="analyzer-categories-category-image" src={`/media/${market}/${c.name}.png`} alt={`${c.name}`} value={c.name}/>
+                    </div>
+                    <span>{c.name}</span>
+                  </div>
                 )
                 }
                 </div>

@@ -14,14 +14,6 @@ const Estimate = ({}) => {
 
   const {market, category, rank, data} = estimate
 
-  useEffect( () => {
-    // data.map( (c, i) => {
-    //   c.categories.map( (n, i) => {
-    //     console.log(n.name)
-    //   })
-    // })
-  }, [])
-
   const pickMarket = (e) => {
     console.log(e.target.getAttribute("value"))
     setEstimate({...estimate, market: e.target.getAttribute("value")})

@@ -85,6 +85,12 @@
   }
 }
 
+.active-market {
+  cursor: pointer;
+  border-radius: 50%;
+  border: 0.1rem solid var(--color-light-orange);
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;

@@ -6,8 +6,31 @@
   font-weight: 300;
   color: black;
 
+  &-breadcrumb {
+    padding: 0.2rem 0;
+    margin: 2rem 0 1rem 0;
+    width: max-content;
+    grid-column: col-start 2 / center-end;
+    font-size: 1.4rem;
+    border-bottom: 0.2rem solid var(--color-primary-dark);
+
+    &:hover {
+      border-bottom: 0.2rem solid var(--color-primary);
+    }
+
+    &-container {
+      display: grid;
+      grid-template-columns:
+        [full-start] 1fr [center-start] repeat(8, [col-start] 1fr [col-end])
+        [center-end] 1fr [full-end];
+    }
+  }
+
   &-container {
     grid-column: center-start / center-end;
+    display: grid;
+    justify-content: center;
+    margin: 1rem 0;
   }
 
   &-heading {
@@ -94,5 +117,82 @@
         cursor: pointer;
       }
     }
+  }
+
+  &-input-group {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 6rem;
+      height: 6rem;
+    }
+
+    input {
+      border: none;
+      border-bottom: 0.3rem solid #f8f9f8;
+      font-size: 1.6rem;
+      padding: 1rem;
+      color: var(--color-light-orange);
+
+      &::placeholder {
+        color: #dfdfdf;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &-estimate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation-name: slide;
+    animation-duration: 1s;
+
+    &-container {
+      animation-name: slide;
+      animation-duration: 1s;
+    }
+
+    &-calculation {
+      font-size: 4rem;
+      color: #386170;
+      font-weight: 800;
+
+      &-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20rem;
+        width: 20rem;
+        border-radius: 50%;
+        background-color: #fbea9b;
+        margin: 1rem 0;
+      }
+    }
+
+    &-button {
+      color: white;
+      font-weight: 800;
+      font-size: 2.2rem;
+      padding: 1rem 3rem;
+      margin: 2rem 0;
+      background-image: linear-gradient(
+        90deg,
+        var(--color-light-orange-2),
+        var(--color-light-orange-3)
+      );
+      border-radius: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  &-subheading {
+    font-size: 1.6rem;
+    padding: 1rem;
   }
 }

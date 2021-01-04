@@ -1,5 +1,5 @@
 import axios from 'axios'
-import {useState, useEffect} from 'react'
+import {useState, useEffect, useRef} from 'react'
 import Nav from '../components/nav'
 import Data from '../services/backupData.json'
 
@@ -17,17 +17,22 @@ const Estimate = ({}) => {
   const {market, category, rank, data, estimateReady, calculation} = estimate
 
   const pickMarket = (e) => {
-    console.log(e.target.getAttribute("value"))
     setEstimate({...estimate, market: e.target.getAttribute("value")})
   }
 
   const pickCategory = (e) => {
-    console.log(e.target.getAttribute("value"))
-    setEstimate({...estimate, estimateReady: true, category: e.target.getAttribute("value")})
+    setEstimate({...estimate, estimateReady: true, category: e.currentTarget.id})
   }
 
   const handleChange = (e) => {
-    setEstimate({...estimate, rank: e.target.value})
+    console.log(e.target.value)
+    let code = e.keyCode || e.which
+    console.log(code)
+    if(code === 13) setEstimate({...estimate, rank: e.target.value, calculation: 0})
+  }
+
+  const resetRank = (e) => {
+    setEstimate({...estimate, rank: 'Not a number', calculation: 0})
   }
   
   const estimateSales = async (e) => {
@@ -66,9 +71,9 @@ const Estimate = ({}) => {
                 <div key={i} className="analyzer-categories-container">
                 { m.market == market && 
                   m.categories.map( (c, i) => 
-                  <div className="analyzer-categories-container-box"> 
+                  <div key={i} id={c.name} className="analyzer-categories-container-box" onClick={pickCategory}> 
                     <div className="analyzer-categories-category">
-                      <img key={i} className="analyzer-categories-category-image" src={`/media/${market}/${c.name}.png`} alt={`${c.name}`} value={c.name} onClick={pickCategory}/>
+                      <img className="analyzer-categories-category-image" src={`/media/${market}/${c.name}.png`} alt={`${c.name}`}/>
                     </div>
                     <span>{c.name}</span>
                   </div>
@@ -86,7 +91,7 @@ const Estimate = ({}) => {
           <div className="analyzer-heading">{category}</div>
           <div className="analyzer-input-group">
             <img src="/media/tag.png" alt="Rank" className="analyzer-input-group-tag"/>
-            <input type="text" name="rank" placeholder="Enter sales rank" onChange={handleChange}/>
+            <input type="text" autoFocus name="rank" placeholder="Enter sales rank (Enter)" onKeyPress={handleChange} onChange={resetRank}/>
           </div>
           { !isNaN(rank) == true && 
               <div className="analyzer-estimate">

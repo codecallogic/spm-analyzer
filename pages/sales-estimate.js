@@ -24,19 +24,23 @@ const Estimate = ({}) => {
     setEstimate({...estimate, estimateReady: true, category: e.currentTarget.id})
   }
 
-  const handleChange = (e) => {
-    console.log(e.target.value)
+  const handleChange = async (e) => {
     let code = e.keyCode || e.which
-    console.log(code)
-    if(code === 13) setEstimate({...estimate, rank: e.target.value, calculation: 0})
+    if(code === 13){
+      try {
+        const response = await axios.get(`https://il7kji6jcl.execute-api.us-east-2.amazonaws.com/dev/salesEstimator?market=${market}&category=${category}&rank=${rank}`)
+        setEstimate({...estimate, calculation: response.data.estimationResult})
+      } catch (error) {
+        console.log(error)
+      }
+    }
   }
 
   const resetRank = (e) => {
-    setEstimate({...estimate, rank: 'Not a number', calculation: 0})
+    setEstimate({...estimate, rank: e.target.value, calculation: 0})
   }
   
   const estimateSales = async (e) => {
-    setEstimate({...estimate, calculation: '...'})
     try {
       const response = await axios.get(`https://il7kji6jcl.execute-api.us-east-2.amazonaws.com/dev/salesEstimator?market=${market}&category=${category}&rank=${rank}`)
       setEstimate({...estimate, calculation: response.data.estimationResult})

@@ -99,17 +99,16 @@ const Estimate = ({}) => {
           </div>
           { !isNaN(rank) == true && 
               <div className="analyzer-estimate">
+                <div className="analyzer-estimate-button" onClick={estimateSales}>Calculate Sales</div>
                 <div className="analyzer-subheading">Calculate sales per month</div>
                 <div className="analyzer-estimate-calculation-container">
                   <div className="analyzer-estimate-calculation">{calculation}</div>
                 </div>
-                <div className="analyzer-estimate-button" onClick={estimateSales}>Calculate Sales</div>
               </div>
           }
         </div>
         }
         </div>
-      {/* <button onClick={salesEstimate}>Testing</button> */}
     </div>
     </div>
   )

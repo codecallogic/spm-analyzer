@@ -5,18 +5,25 @@ import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 const Header = ({}) => {
   const [stickOnScroll, setstickOnScroll] = useState({
     navSticky: false,
+    mobileSticky: false
   })
   
-  const {navSticky} = stickOnScroll
+  const {navSticky, mobileSticky} = stickOnScroll
   
   useScrollPosition(({ prevPos, currPos }) => {
-    currPos.y === 0 ? setstickOnScroll({...stickOnScroll, navSticky: false}) : setstickOnScroll({...stickOnScroll, navSticky: true});
+    if (window.innerWidth >= 992) {
+      currPos.y === 0 ? setstickOnScroll({...stickOnScroll, navSticky: false}) : setstickOnScroll({...stickOnScroll, navSticky: true});
+    }
+    if (window.innerWidth < 992) {
+      currPos.y === 0 ? setstickOnScroll({...stickOnScroll, mobileSticky: false}) : setstickOnScroll({...stickOnScroll, mobileSticky: true});
+    }
   }, [stickOnScroll])
 
   return (
     <div className="main-container">
       <Nav
         sticky={navSticky}
+        mobileSticky={mobileSticky}
       />
       <div id="home" className="header" style={ navSticky ? {padding: '15rem 0 0 0'} : {} }>
         <div className="header-title">SPM ANALYZER</div>

@@ -1001,6 +1001,12 @@ body {
   justify-content: space-between;
   align-items: baseline;
   padding: 4rem 0; }
+  @media only screen and (max-width: 600px) {
+    .contact {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 4rem 2rem; } }
   .contact-container {
     grid-column: 1/-1;
     display: grid;
@@ -1028,6 +1034,9 @@ body {
   .contact-social-media {
     align-self: end;
     display: flex; }
+    @media only screen and (max-width: 600px) {
+      .contact-social-media {
+        margin: 2rem 0; } }
     .contact-social-media-icon {
       display: flex;
       justify-content: center;

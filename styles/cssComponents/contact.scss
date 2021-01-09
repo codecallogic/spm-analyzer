@@ -5,6 +5,13 @@
   align-items: baseline;
   padding: 4rem 0;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 4rem 2rem;
+  }
+
   &-container {
     grid-column: 1/-1;
     display: grid;
@@ -44,6 +51,10 @@
   &-social-media {
     align-self: end;
     display: flex;
+
+    @media only screen and (max-width: $small) {
+      margin: 2rem 0;
+    }
 
     &-icon {
       display: flex;

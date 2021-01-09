@@ -31,7 +31,7 @@ const Gallery = ({}) => {
       setState({...state, spaceGap: 0, autoSlides: true})
     }
     if (window.innerWidth > 600) {
-      setState({...state, spaceGap: 0, autoSlides: false})
+      setState({...state, spaceGap: 30, autoSlides: false})
     }
   }, [sizes.width]);
   

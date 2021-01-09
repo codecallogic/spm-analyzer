@@ -47,7 +47,7 @@
       background-color: rgba(226, 226, 226, 0.4); }
 
 .show {
-  display: block;
+  display: block !important;
   animation: fadeIn ease 2s; }
 
 .slide-hide {
@@ -257,6 +257,8 @@ body {
   .nav-mobile-checkbox:checked + .nav-mobile-button .nav-mobile-icon:after {
     top: 0%;
     transform: rotate(-135deg); }
+  .nav-mobile-checkbox:checked ~ .nav-mobile-nav .nav-mobile-list {
+    display: block; }
   .nav-mobile-background {
     position: fixed;
     height: 3rem;
@@ -282,7 +284,8 @@ body {
     width: 100%;
     transform: translate(-50%, -50%);
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    display: none; }
     .nav-mobile-list-item {
       margin: 2rem; }
     .nav-mobile-list-link:link, .nav-mobile-list-link:visited {
@@ -338,17 +341,29 @@ body {
     font-size: 4rem;
     font-weight: 800;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .header-title {
+        font-size: 3rem; } }
   .header-subheading {
     color: white;
     font-size: 2rem;
     font-weight: 300;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .header-subheading {
+        font-size: 1.6rem;
+        margin: 1rem 0; } }
   .header-download {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 2rem;
     text-transform: uppercase; }
+    @media only screen and (max-width: 600px) {
+      .header-download {
+        margin-left: -20%;
+        width: 150%;
+        padding: 2rem 0; } }
     .header-download-badge {
       display: flex;
       justify-content: center;
@@ -357,9 +372,16 @@ body {
       background-color: white;
       padding: 0.5rem 2rem;
       color: var(--color-light-orange);
-      font-weight: 1000;
+      font-weight: 800;
       font-size: 1.4rem;
       transition: all 0.5s; }
+      @media only screen and (max-width: 600px) {
+        .header-download-badge {
+          padding: 0.5rem 0.5rem;
+          margin-right: 1rem;
+          width: 100%;
+          font-weight: 400;
+          font-size: 1.2rem; } }
       .header-download-badge:hover {
         color: black;
         background-color: var(--color-gray-light); }
@@ -379,6 +401,9 @@ body {
   grid-column: 3/7;
   text-align: center;
   padding: 3rem 0; }
+  @media only screen and (max-width: 600px) {
+    .video {
+      grid-column: 1/-1; } }
   .video-title {
     font-size: 1.4rem;
     text-transform: uppercase; }
@@ -388,12 +413,20 @@ body {
     color: var(--color-light-orange); }
   .video-wrap {
     height: 50rem; }
+    @media only screen and (max-width: 600px) {
+      .video-wrap {
+        height: 100%; } }
   .video-player {
     width: 100%;
     height: 50rem;
     border: none;
     outline: none;
     z-index: 100; }
+    @media only screen and (max-width: 600px) {
+      .video-player {
+        width: 100%;
+        height: 100%;
+        margin: 1rem 0; } }
     .video-player video {
       width: 100%;
       height: 100%;
@@ -401,6 +434,10 @@ body {
       border: none;
       outline: none;
       object-fit: cover; }
+      @media only screen and (max-width: 600px) {
+        .video-player video {
+          min-width: 100%;
+          min-height: 100%; } }
 
 @keyframes fade-in-up {
   0% {
@@ -411,6 +448,9 @@ body {
 
 .features {
   grid-column: 3/11; }
+  @media only screen and (max-width: 600px) {
+    .features {
+      grid-column: 1/-1; } }
   .features-container {
     grid-column: 1/-1;
     display: grid;
@@ -424,13 +464,17 @@ body {
   .features-subheading {
     text-align: center;
     color: var(--color-light-orange);
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     padding: 1rem; }
   .features-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem; }
+    @media only screen and (max-width: 600px) {
+      .features-list {
+        grid-template-columns: 1fr;
+        padding: 0; } }
     .features-list-item {
       display: grid;
       grid-template-columns: min-content 1fr;
@@ -441,8 +485,14 @@ body {
       transition: all 0.5s; }
       .features-list-item:hover {
         transform: translateY(-3%); }
+        @media only screen and (max-width: 600px) {
+          .features-list-item:hover {
+            transform: none; } }
       .features-list-item:not(:first-child) {
         margin-left: 2.5rem; }
+        @media only screen and (max-width: 600px) {
+          .features-list-item:not(:first-child) {
+            margin: 0; } }
       .features-list-item-1 {
         height: 4.8rem;
         width: 4.8rem;
@@ -493,9 +543,17 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   padding: 4rem 0 0 0; }
+  @media only screen and (max-width: 600px) {
+    .discover {
+      grid-column: 1/-1;
+      padding: 4rem 2rem 0 2rem; } }
   .discover-app {
     display: flex;
     justify-content: space-between; }
+    @media only screen and (max-width: 600px) {
+      .discover-app {
+        display: grid;
+        grid-template-columns: 1fr; } }
     .discover-app-container-right {
       flex: 0 40%;
       display: flex;
@@ -517,6 +575,10 @@ body {
   .discover-image {
     margin-left: -30rem;
     margin-top: -23rem; }
+    @media only screen and (max-width: 600px) {
+      .discover-image {
+        margin-left: 0;
+        margin-top: 0; } }
     .discover-image img {
       width: 100%;
       height: 100%;
@@ -525,6 +587,10 @@ body {
 .app {
   grid-column: 3/11;
   margin-bottom: 5rem; }
+  @media only screen and (max-width: 600px) {
+    .app {
+      grid-column: 1/-1;
+      margin-bottom: 1rem; } }
   .app-container {
     grid-column: 1/-1;
     display: grid;
@@ -558,6 +624,13 @@ body {
     .app-content-container {
       display: flex;
       padding: 2rem 5rem; }
+      @media only screen and (max-width: 600px) {
+        .app-content-container {
+          display: grid;
+          grid-template-columns: 1fr;
+          justify-content: center;
+          text-align: center;
+          padding: 0 1rem; } }
     .app-content img {
       flex: 1;
       width: 32rem;
@@ -567,15 +640,27 @@ body {
       color: var(--color-light-orange);
       font-size: 3rem;
       font-weight: 800; }
+      @media only screen and (max-width: 600px) {
+        .app-content-title {
+          font-size: 3rem;
+          padding: 0 1rem; } }
       .app-content-title-2 {
         color: var(--color-light-orange);
         font-size: 2.5rem;
         font-weight: 800; }
+        @media only screen and (max-width: 600px) {
+          .app-content-title-2 {
+            font-size: 1.8rem;
+            padding: 0.5rem 1rem; } }
     .app-content-subheading {
       color: var(--color-primary); }
     .app-content-description {
       padding: 2rem 0;
       font-size: 2rem; }
+      @media only screen and (max-width: 600px) {
+        .app-content-description {
+          font-size: 1.5rem;
+          padding: 1rem 1rem; } }
 
 .launch {
   grid-column: 2/8;
@@ -584,15 +669,27 @@ body {
   padding: 6rem 0;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 600px) {
+    .launch {
+      grid-column: 1/-1;
+      margin-bottom: 1rem; } }
   .launch-container {
     grid-column: 3/7;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .launch-container {
+        grid-column: 1/-1;
+        padding: 0 1rem; } }
   .launch img {
     width: 75%;
     height: 100vh;
     margin-top: 4rem;
     padding: 0 2rem;
     text-align: center; }
+    @media only screen and (max-width: 600px) {
+      .launch img {
+        width: 100%;
+        height: 100%; } }
   .launch-content {
     padding: 0 2rem; }
     .launch-content-icon {
@@ -604,9 +701,9 @@ body {
       margin-top: 1rem;
       box-shadow: 0.2rem 0.3rem 3rem rgba(0, 0, 0, 0.2); }
     .launch-content-title {
-      font-size: 3.5rem;
+      font-size: 3rem;
       color: var(--color-light-orange);
-      font-weight: 400; }
+      font-weight: 800; }
     .launch-content-description {
       font-size: 1.4rem; }
 
@@ -615,6 +712,12 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 4rem 2rem; }
+  @media only screen and (max-width: 600px) {
+    .steps {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 100%; } }
   .steps-container {
     grid-column: 1/-1;
     display: grid;
@@ -623,15 +726,27 @@ body {
   .steps-list {
     display: flex;
     flex-flow: column; }
+    @media only screen and (max-width: 600px) {
+      .steps-list {
+        display: grid;
+        grid-template-columns: 1fr; } }
     .steps-list-container {
       grid-column: 1/3;
       display: flex;
       justify-content: center;
       align-items: center; }
+      @media only screen and (max-width: 600px) {
+        .steps-list-container {
+          grid-column: 1/-1;
+          display: grid;
+          grid-template-columns: 1fr; } }
     .steps-list-item {
       display: flex;
       align-items: center;
       height: 12rem; }
+      @media only screen and (max-width: 600px) {
+        .steps-list-item {
+          margin: 1rem 0; } }
       .steps-list-item:hover > .steps-list-item-step {
         background-image: linear-gradient(120deg, var(--color-light-orange), #ebb477 60%);
         color: white; }
@@ -647,12 +762,24 @@ body {
         align-items: center;
         box-shadow: 0.2rem 1rem 2rem rgba(0, 0, 0, 0.2);
         color: var(--color-light-orange); }
+        @media only screen and (max-width: 600px) {
+          .steps-list-item-step {
+            box-shadow: none;
+            background-color: transparent; } }
+        @media only screen and (max-width: 600px) {
+          .steps-list-item-step {
+            width: 16px;
+            height: 16px;
+            padding: 2rem; } }
         .steps-list-item-step-number {
           font-size: 3.5rem;
           color: inherit;
           font-weight: 600; }
       .steps-list-item-content {
         padding: 0 2rem; }
+        @media only screen and (max-width: 600px) {
+          .steps-list-item-content {
+            padding: 1rem 2rem; } }
         .steps-list-item-content-heading {
           font-size: 2.5rem;
           color: var(--color-light-orange); }
@@ -661,14 +788,18 @@ body {
   .steps img {
     width: 95%;
     height: 90vh; }
-    @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 600px) {
       .steps img {
-        width: 100%;
-        height: 80vh; } }
+        height: auto;
+        margin: 2rem 0; } }
 
 .reviews {
   grid-column: 2/8;
   padding: 0 5rem; }
+  @media only screen and (max-width: 600px) {
+    .reviews {
+      grid-column: 1/-1;
+      padding: 0; } }
   .reviews-slider {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
@@ -680,6 +811,9 @@ body {
       justify-content: center;
       align-items: center;
       padding: 0 3rem; }
+      @media only screen and (max-width: 600px) {
+        .reviews-slider-arrow {
+          padding: 0 1rem; } }
       .reviews-slider-arrow svg {
         width: 3rem;
         height: 3rem;
@@ -693,9 +827,10 @@ body {
         font-size: 1.4rem;
         text-transform: uppercase; }
       .reviews-slider-slide-subheading {
-        font-size: 3.5rem;
-        font-weight: 600;
-        color: var(--color-light-orange); }
+        font-size: 3rem;
+        font-weight: 800;
+        color: var(--color-light-orange);
+        padding: 2rem 0; }
       .reviews-slider-slide-image img {
         background: transparent scroll no-repeat 0 0;
         box-sizing: conten-box;
@@ -733,6 +868,10 @@ body {
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     background-color: #f7f5f7; }
+    @media only screen and (max-width: 600px) {
+      .gallery-container {
+        display: grid;
+        grid-template-columns: 1fr; } }
   .gallery-title {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -748,6 +887,11 @@ body {
   width: 80rem;
   height: 70rem;
   cursor: pointer; }
+  @media only screen and (max-width: 600px) {
+    .swiper-container {
+      width: 100%;
+      height: min-content;
+      object-fit: cover; } }
 
 .swiper-wrapper {
   cursor: pointer;
@@ -765,6 +909,9 @@ body {
   position: absolute;
   bottom: 5rem !important;
   margin: 0 0 0 0; }
+  @media only screen and (max-width: 600px) {
+    .swiper-pagination {
+      display: none; } }
   .swiper-pagination-bullet {
     width: 4rem !important;
     border-radius: 1rem !important;

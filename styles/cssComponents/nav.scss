@@ -225,6 +225,10 @@
     transform: rotate(-135deg);
   }
 
+  &-checkbox:checked ~ &-nav &-list {
+    display: block;
+  }
+
   &-background {
     position: fixed;
     height: 3rem;
@@ -258,6 +262,7 @@
     transform: translate(-50%, -50%);
     list-style: none;
     text-align: center;
+    display: none;
 
     &-item {
       margin: 2rem;

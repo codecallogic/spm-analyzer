@@ -23,7 +23,7 @@ const MoreFeatures = ({}) => {
           <div className={`app-menu-item ` + (show === 'messages' ? 'active-2': '')} onClick={itemClicked}>Messages</div>
           <div className={`app-menu-item ` + (show === 'live chat' ? 'active-2': '')} onClick={itemClicked}>Live Chat</div>
         </div> */}
-        <div className={`app-content ` + (show === 'communication' ? 'show' : '')}>
+        <div className={`app-content ` + (show == 'communication' ? 'show' : '')}>
           <div className="app-content-container">
           <div>
             <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
@@ -38,7 +38,7 @@ const MoreFeatures = ({}) => {
           </div>
           </div>
         </div>
-        <div className={`app-content ` + (show === 'scheduling' ? 'show' : '')}>
+        {/* <div className={`app-content ` + (show === 'scheduling' ? 'show' : '')}>
           <div className="app-content-container">
           <div>
             <div className="app-content-title">Scheduling when you want</div>
@@ -85,7 +85,7 @@ const MoreFeatures = ({}) => {
             <img className="app-content-image" src="/media/spm-pro.png" alt="Tab Image"/> 
           </div>
           </div>
-        </div>      
+        </div>       */}
       </div>
     </div>
   )

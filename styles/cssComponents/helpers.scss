@@ -61,7 +61,7 @@
 }
 
 .show {
-  display: block;
+  display: block !important;
   animation: fadeIn ease 2s;
 }
 

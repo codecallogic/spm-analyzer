@@ -3,6 +3,10 @@
   text-align: center;
   padding: 3rem 0;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+  }
+
   &-title {
     font-size: 1.4rem;
     text-transform: uppercase;
@@ -16,6 +20,10 @@
 
   &-wrap {
     height: 50rem;
+
+    @media only screen and (max-width: $small) {
+      height: 100%;
+    }
   }
 
   &-player {
@@ -25,6 +33,12 @@
     outline: none;
     z-index: 100;
 
+    @media only screen and (max-width: $small) {
+      width: 100%;
+      height: 100%;
+      margin: 1rem 0;
+    }
+
     video {
       width: 100%;
       height: 100%;
@@ -32,6 +46,11 @@
       border: none;
       outline: none;
       object-fit: cover;
+
+      @media only screen and (max-width: $small) {
+        min-width: 100%;
+        min-height: 100%;
+      }
     }
   }
 }

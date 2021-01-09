@@ -2,6 +2,11 @@
   grid-column: 2/8;
   padding: 0 5rem;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+    padding: 0;
+  }
+
   &-slider {
     display: grid;
     grid-template-columns: min-content 1fr min-content;
@@ -14,6 +19,10 @@
       justify-content: center;
       align-items: center;
       padding: 0 3rem;
+
+      @media only screen and (max-width: $small) {
+        padding: 0 1rem;
+      }
 
       svg {
         width: 3rem;
@@ -34,9 +43,10 @@
       }
 
       &-subheading {
-        font-size: 3.5rem;
-        font-weight: 600;
+        font-size: 3rem;
+        font-weight: 800;
         color: var(--color-light-orange);
+        padding: 2rem 0;
       }
 
       &-image {

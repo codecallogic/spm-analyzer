@@ -4,9 +4,19 @@
   grid-template-columns: 1fr;
   padding: 4rem 0 0 0;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+    padding: 4rem 2rem 0 2rem;
+  }
+
   &-app {
     display: flex;
     justify-content: space-between;
+
+    @media only screen and (max-width: $small) {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
 
     &-container-right {
       flex: 0 40%;
@@ -40,6 +50,11 @@
   &-image {
     margin-left: -30rem;
     margin-top: -23rem;
+
+    @media only screen and (max-width: $small) {
+      margin-left: 0;
+      margin-top: 0;
+    }
 
     & img {
       width: 100%;

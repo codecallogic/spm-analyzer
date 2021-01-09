@@ -1,6 +1,10 @@
 .features {
   grid-column: 3/11;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+  }
+
   &-container {
     grid-column: 1/-1;
     display: grid;
@@ -18,7 +22,7 @@
   &-subheading {
     text-align: center;
     color: var(--color-light-orange);
-    font-size: 2.8rem;
+    font-size: 3rem;
     font-weight: 800;
     padding: 1rem;
   }
@@ -27,6 +31,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 1rem;
+
+    @media only screen and (max-width: $small) {
+      grid-template-columns: 1fr;
+      padding: 0;
+    }
 
     &-item {
       display: grid;
@@ -39,10 +48,18 @@
 
       &:hover {
         transform: translateY(-3%);
+
+        @media only screen and (max-width: $small) {
+          transform: none;
+        }
       }
 
       &:not(:first-child) {
         margin-left: 2.5rem;
+
+        @media only screen and (max-width: $small) {
+          margin: 0;
+        }
       }
 
       &-1 {

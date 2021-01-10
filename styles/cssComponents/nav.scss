@@ -201,6 +201,7 @@
     width: 3rem;
     z-index: 1000;
     cursor: pointer;
+    margin-right: -3rem;
   }
 
   &-button:hover &-icon:before {

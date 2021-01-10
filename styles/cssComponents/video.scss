@@ -20,24 +20,14 @@
 
   &-wrap {
     height: 50rem;
-
-    @media only screen and (max-width: $small) {
-      height: 100%;
-    }
   }
 
   &-player {
     width: 100%;
-    height: 50rem;
+    height: 100%;
     border: none;
     outline: none;
     z-index: 100;
-
-    @media only screen and (max-width: $small) {
-      width: 100%;
-      height: 100%;
-      margin: 1rem 0;
-    }
 
     video {
       width: 100%;
@@ -46,11 +36,6 @@
       border: none;
       outline: none;
       object-fit: cover;
-
-      @media only screen and (max-width: $small) {
-        min-width: 100%;
-        min-height: 100%;
-      }
     }
   }
 }
@@ -62,5 +47,17 @@
   100% {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+.video-player.sticky {
+  width: 30%;
+  height: 30%;
+}
+
+@media only screen and (max-width: $small) {
+  .video-player.sticky {
+    width: 50%;
+    height: 20%;
   }
 }

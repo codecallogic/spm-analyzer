@@ -20,10 +20,6 @@ const Gallery = ({}) => {
   
   SwiperCore.use([Navigation, Pagination, A11y, Autoplay]);
 
-  // useScrollPosition(({ prevPos, currPos }) => {
-  //   
-  // }, [slidesPerView])
-
   const [resizeListener, sizes] = useResizeAware();
   
   useEffect(() => {
@@ -46,7 +42,6 @@ const Gallery = ({}) => {
       <Swiper
         spaceBetween={spaceGap}
         slidesPerView={slidesPerView}
-        centeredSlides={true}
         loop
         autoplay={true}
         pagination={{ clickable: true }}
@@ -63,7 +58,6 @@ const Gallery = ({}) => {
       <Swiper
         spaceBetween={spaceGap}
         slidesPerView={'auto'}
-        centeredSlides={true}
         loop
         autoplay={true}
         pagination={{ clickable: true }}

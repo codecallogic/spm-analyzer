@@ -53,7 +53,8 @@
     display: flex;
 
     @media only screen and (max-width: $small) {
-      margin: 2rem 0;
+      justify-content: center;
+      margin: 3rem 0;
     }
 
     &-icon {

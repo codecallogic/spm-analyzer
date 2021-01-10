@@ -44,9 +44,11 @@ const Video = ({}) => {
       <div className="video-subheading">What is SPM?</div>
       <div className={videoWrap ? 'video-wrap' : ''} >
         <div className={`video-player ` + ( videoWrap ? 'sticky': '')}>
-          <svg className={ videoWrap ? 'sticky-icon-show': 'sticky-icon-hide'} onClick={handleSticky} >
-            <use xlinkHref="/media/sprite.svg#icon-cross"></use>
-          </svg>
+          {/* <div className="sticky-container"> */}
+            <svg className={ videoWrap ? 'sticky-icon-show': 'sticky-icon-hide'} onClick={handleSticky} >
+              <use xlinkHref="/media/sprite.svg#icon-cross"></use>
+            </svg>
+          {/* </div> */}
           <video ref={vidRef} id="stream" poster="/media/image-overlay.png" controls><source src="/media/video.mp4" type="video/mp4" frameBorder="0" gesture="media" allowFullScreen/></video>
         </div>
       </div>

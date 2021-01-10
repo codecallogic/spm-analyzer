@@ -5,6 +5,14 @@
   flex-flow: column;
   align-items: center;
 
+  @media only screen and (max-width: $small) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
   &-title {
     font-size: 1.6rem;
     text-transform: uppercase;
@@ -21,6 +29,14 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
     padding: 3rem 0;
+
+    @media only screen and (max-width: $small) {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
 
     &-title {
       font-size: 1.8rem;

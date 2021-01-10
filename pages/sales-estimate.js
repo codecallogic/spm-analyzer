@@ -1,9 +1,12 @@
 import axios from 'axios'
 import {useState, useEffect, useRef} from 'react'
+import {useRouter} from 'next/router'
 import Nav from '../components/nav'
 import Data from '../services/backupData.json'
 
 const Estimate = ({}) => {
+
+  const router = useRouter()
 
   const [estimate, setEstimate] = useState({
     market: null,
@@ -18,6 +21,7 @@ const Estimate = ({}) => {
 
   const pickMarket = (e) => {
     setEstimate({...estimate, market: e.target.getAttribute("value")})
+    router.push('/sales-estimate/#categories')
   }
 
   const pickCategory = (e) => {
@@ -69,7 +73,7 @@ const Estimate = ({}) => {
           </div>
           {market !== null &&
           <div>
-            <div className="analyzer-heading">Pick a category</div>
+            <div className="analyzer-heading" id="categories">Pick a category</div>
             <div className="analyzer-categories">
               {data && data.map( (m, i) =>
                 <div key={i} className="analyzer-categories-container">

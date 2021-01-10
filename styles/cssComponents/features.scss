@@ -35,6 +35,7 @@
     @media only screen and (max-width: $small) {
       grid-template-columns: 1fr;
       padding: 0;
+      margin: 1rem 0;
     }
 
     &-item {
@@ -45,6 +46,11 @@
       padding: 1.5rem 1.3rem 1.5rem 1rem;
       border-left: 0.2rem solid var(--color-light-orange);
       transition: all 0.5s;
+
+      @media only screen and (max-width: $small) {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
       &:hover {
         transform: translateY(-3%);

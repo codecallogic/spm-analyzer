@@ -59,6 +59,11 @@
       animation-name: slide;
       animation-duration: 1.5s;
 
+      @media only screen and (max-width: $small) {
+        width: 8rem;
+        height: 8rem;
+      }
+
       &:hover {
         cursor: pointer;
         border-radius: 50%;

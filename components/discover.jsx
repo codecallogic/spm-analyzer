@@ -9,7 +9,7 @@ const Discover = ({}) => {
           <svg className="discover-app-icon discover-app-item">
             <use xlinkHref="/media/sprite.svg#icon-mobile"></use>
           </svg>
-          <div className="discover-app-title discover-app-item">An On The Go Research Tool</div>
+          <div className="discover-app-title discover-app-item">Research</div>
           <div className="discover-app-description discover-app-item">Quickly and easily estimate any products sales per month in the palm of your hands.
           <br></br>
           <br/>

@@ -1,7 +1,7 @@
 {
   "name": "spm-analyzer",
   "version": "0.1.0",
-  "main": "index.js",
+  "main": "server.js",
   "private": true,
   "proxy": "http://localhost:3001",
   "scripts": {
@@ -22,7 +22,7 @@
     "morgan": "^1.10.0",
     "next": "10.0.3",
     "next-videos": "1.4.0",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.7",
     "nprogress": "^0.2.0",
     "qs": "^6.9.4",
     "react": "17.0.1",

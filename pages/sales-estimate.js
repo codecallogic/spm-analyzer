@@ -35,6 +35,7 @@ const Estimate = ({}) => {
     if(code === 13){
       try {
         const response = await salesService.sales(market, category, rank)
+        console.log(response)
         setEstimate({...estimate, calculation: response.data.estimationResult})
       } catch (error) {
         console.log(error)
@@ -49,6 +50,7 @@ const Estimate = ({}) => {
   const estimateSales = async (e) => {
     try {
       const response = await salesService.sales(market, category, rank)
+      console.log(response)
       setEstimate({...estimate, calculation: response.data.estimationResult})
     } catch (error) {
       console.log(error)

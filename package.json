@@ -8,6 +8,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "server": "nodemon server.js",
     "watch:css": "node-sass styles/main.scss styles/app.css -w",
     "heroku-postbuild": "npm run build"
   },

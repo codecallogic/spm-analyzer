@@ -21,7 +21,7 @@ app.use('/api/sales', async (req, res) => {
   } catch (error) {
     console.log(error)
     if(error){
-      return res.json('Error getting sales estimation')
+      return res.json('Error')
     }
   }
 })

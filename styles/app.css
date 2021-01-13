@@ -1208,6 +1208,7 @@ body {
         justify-content: center;
         padding: 1rem 2rem;
         align-items: center;
+        background-image: linear-gradient(90deg, white, white);
         border: 0.2rem solid var(--color-primary); }
         .analyzer-categories-container-box:hover {
           color: white;
@@ -1216,7 +1217,7 @@ body {
           border: 0.2rem solid var(--color-dark-gray); }
         .analyzer-categories-container-box span {
           padding: 1rem 0;
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           text-align: center; }
     .analyzer-categories-category {
       height: 12rem;

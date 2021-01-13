@@ -1,8 +1,10 @@
 import axios from 'axios'
+import qs from 'qs'
 import {useState, useEffect, useRef} from 'react'
 import {useRouter} from 'next/router'
 import Nav from '../components/nav'
 import Data from '../services/backupData.json'
+import salesService from '../utils/salesService'
 
 const Estimate = ({}) => {
 
@@ -32,8 +34,8 @@ const Estimate = ({}) => {
     let code = e.keyCode || e.which
     if(code === 13){
       try {
-        const response = await axios.get(`https://il7kji6jcl.execute-api.us-east-2.amazonaws.com/dev/salesEstimator?market=${market}&category=${category}&rank=${rank}`)
-        setEstimate({...estimate, calculation: response.data.estimationResult})
+        const response = await salesService.sales(market, category, rank)
+        setEstimate({...estimate, calculation: response.estimationResult})
       } catch (error) {
         console.log(error)
       }
@@ -46,8 +48,8 @@ const Estimate = ({}) => {
   
   const estimateSales = async (e) => {
     try {
-      const response = await axios.get(`https://il7kji6jcl.execute-api.us-east-2.amazonaws.com/dev/salesEstimator?market=${market}&category=${category}&rank=${rank}`)
-      setEstimate({...estimate, calculation: response.data.estimationResult})
+      const response = await salesService.sales(market, category, rank)
+      setEstimate({...estimate, calculation: response.estimationResult})
     } catch (error) {
       console.log(error)
     }

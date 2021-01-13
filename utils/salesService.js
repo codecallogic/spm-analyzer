@@ -9,7 +9,7 @@ function sales(market, category, rank){
     return axios.post(`${API}/sales`, {market, category, rank})
     .then(res => {
         console.log(res)
-        if (res.statusText == 'OK') return res;
+        if (res.status == 200) return res;
         throw new Error('Error getting sales estimation')
     })
 }

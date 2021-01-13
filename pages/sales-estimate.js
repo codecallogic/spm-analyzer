@@ -1,5 +1,5 @@
 import axios from 'axios'
-import qs from 'qs'
+import {API} from '../config'
 import {useState, useEffect, useRef} from 'react'
 import {useRouter} from 'next/router'
 import Nav from '../components/nav'
@@ -35,7 +35,7 @@ const Estimate = ({}) => {
     if(code === 13){
       try {
         const response = await salesService.sales(market, category, rank)
-        setEstimate({...estimate, calculation: response.estimationResult})
+        setEstimate({...estimate, calculation: response.data.estimationResult})
       } catch (error) {
         console.log(error)
       }
@@ -49,7 +49,7 @@ const Estimate = ({}) => {
   const estimateSales = async (e) => {
     try {
       const response = await salesService.sales(market, category, rank)
-      setEstimate({...estimate, calculation: response.estimationResult})
+      setEstimate({...estimate, calculation: response.data.estimationResult})
     } catch (error) {
       console.log(error)
     }

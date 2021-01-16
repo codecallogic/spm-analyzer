@@ -21,7 +21,7 @@ app.use('/api/sales', async (req, res) => {
   } catch (error) {
     console.log(error)
     if(error){
-      return res.json('Error')
+      return res.status(400).json('Error')
     }
   }
 })

@@ -6,9 +6,9 @@ export default {
 }
 
 function sales(market, category, rank){
+    console.log(market)
     return axios.post(`${API}/sales`, {market, category, rank})
     .then(res => {
-        console.log(res)
         if (res.status == 200) return res;
         throw new Error('Error getting sales estimation')
     })

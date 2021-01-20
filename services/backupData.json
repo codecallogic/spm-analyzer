@@ -337,7 +337,7 @@
     "market": "Germany",
     "categories": [
       {
-        "name": "Auto & Motorrad",
+        "name": "Auto",
         "countrycode": "de",
         "domain": "DE",
         "other": ""
@@ -552,12 +552,6 @@
         "other": ""
       },
       {
-        "name": "Hogar y cocina",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Iluminación",
         "countrycode": "es",
         "domain": "",
@@ -619,12 +613,6 @@
       },
       {
         "name": "Relojes",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Ropa",
         "countrycode": "es",
         "domain": "",
         "other": ""

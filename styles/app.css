@@ -1230,8 +1230,9 @@ body {
           border: 0.2rem solid var(--color-dark-gray); }
         .analyzer-categories-container-box span {
           padding: 1rem 0;
-          font-size: 1.4rem;
-          text-align: center; }
+          font-size: 1.2rem;
+          text-align: center;
+          text-transform: capitalize; }
     .analyzer-categories-category {
       height: 12rem;
       display: flex;

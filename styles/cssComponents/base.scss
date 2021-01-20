@@ -33,6 +33,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: $font-primary;
   font-weight: 400;

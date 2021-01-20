@@ -95,11 +95,18 @@
 .next {
   transition: all 1s;
   transform: translateY(-10%);
-  transform: scale(1.2);
+
+  @media only screen and (max-width: $small) {
+    transform: scale(1);
+  }
 
   &-prev {
     transition: all 1.4s;
     transform: scale(1);
+
+    @media only screen and (max-width: $small) {
+      transform: scale(1.2);
+    }
   }
 }
 

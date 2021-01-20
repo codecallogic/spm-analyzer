@@ -24,7 +24,7 @@ const Gallery = ({}) => {
   
   useEffect(() => {
     if (window.innerWidth < 600) {
-      setState({...state, spaceGap: 0, autoSlides: true})
+      setState({...state, spaceGap: 0, autoSlides: true, slidesPerView: 1})
     }
     if (window.innerWidth > 600) {
       setState({...state, spaceGap: 30, autoSlides: false})
@@ -42,7 +42,6 @@ const Gallery = ({}) => {
       <Swiper
         spaceBetween={spaceGap}
         slidesPerView={slidesPerView}
-        loop
         autoplay={true}
         pagination={{ clickable: true }}
         >
@@ -57,8 +56,8 @@ const Gallery = ({}) => {
       { autoSlides && 
       <Swiper
         spaceBetween={spaceGap}
-        slidesPerView={'auto'}
-        loop
+        slidesPerView={1}
+        centeredSlides={true}
         autoplay={true}
         pagination={{ clickable: true }}
         >

@@ -21,6 +21,10 @@ html {
   font-size: 62.5%;
   scroll-behavior: smooth; }
 
+html,
+body {
+  overflow-x: hidden; }
+
 body {
   font-family: "futura-pt", sans-serif;
   font-weight: 400;
@@ -101,11 +105,16 @@ body {
 
 .next {
   transition: all 1s;
-  transform: translateY(-10%);
-  transform: scale(1.2); }
+  transform: translateY(-10%); }
+  @media only screen and (max-width: 600px) {
+    .next {
+      transform: scale(1); } }
   .next-prev {
     transition: all 1.4s;
     transform: scale(1); }
+    @media only screen and (max-width: 600px) {
+      .next-prev {
+        transform: scale(1.2); } }
 
 .active-market {
   cursor: pointer;
@@ -912,16 +921,20 @@ body {
   cursor: pointer; }
   @media only screen and (max-width: 600px) {
     .swiper-container {
-      width: 100%;
-      height: min-content;
-      object-fit: cover; } }
+      width: 100vw !important;
+      height: 100% !important; } }
 
 .swiper-wrapper {
   cursor: pointer;
   padding: 5rem 0; }
 
 .swiper-slide {
-  height: 70% !important; }
+  height: 70%; }
+  @media only screen and (max-width: 600px) {
+    .swiper-slide {
+      width: 100vw !important;
+      height: 100% !important;
+      object-fit: cover; } }
   .swiper-slide-active {
     transition: all 1s; }
   .swiper-slide img {

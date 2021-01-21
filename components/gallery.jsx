@@ -27,7 +27,7 @@ const Gallery = ({}) => {
       setState({...state, spaceGap: 0, autoSlides: true, slidesPerView: 1})
     }
     if (window.innerWidth > 600) {
-      setState({...state, spaceGap: 25, autoSlides: false})
+      setState({...state, spaceGap: 25, autoSlides: false, slidesPerView: 3})
     }
   }, [sizes.width]);
   

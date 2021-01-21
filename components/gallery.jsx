@@ -27,7 +27,7 @@ const Gallery = ({}) => {
       setState({...state, spaceGap: 0, autoSlides: true, slidesPerView: 1})
     }
     if (window.innerWidth > 600) {
-      setState({...state, spaceGap: 30, autoSlides: false})
+      setState({...state, spaceGap: 25, autoSlides: false})
     }
   }, [sizes.width]);
   
@@ -42,6 +42,7 @@ const Gallery = ({}) => {
       <Swiper
         spaceBetween={spaceGap}
         slidesPerView={slidesPerView}
+        loop
         autoplay={true}
         pagination={{ clickable: true }}
         >
@@ -59,6 +60,7 @@ const Gallery = ({}) => {
         slidesPerView={1}
         centeredSlides={true}
         autoplay={true}
+        loop
         pagination={{ clickable: true }}
         >
         <SwiperSlide>{({isNext, isActive}) => (<img className={(isNext ? 'next ' : 'next-prev ') + (isActive ? 'active-slider': '')} src="/media/gallery-1.png" alt="Person image" />)}</SwiperSlide>

@@ -98,6 +98,7 @@
 
   @media only screen and (max-width: $small) {
     transform: scale(1);
+    transform: translateY(0);
   }
 
   &-prev {

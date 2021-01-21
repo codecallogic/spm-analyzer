@@ -200,7 +200,7 @@
         "other": "Baby"
       },
       {
-        "name": "Beauty & Personal Care",
+        "name": "Beauty",
         "countrycode": "ca",
         "domain": "CA",
         "other": "Beauty"
@@ -213,6 +213,18 @@
       },
       {
         "name": "Clothing & Accessories",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "Computer & Video Games",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
+        "name": "DVD",
         "countrycode": "ca",
         "domain": "CA",
         "other": ""
@@ -240,12 +252,6 @@
         "countrycode": "ca",
         "domain": "CA",
         "other": ""
-      },
-      {
-        "name": "Home",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": "Home & Kitchen"
       },
       {
         "name": "Home & Kitchen",
@@ -308,6 +314,12 @@
         "other": ""
       },
       {
+        "name": "Software",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": ""
+      },
+      {
         "name": "Sports & Outdoors",
         "countrycode": "ca",
         "domain": "CA",
@@ -324,6 +336,12 @@
         "countrycode": "ca",
         "domain": "CA",
         "other": "Toys & Games"
+      },
+      {
+        "name": "Video",
+        "countrycode": "ca",
+        "domain": "CA",
+        "other": "Video"
       },
       {
         "name": "Watches",
@@ -409,7 +427,13 @@
         "other": ""
       },
       {
-        "name": "Elektronik & Foto",
+        "name": "Elektronik",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Elektronik"
+      },
+      {
+        "name": "Fremdsprachige Bücher",
         "countrycode": "de",
         "domain": "DE",
         "other": "Elektronik"
@@ -439,7 +463,7 @@
         "other": ""
       },
       {
-        "name": "Kamera & Foto",
+        "name": "Kamera",
         "countrycode": "de",
         "domain": "DE",
         "other": "Kamera"
@@ -463,7 +487,13 @@
         "other": ""
       },
       {
-        "name": "Musikinstrumente & DJ-Equipment",
+        "name": "Motorrad",
+        "countrycode": "de",
+        "domain": "DE",
+        "other": "Musikinstrumente"
+      },
+      {
+        "name": "Musikinstrumente",
         "countrycode": "de",
         "domain": "DE",
         "other": "Musikinstrumente"
@@ -625,6 +655,12 @@
       },
       {
         "name": "Software",
+        "countrycode": "es",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Supermercado",
         "countrycode": "es",
         "domain": "",
         "other": ""
@@ -1148,7 +1184,31 @@
         "other": ""
       },
       {
+        "name": "Industria, Empresas y Ciencia",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
         "name": "Juegos y juguetes",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Libros",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Mascotas",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Música",
         "countrycode": "mx",
         "domain": "",
         "other": ""
@@ -1167,6 +1227,12 @@
       },
       {
         "name": "Salud, Belleza y Cuidado Personal",
+        "countrycode": "mx",
+        "domain": "",
+        "other": ""
+      },
+      {
+        "name": "Software",
         "countrycode": "mx",
         "domain": "",
         "other": ""
@@ -1219,12 +1285,6 @@
         "other": "DIY & Tools"
       },
       {
-        "name": "DVD & Blue-ray",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "DIY & Tools"
-      },
-      {
         "name": "Electronics",
         "countrycode": "uk",
         "domain": "CO_UK",
@@ -1255,7 +1315,7 @@
         "other": "Jewellery"
       },
       {
-        "name": "Home & Kitchen",
+        "name": "Kitchen & Home",
         "countrycode": "uk",
         "domain": "CO_UK",
         "other": "Home & Kitchen"
@@ -1303,7 +1363,7 @@
         "other": "Pet Supplies"
       },
       {
-        "name": "Shoes",
+        "name": "Shoes & Bags",
         "countrycode": "uk",
         "domain": "CO_UK",
         "other": "Shoes"

@@ -2,7 +2,7 @@
 
 ## GETTING STARTED
 
-[<b>Website</b>](https://www.spmanalyzer.com/)
+[<b>Click here to visit website</b>](https://www.spmanalyzer.com/)
 
 SPM Analyzer - iOS and Android App for Amazon Sellers - Sales Estimator - Rank Calculator
 

@@ -14,7 +14,7 @@ const Estimate = ({}) => {
     market: null,
     category: null,
     estimateReady: false,
-    rank: 'Not a number',
+    rank: 1,
     data: Data,
     calculation: 0
   })
@@ -103,7 +103,7 @@ const Estimate = ({}) => {
           <div className="analyzer-heading">{category}</div>
           <div className="analyzer-input-group">
             <img src="/media/tag.png" alt="Rank" className="analyzer-input-group-tag"/>
-            <input type="text" autoFocus name="rank" placeholder="Enter sales rank (Enter)" onKeyPress={handleChange} onChange={resetRank}/>
+            <input type="text" autoFocus name="rank" placeholder="Enter sales rank (Enter)" onKeyPress={handleChange} onChange={resetRank} value={ !isNaN(rank) ? rank : ''}/>
           </div>
           { !isNaN(rank) == true && 
               <div className="analyzer-estimate">

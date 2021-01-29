@@ -200,12 +200,6 @@
         "other": "Baby"
       },
       {
-        "name": "Beauty",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": "Beauty"
-      },
-      {
         "name": "Books",
         "countrycode": "ca",
         "domain": "CA",
@@ -218,28 +212,10 @@
         "other": ""
       },
       {
-        "name": "Computer & Video Games",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": ""
-      },
-      {
-        "name": "DVD",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": ""
-      },
-      {
         "name": "Electronics",
         "countrycode": "ca",
         "domain": "CA",
         "other": "Electronics"
-      },
-      {
-        "name": "Gift Cards",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": ""
       },
       {
         "name": "Grocery & Gourmet Food",
@@ -252,12 +228,6 @@
         "countrycode": "ca",
         "domain": "CA",
         "other": ""
-      },
-      {
-        "name": "Home & Kitchen",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": "Home & Kitchen"
       },
       {
         "name": "Industrial & Scientific",
@@ -314,12 +284,6 @@
         "other": ""
       },
       {
-        "name": "Software",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": ""
-      },
-      {
         "name": "Sports & Outdoors",
         "countrycode": "ca",
         "domain": "CA",
@@ -338,12 +302,6 @@
         "other": "Toys & Games"
       },
       {
-        "name": "Video",
-        "countrycode": "ca",
-        "domain": "CA",
-        "other": "Video"
-      },
-      {
         "name": "Watches",
         "countrycode": "ca",
         "domain": "CA",
@@ -354,12 +312,6 @@
   {
     "market": "Germany",
     "categories": [
-      {
-        "name": "Auto",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": ""
-      },
       {
         "name": "Baby",
         "countrycode": "de",
@@ -391,12 +343,6 @@
         "other": ""
       },
       {
-        "name": "Bücher",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": ""
-      },
-      {
         "name": "Bürobedarf & Schreibwaren",
         "countrycode": "de",
         "domain": "DE",
@@ -415,28 +361,10 @@
         "other": ""
       },
       {
-        "name": "DVD & Blu-ray",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Musik-CDs & Vinyl"
-      },
-      {
         "name": "Elektro-Großgeräte",
         "countrycode": "de",
         "domain": "DE",
         "other": ""
-      },
-      {
-        "name": "Elektronik",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Elektronik"
-      },
-      {
-        "name": "Fremdsprachige Bücher",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Elektronik"
       },
       {
         "name": "Games",
@@ -463,40 +391,16 @@
         "other": ""
       },
       {
-        "name": "Kamera",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Kamera"
-      },
-      {
         "name": "Koffer, Rucksäcke & Taschen",
         "countrycode": "de",
         "domain": "DE",
         "other": ""
       },
       {
-        "name": "Küche & Haushalt",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Küche & Haushalt"
-      },
-      {
         "name": "Lebensmittel & Getränke",
         "countrycode": "de",
         "domain": "DE",
         "other": ""
-      },
-      {
-        "name": "Motorrad",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Musikinstrumente"
-      },
-      {
-        "name": "Musikinstrumente",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": "Musikinstrumente"
       },
       {
         "name": "Schmuck",
@@ -506,12 +410,6 @@
       },
       {
         "name": "Schuhe & Handtaschen",
-        "countrycode": "de",
-        "domain": "DE",
-        "other": ""
-      },
-      {
-        "name": "Software",
         "countrycode": "de",
         "domain": "DE",
         "other": ""
@@ -624,19 +522,7 @@
         "other": ""
       },
       {
-        "name": "Libros",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Oficina y papelería",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Películas y TV",
         "countrycode": "es",
         "domain": "",
         "other": ""
@@ -649,18 +535,6 @@
       },
       {
         "name": "Salud y cuidado personal",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Software",
-        "countrycode": "es",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Supermercado",
         "countrycode": "es",
         "domain": "",
         "other": ""
@@ -707,12 +581,6 @@
         "other": ""
       },
       {
-        "name": "Bébés & Puériculture",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Bijoux",
         "countrycode": "fr",
         "domain": "",
@@ -743,12 +611,6 @@
         "other": ""
       },
       {
-        "name": "DVD & Blu-ray",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Epicerie",
         "countrycode": "fr",
         "domain": "",
@@ -773,19 +635,7 @@
         "other": ""
       },
       {
-        "name": "Hygiène et Soins du corps",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Informatique",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Instruments de musique",
         "countrycode": "fr",
         "domain": "",
         "other": ""
@@ -804,12 +654,6 @@
       },
       {
         "name": "Jeux vidéo",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Livres",
         "countrycode": "fr",
         "domain": "",
         "other": ""
@@ -834,12 +678,6 @@
       },
       {
         "name": "Sports et Loisirs",
-        "countrycode": "fr",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Vêtements et accessoires",
         "countrycode": "fr",
         "domain": "",
         "other": ""
@@ -1029,12 +867,6 @@
         "other": ""
       },
       {
-        "name": "CD e Vinili",
-        "countrycode": "it",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Commercio, Industria e Scienza",
         "countrycode": "it",
         "domain": "",
@@ -1048,12 +880,6 @@
       },
       {
         "name": "Fai da te",
-        "countrycode": "it",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Film e TV",
         "countrycode": "it",
         "domain": "",
         "other": ""
@@ -1089,12 +915,6 @@
         "other": ""
       },
       {
-        "name": "Libri",
-        "countrycode": "it",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Orologi",
         "countrycode": "it",
         "domain": "",
@@ -1119,19 +939,7 @@
         "other": ""
       },
       {
-        "name": "Software",
-        "countrycode": "it",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Sport e tempo libero",
-        "countrycode": "it",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Strumenti musicali e DJ",
         "countrycode": "it",
         "domain": "",
         "other": ""
@@ -1190,19 +998,7 @@
         "other": ""
       },
       {
-        "name": "Juegos y juguetes",
-        "countrycode": "mx",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Libros",
-        "countrycode": "mx",
-        "domain": "",
-        "other": ""
-      },
-      {
-        "name": "Mascotas",
         "countrycode": "mx",
         "domain": "",
         "other": ""
@@ -1232,12 +1028,6 @@
         "other": ""
       },
       {
-        "name": "Software",
-        "countrycode": "mx",
-        "domain": "",
-        "other": ""
-      },
-      {
         "name": "Videojuegos",
         "countrycode": "mx",
         "domain": "",
@@ -1249,22 +1039,10 @@
     "market": "United Kingdom",
     "categories": [
       {
-        "name": "Baby",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Baby"
-      },
-      {
         "name": "Beauty",
         "countrycode": "uk",
         "domain": "CO_UK",
         "other": "Beauty"
-      },
-      {
-        "name": "Car & Motorbike",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Car & Motorbike"
       },
       {
         "name": "Clothing",
@@ -1273,22 +1051,10 @@
         "other": "Clothing"
       },
       {
-        "name": "Computers",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Computers"
-      },
-      {
         "name": "DIY & Tools",
         "countrycode": "uk",
         "domain": "CO_UK",
         "other": "DIY & Tools"
-      },
-      {
-        "name": "Electronics",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Electronics"
       },
       {
         "name": "Garden & Outdoors",
@@ -1315,12 +1081,6 @@
         "other": "Jewellery"
       },
       {
-        "name": "Kitchen & Home",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Home & Kitchen"
-      },
-      {
         "name": "Large Appliances",
         "countrycode": "uk",
         "domain": "CO_UK",
@@ -1339,18 +1099,6 @@
         "other": ""
       },
       {
-        "name": "Musical Instruments",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Musical Instruments"
-      },
-      {
-        "name": "Office Products",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": "Office Products"
-      },
-      {
         "name": "PC & Video Games",
         "countrycode": "uk",
         "domain": "CO_UK",
@@ -1367,12 +1115,6 @@
         "countrycode": "uk",
         "domain": "CO_UK",
         "other": "Shoes"
-      },
-      {
-        "name": "Software",
-        "countrycode": "uk",
-        "domain": "CO_UK",
-        "other": ""
       },
       {
         "name": "Sports & Outdoors",

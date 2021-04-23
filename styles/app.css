@@ -1322,11 +1322,12 @@ body {
   display: grid;
   justify-content: center; }
   .login-logo {
-    width: 30rem;
+    margin: 2rem 0;
+    width: 20rem;
     justify-self: center; }
     @media only screen and (max-width: 768px) {
       .login-logo {
-        width: 20rem; } }
+        width: 15rem; } }
   .login h1 {
     text-align: center;
     font-size: 2.4rem;
@@ -1404,11 +1405,12 @@ body {
   display: grid;
   justify-content: center; }
   .signup-logo {
-    width: 30rem;
+    margin: 2rem 0;
+    width: 20rem;
     justify-self: center; }
     @media only screen and (max-width: 768px) {
       .signup-logo {
-        width: 20rem; } }
+        width: 15rem; } }
   .signup h1 {
     text-align: center;
     font-size: 2.4rem;

@@ -7,7 +7,7 @@ const Signup = ({}) => {
     <Nav></Nav>
     <div className="signup-container">
       <div className="signup">
-        <img src="/media/logo-2.jpeg" alt="SPM-Analyzer Logo" className="signup-logo"/>
+        <img src="/media/logo-3.png" alt="SPM-Analyzer Logo" className="signup-logo"/>
         <h1>Create an account to get started</h1>
         <form>
           <div className="signup-form-group">

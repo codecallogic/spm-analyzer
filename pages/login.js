@@ -7,7 +7,7 @@ const Login = ({}) => {
     <Nav></Nav>
     <div className="login-container">
       <div className="login">
-        <img src="/media/logo-2.jpeg" alt="SPM-Analyzer Logo" className="login-logo"/>
+        <img src="/media/logo-3.png" alt="SPM-Analyzer Logo" className="login-logo"/>
         <h1>Login into your account</h1>
         <form>
           <div className="login-form-group">

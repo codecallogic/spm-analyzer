@@ -4,11 +4,12 @@
   justify-content: center;
 
   &-logo {
-    width: 30rem;
+    margin: 2rem 0;
+    width: 20rem;
     justify-self: center;
 
     @media only screen and (max-width: $medium) {
-      width: 20rem;
+      width: 15rem;
     }
   }
 

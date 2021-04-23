@@ -1,0 +1,116 @@
+.signup {
+  grid-column: 1/-1;
+  display: grid;
+  justify-content: center;
+
+  &-logo {
+    width: 30rem;
+    justify-self: center;
+
+    @media only screen and (max-width: $medium) {
+      width: 20rem;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1rem 0;
+
+    @media only screen and (max-width: $medium) {
+      font-size: 2rem;
+    }
+  }
+
+  form {
+    display: grid;
+    justify-self: center;
+    padding: 1rem 2rem;
+  }
+
+  &-form {
+    &-group {
+      display: flex;
+      align-items: center;
+      border-bottom: 0.1rem solid var(--color-gray-dark);
+      margin: 1rem 0;
+      padding: 1rem;
+
+      svg {
+        width: 4rem;
+        height: 4rem;
+        fill: var(--color-gray-dark);
+      }
+
+      input {
+        border: none;
+        outline: none;
+        margin-left: 1rem;
+        font-size: 1.6rem;
+        width: 25rem;
+        padding: 1rem 1rem;
+
+        @media only screen and (max-width: $extra-small) {
+          width: 15rem;
+        }
+      }
+    }
+
+    &-button {
+      padding: 2rem 1rem;
+      margin: 4rem 0 0 0;
+      font-size: 1.6rem;
+      border-radius: 3rem;
+      border: none;
+      outline: none;
+      font-weight: 900;
+      text-transform: uppercase;
+      background-color: var(--color-light-orange-2);
+      color: white;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+      }
+    }
+
+    &-terms {
+      padding: 1.5rem 2rem;
+      font-size: 1.6rem;
+      font-weight: 300;
+
+      a {
+        color: #1064fd;
+      }
+    }
+  }
+
+  &-signup {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0;
+
+    a {
+      color: #1064fd;
+    }
+  }
+
+  &-copyright {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0;
+
+    @media only screen and (max-width: $extra-small) {
+      padding: 0 2rem;
+    }
+  }
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}

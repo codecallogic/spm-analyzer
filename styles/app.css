@@ -186,7 +186,9 @@ body {
     .nav-menu-list-item {
       margin-right: 1.9rem;
       text-transform: uppercase;
-      font-size: 1.4rem; }
+      font-size: 1.4rem;
+      transition: all 0.5s;
+      animation: slideInRight 0.5s ease-in; }
       .nav-menu-list-item:hover {
         color: white;
         cursor: pointer; }
@@ -1314,3 +1316,173 @@ body {
   .analyzer-subheading {
     font-size: 1.6rem;
     padding: 1rem; }
+
+.login {
+  grid-column: 1/-1;
+  display: grid;
+  justify-content: center; }
+  .login-logo {
+    width: 30rem;
+    justify-self: center; }
+    @media only screen and (max-width: 768px) {
+      .login-logo {
+        width: 20rem; } }
+  .login h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1rem 0; }
+    @media only screen and (max-width: 768px) {
+      .login h1 {
+        font-size: 2rem; } }
+  .login form {
+    display: grid;
+    justify-self: center;
+    padding: 1rem 2rem; }
+  .login-form-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-gray-dark);
+    margin: 1rem 0;
+    padding: 1rem; }
+    .login-form-group svg {
+      width: 4rem;
+      height: 4rem;
+      fill: var(--color-gray-dark); }
+    .login-form-group input {
+      border: none;
+      outline: none;
+      margin-left: 1rem;
+      font-size: 1.6rem;
+      width: 25rem;
+      padding: 1rem 1rem; }
+      @media only screen and (max-width: 450px) {
+        .login-form-group input {
+          width: 15rem; } }
+  .login-form-button {
+    padding: 2rem 1rem;
+    margin: 4rem 0 0 0;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--color-light-orange-2);
+    color: white;
+    transition: all 0.5s; }
+    .login-form-button:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
+  .login-form-terms {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 300; }
+    .login-form-terms a {
+      color: #1064fd; }
+  .login-signup {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0; }
+    .login-signup a {
+      color: #1064fd; }
+  .login-copyright {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0; }
+    @media only screen and (max-width: 450px) {
+      .login-copyright {
+        padding: 0 2rem; } }
+  .login-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); }
+
+.signup {
+  grid-column: 1/-1;
+  display: grid;
+  justify-content: center; }
+  .signup-logo {
+    width: 30rem;
+    justify-self: center; }
+    @media only screen and (max-width: 768px) {
+      .signup-logo {
+        width: 20rem; } }
+  .signup h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+    margin: 1rem 0; }
+    @media only screen and (max-width: 768px) {
+      .signup h1 {
+        font-size: 2rem; } }
+  .signup form {
+    display: grid;
+    justify-self: center;
+    padding: 1rem 2rem; }
+  .signup-form-group {
+    display: flex;
+    align-items: center;
+    border-bottom: 0.1rem solid var(--color-gray-dark);
+    margin: 1rem 0;
+    padding: 1rem; }
+    .signup-form-group svg {
+      width: 4rem;
+      height: 4rem;
+      fill: var(--color-gray-dark); }
+    .signup-form-group input {
+      border: none;
+      outline: none;
+      margin-left: 1rem;
+      font-size: 1.6rem;
+      width: 25rem;
+      padding: 1rem 1rem; }
+      @media only screen and (max-width: 450px) {
+        .signup-form-group input {
+          width: 15rem; } }
+  .signup-form-button {
+    padding: 2rem 1rem;
+    margin: 4rem 0 0 0;
+    font-size: 1.6rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+    font-weight: 900;
+    text-transform: uppercase;
+    background-color: var(--color-light-orange-2);
+    color: white;
+    transition: all 0.5s; }
+    .signup-form-button:hover {
+      transform: scale(1.2);
+      cursor: pointer; }
+  .signup-form-terms {
+    padding: 1.5rem 2rem;
+    font-size: 1.6rem;
+    font-weight: 300; }
+    .signup-form-terms a {
+      color: #1064fd; }
+  .signup-signup {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0; }
+    .signup-signup a {
+      color: #1064fd; }
+  .signup-copyright {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin: 2rem 0; }
+    @media only screen and (max-width: 450px) {
+      .signup-copyright {
+        padding: 0 2rem; } }
+  .signup-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); }
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%); }
+  100% {
+    transform: translateX(0%); } }

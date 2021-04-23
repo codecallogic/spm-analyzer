@@ -1,10 +1,10 @@
-// Base
+// BASE
 @import 'cssComponents/base.scss';
 
-// Helpers
+// HELPERS
 @import 'cssComponents/helpers.scss';
 
-// Components
+// COMPONENTS
 @import 'cssComponents/nav.scss';
 @import 'cssComponents/home.scss';
 @import 'cssComponents/header.scss';
@@ -22,3 +22,10 @@
 @import 'cssComponents/privacy.scss';
 @import 'cssComponents/terms.scss';
 @import 'cssComponents/analyzer.scss';
+
+// PAGES
+@import 'pages/login.scss';
+@import 'pages/signup.scss';
+
+//HELPERS
+@import 'helpers/animations.scss';

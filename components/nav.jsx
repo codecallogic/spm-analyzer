@@ -8,13 +8,16 @@ const Nav = (props) => {
 
   const [state, setState] = useState({
     active: 'home',
+    login: true,
     host: 'https://spmanalyzer.com/',
   })
 
-  const {active, localhost, host} = state
+  const {active, login, localhost, host} = state
 
   useEffect( () => {
     if(router.pathname.substr(1,) == 'sales-estimate') setState({...state, active: 'spm estimator'});
+    if(router.pathname.substr(1,) == 'login') setState({...state, active: 'login'});
+    if(router.pathname.substr(1,) == 'signup') setState({...state, active: 'signup', login: false});
   }, [])
   
   const executeScroll = (e) => {
@@ -37,6 +40,11 @@ const Nav = (props) => {
           <a href="/#gallery" className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
           <a href="/sales-estimate" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
           <a href="/#contact" className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a>
+          {login ? 
+            <a href="/signup" className={`nav-menu-list-item`} onClick={executeScroll}>Signup</a>
+            :
+            <a href="/login" className={`nav-menu-list-item`} onClick={executeScroll}>Login</a>
+          }
           <a href="/#download" className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
         </div>
       </div>
@@ -61,6 +69,7 @@ const Nav = (props) => {
               <li className="nav-mobile-list-item"><a href="/#gallery" className={`nav-mobile-list-link` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a></li>
               <li className="nav-mobile-list-item"><a href="/sales-estimate" className={`nav-mobile-list-link` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a></li>
               <li className="nav-mobile-list-item"><a href="/#contact" className={`nav-mobile-list-link` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a></li>
+              <li className="nav-mobile-list-item"><a href="/login" className={`nav-mobile-list-link` + (active === 'login' ? ' active' : '')} onClick={executeScroll}>Login</a></li>
               <li className="nav-mobile-list-item"><a href="/#download" className='nav-mobile-list-link' onClick={executeScroll}>Download</a></li>
             </ul>
           </nav>

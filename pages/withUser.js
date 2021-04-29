@@ -12,8 +12,6 @@ const withUser = Page => {
 
       if(user){newUser = user.split('=')[1]}
 
-      console.log(newUser)
-
       if(user == null){
           return {
             ...(Page.getInitialProps ? await Page.getInitialProps(context) : {}),

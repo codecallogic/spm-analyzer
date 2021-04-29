@@ -11,12 +11,13 @@ import Questions from '../components/questions'
 import Download from '../components/download'
 import Contact from '../components/contact'
 import Copyright from '../components/copyright'
+import withUser from './withUser'
 
-const Home = ({}) => {
+const Home = ({newUser}) => {
   
   return (
     <div className='home'>
-      <Header />
+      <Header user={newUser}/>
       <Video />
       <Features />
       <Discover />
@@ -33,4 +34,4 @@ const Home = ({}) => {
   )
 }
 
-export default Home
+export default withUser(Home)

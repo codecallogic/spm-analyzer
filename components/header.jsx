@@ -2,7 +2,7 @@ import Nav from '../components/nav'
 import React, { useState } from 'react'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
-const Header = ({}) => {
+const Header = ({user}) => {
   const [stickOnScroll, setstickOnScroll] = useState({
     navSticky: false,
     mobileSticky: false
@@ -22,6 +22,7 @@ const Header = ({}) => {
   return (
     <div className="main-container">
       <Nav
+        user={user}
         sticky={navSticky}
         mobileSticky={mobileSticky}
       />

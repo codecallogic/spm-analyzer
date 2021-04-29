@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import { useRouter } from 'next/router'
 
 
-const Nav = (props) => {
+const Nav = ({user, sticky, mobileSticky}) => {
 
   const router = useRouter()
 
@@ -11,14 +11,16 @@ const Nav = (props) => {
     login: true,
     host: 'https://spmanalyzer.com/',
   })
+  const [activeUser, setActiveUser] = useState(null)
 
   const {active, login, localhost, host} = state
 
   useEffect( () => {
+    if(user) setActiveUser(JSON.parse(decodeURIComponent(user)))
     if(router.pathname.substr(1,) == 'sales-estimate') setState({...state, active: 'spm estimator'});
     if(router.pathname.substr(1,) == 'login') setState({...state, active: 'login'});
     if(router.pathname.substr(1,) == 'signup') setState({...state, active: 'signup', login: false});
-  }, [])
+  }, [user])
   
   const executeScroll = (e) => {
     document.getElementById("nav-toggle").checked = false;
@@ -27,7 +29,7 @@ const Nav = (props) => {
   
   return (
   <React.Fragment>
-  <div className={`nav ` + (props.sticky ? 'nav-sticky': '')}>
+  <div className={`nav ` + (sticky ? 'nav-sticky': '')}>
     <div className="nav-container">
       <a href='/#home' className="nav-logo">
         <img className="nav-logo-image" src="/media/logo.png" alt="SMP-Analyzer logo"/>
@@ -40,17 +42,16 @@ const Nav = (props) => {
           <a href="/#gallery" className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
           <a href="/sales-estimate" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
           <a href="/#contact" className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a>
-          {login ? 
-            <a href="/signup" className={`nav-menu-list-item`} onClick={executeScroll}>Signup</a>
-            :
-            <a href="/login" className={`nav-menu-list-item`} onClick={executeScroll}>Login</a>
-          }
+          {!activeUser && login ? <a href="/signup" className={`nav-menu-list-item`} onClick={executeScroll}>Sign up</a> : null}
+          {!activeUser && !login ? <a href="/login" className={`nav-menu-list-item`} onClick={executeScroll}>Login</a> : null}
+
+          {activeUser ? <a className={`nav-menu-list-item`} href="">Hi, {activeUser.username}</a> : null}
           <a href="/#download" className='nav-menu-list-item-download' onClick={executeScroll}>Download</a>
         </div>
       </div>
     </div>
   </div>
-  <div className={`nav-mobile ` + (props.mobileSticky ? 'nav-mobile-sticky': '')}>
+  <div className={`nav-mobile ` + (mobileSticky ? 'nav-mobile-sticky': '')}>
       <div className="nav-mobile-container">
         <a href='/#home' className="nav-logo">
           <img className="nav-logo-image" src="/media/logo.png" alt="SMP-Analyzer logo"/>

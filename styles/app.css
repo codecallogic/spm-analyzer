@@ -1381,6 +1381,11 @@ body {
     font-weight: 300; }
     .login-form-terms a {
       color: #1064fd; }
+  .login-form-error {
+    font-size: 1.6rem;
+    margin: 1rem 0;
+    text-align: center;
+    color: #f3ba7c; }
   .login-signup {
     text-align: center;
     font-size: 1.6rem;
@@ -1483,8 +1488,164 @@ body {
     display: grid;
     grid-template-columns: repeat(12, 1fr); }
 
+.pricing {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  padding: 5rem 0; }
+  .pricing-heading {
+    font-size: 4rem;
+    justify-self: center;
+    position: relative;
+    transition: all 1s;
+    width: min-content;
+    border-bottom: 0.2rem solid var(--color-primary); }
+  .pricing h6 {
+    font-size: 1.8rem;
+    font-weight: 200;
+    text-align: center;
+    padding: 2rem 0; }
+  .pricing-plans {
+    display: grid;
+    grid-template-columns: [content-start] repeat(3, 1fr) [content-end];
+    gap: 3rem;
+    justify-content: center;
+    margin: 5rem 0;
+    padding: 2rem 10rem; }
+    @media only screen and (max-width: 768px) {
+      .pricing-plans {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 5rem; } }
+    .pricing-plans-option {
+      width: auto;
+      box-shadow: 1rem 0.2rem 5rem 2rem rgba(0, 0, 0, 0.1);
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 3rem; }
+      .pricing-plans-option h1 {
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 200;
+        color: #565656;
+        padding: 1rem 0; }
+      .pricing-plans-option h2 {
+        text-align: center;
+        font-size: 2.2rem;
+        font-weight: 200; }
+      .pricing-plans-option span {
+        display: block;
+        font-size: 4.8rem;
+        font-weight: 400;
+        color: #565656;
+        text-align: center; }
+        .pricing-plans-option span h2 {
+          display: inline-block;
+          font-size: 1.8rem !important;
+          font-weight: 200; }
+      .pricing-plans-option-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%; }
+        .pricing-plans-option-list ul {
+          padding: 0 2rem;
+          margin: 0 0 3rem 0;
+          text-align: center;
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .pricing-plans-option-list ul ol {
+            font-size: 1.6rem;
+            font-weight: 300;
+            padding: 0.5rem 0; }
+      .pricing-plans-option-check {
+        width: 2rem;
+        height: 2rem;
+        margin-right: 0.5rem;
+        fill: #5ca935; }
+      .pricing-plans-option-cross {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 0.5rem;
+        margin-bottom: -1rem;
+        fill: #bd000a; }
+
+.banner {
+  background-color: #dd8364;
+  padding: 1rem 0;
+  margin: 0 0 0 0;
+  width: 100%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem; }
+  .banner h1,
+  .banner h2 {
+    color: white !important;
+    font-weight: 700; }
+  .banner-lite {
+    position: relative;
+    width: 100%;
+    background-color: #e2e2e2;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem; }
+    .banner-lite h1 {
+      width: 100%;
+      color: black !important; }
+  .banner-pro {
+    background-color: #72bab4;
+    margin: 0 0 3rem 0;
+    color: white !important;
+    width: 100%; }
+    .banner-pro span {
+      font-size: 2.4rem;
+      display: inline-block;
+      color: #fde27d; }
+    .banner-pro-monthly {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #72bab4;
+      margin: 0 0 3rem 0;
+      color: white !important;
+      height: min-content;
+      width: 100%;
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem; }
+      .banner-pro-monthly span {
+        margin-left: 1rem;
+        font-size: 2.4rem;
+        display: inline-block;
+        color: #fde27d; }
+
+.option-pro {
+  transform: translateY(-2.5rem);
+  transform: scaleY(1.07); }
+
 @keyframes slideInRight {
   0% {
     transform: translateX(100%); }
   100% {
     transform: translateX(0%); } }
+
+.buttons-select {
+  display: block;
+  padding: 2rem 3rem;
+  margin: 0 0 2rem 0;
+  width: max-content;
+  justify-self: center;
+  height: min-content;
+  font-size: 1.8rem;
+  background-image: linear-gradient(180deg, rgba(75, 154, 151, 0.8), rgba(75, 154, 151, 0.5));
+  border: none;
+  color: #f1f1f1;
+  border-radius: 3rem;
+  transition: all 0.5s; }
+  .buttons-select:hover {
+    cursor: pointer;
+    border-radius: 0; }
+
+.buttons-subscription {
+  background-image: linear-gradient(180deg, rgba(221, 131, 100, 0.8), rgba(240, 150, 109, 0.5));
+  color: #f1f1f1; }

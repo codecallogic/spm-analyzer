@@ -5,8 +5,9 @@ import {useRouter} from 'next/router'
 import Nav from '../components/nav'
 import Data from '../services/backupData.json'
 import salesService from '../utils/salesService'
+import withUser from './withUser'
 
-const Estimate = ({}) => {
+const Estimate = ({newUser}) => {
 
   const router = useRouter()
 
@@ -59,7 +60,7 @@ const Estimate = ({}) => {
   
   return (
     <div>
-      <Nav />
+      <Nav user={newUser}/>
       { estimateReady == true && 
       <div className="analyzer-breadcrumb-container">
         <a href="/sales-estimate" className="analyzer-breadcrumb">Go back</a>
@@ -122,4 +123,4 @@ const Estimate = ({}) => {
   )
 }
 
-export default Estimate
+export default withUser(Estimate)

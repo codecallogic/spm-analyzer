@@ -32,7 +32,7 @@ const Pricing = ({newUser}) => {
           <button className={`buttons-select ` + (user ? user.subscription == 0 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 0 ? 'Current plan' : 'Try it for free' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option option-pro">
-          <div className="banner">
+          <div className="banner-annually">
             <h1>MOST POPULAR</h1> 
             <h2>Save 50%</h2>
           </div>

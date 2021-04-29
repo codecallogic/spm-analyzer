@@ -1524,7 +1524,8 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      border-radius: 3rem; }
+      border-radius: 3rem;
+      cursor: pointer; }
       .pricing-plans-option h1 {
         text-align: center;
         font-size: 2.8rem;
@@ -1573,51 +1574,60 @@ body {
         margin-bottom: -1rem;
         fill: #bd000a; }
 
-.banner {
+.banner-annually {
   background-color: #dd8364;
   padding: 1rem 0;
   margin: 0 0 0 0;
   width: 100%;
   border-top-left-radius: 3rem;
-  border-top-right-radius: 3rem; }
-  .banner h1,
-  .banner h2 {
+  border-top-right-radius: 3rem;
+  text-align: center; }
+  .banner-annually h1 {
+    display: inline-block;
+    font-size: 2.2rem;
     color: white !important;
     font-weight: 700; }
-  .banner-lite {
-    position: relative;
+  .banner-annually h2 {
+    margin-left: 1rem;
+    display: inline-block;
+    color: white !important;
+    font-weight: 700; }
+
+.banner-lite {
+  position: relative;
+  width: 100%;
+  background-color: #e2e2e2;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem; }
+  .banner-lite h1 {
     width: 100%;
-    background-color: #e2e2e2;
-    border-top-left-radius: 3rem;
-    border-top-right-radius: 3rem; }
-    .banner-lite h1 {
-      width: 100%;
-      color: black !important; }
-  .banner-pro {
+    color: black !important; }
+
+.banner-pro {
+  background-color: #72bab4;
+  margin: 0 0 3rem 0;
+  color: white !important;
+  width: 100%; }
+  .banner-pro span {
+    font-size: 2.4rem;
+    display: inline-block;
+    color: #fde27d; }
+  .banner-pro-monthly {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #72bab4;
     margin: 0 0 3rem 0;
     color: white !important;
-    width: 100%; }
-    .banner-pro span {
+    height: min-content;
+    width: 100%;
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem; }
+    .banner-pro-monthly span {
+      margin-left: 1rem;
       font-size: 2.4rem;
       display: inline-block;
       color: #fde27d; }
-    .banner-pro-monthly {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #72bab4;
-      margin: 0 0 3rem 0;
-      color: white !important;
-      height: min-content;
-      width: 100%;
-      border-top-left-radius: 3rem;
-      border-top-right-radius: 3rem; }
-      .banner-pro-monthly span {
-        margin-left: 1rem;
-        font-size: 2.4rem;
-        display: inline-block;
-        color: #fde27d; }
 
 .option-pro {
   transform: translateY(-2.5rem);

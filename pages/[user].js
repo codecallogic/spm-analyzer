@@ -50,7 +50,7 @@ const Pricing = ({newUser}) => {
               <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
             </ul>
           </div>
-          <button className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
+          <button className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Current plan' : 'Save 50%' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option">
           <h1 className="banner-pro-monthly">SPM Analyzer <span>Pro</span></h1>

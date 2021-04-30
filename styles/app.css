@@ -1657,5 +1657,6 @@ body {
     border-radius: 0; }
 
 .buttons-subscription {
-  background-image: linear-gradient(180deg, rgba(221, 131, 100, 0.8), rgba(240, 150, 109, 0.5));
+  background-color: #dd8364 !important;
+  background-image: none !important;
   color: #f1f1f1; }

@@ -24,11 +24,8 @@
   }
 
   &-subscription {
-    background-image: linear-gradient(
-      180deg,
-      rgba($color-light-orange, 0.8),
-      rgba($color-light-orange-2, 0.5)
-    );
+    background-color: $color-light-orange !important;
+    background-image: none !important;
     color: $light-shade-scheme-1;
   }
 }

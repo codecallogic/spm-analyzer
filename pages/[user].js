@@ -29,7 +29,7 @@ const Pricing = ({newUser}) => {
               <ol><svg className="pricing-plans-option-cross"><use xlinkHref="/media/sprite.svg#icon-cross"></use></svg> Light/dark theme modes</ol>
             </ul>
           </div>
-          <button className={`buttons-select ` + (user ? user.subscription == 0 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 0 ? 'Current plan' : 'Try it for free' : 'Try it for free'}</button>
+          <button className={`buttons-select ` + (user ? user.subscription == 0 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 0 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option option-pro">
           <div className="banner-annually">
@@ -50,7 +50,7 @@ const Pricing = ({newUser}) => {
               <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
             </ul>
           </div>
-          <button className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Downgrade' : 'Try it for free' : 'Try it for free'}</button>
+          <button className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option">
           <h1 className="banner-pro-monthly">SPM Analyzer <span>Pro</span></h1>
@@ -66,7 +66,7 @@ const Pricing = ({newUser}) => {
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> Light/dark theme mode</ol>
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
           </ul>
-          <button className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Downgrade' : 'Try it for free' : 'Try it for free'}</button>
+          <button className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
           </div>
         </div>
       </div>

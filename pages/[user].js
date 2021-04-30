@@ -66,7 +66,7 @@ const Pricing = ({newUser}) => {
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> Light/dark theme mode</ol>
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
           </ul>
-          <button className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
+          <button className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Current plan' : user.subscription == 0 ? 'Try it for free' : 'Downgrade' : 'Try it for free'}</button>
           </div>
         </div>
       </div>

@@ -2,6 +2,7 @@ import Nav from '../components/nav'
 import {useState, useEffect} from 'react'
 import {API} from '../config'
 import axios from 'axios'
+axios.defaults.withCredentials = true
 
 const Signup = ({}) => {
 
@@ -18,7 +19,7 @@ const Signup = ({}) => {
     if(password == confirmPassword){
       try {
         const responseSignUp = await axios.post(`${API}/auth/register`, {email, password})
-        console.log(responseSignUp)
+        window.location.href = '/pricing'
       } catch (error) {
         console.log(error.response)
         if(error.response.data){

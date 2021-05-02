@@ -1469,6 +1469,21 @@ body {
     font-weight: 300; }
     .signup-form-terms a {
       color: #1064fd; }
+  .signup-form-error {
+    font-size: 1.6rem;
+    text-align: center;
+    color: #f3ba7c;
+    height: 2rem; }
+    .signup-form-error-height {
+      font-size: 1.6rem;
+      visibility: hidden;
+      height: 2rem; }
+  .signup-form-list {
+    list-style: none;
+    text-align: center;
+    font-size: 1.6rem;
+    margin: 2rem 0;
+    font-weight: 200; }
   .signup-signup {
     text-align: center;
     font-size: 1.6rem;

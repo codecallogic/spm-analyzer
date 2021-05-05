@@ -1393,6 +1393,14 @@ body {
     margin: 2rem 0; }
     .login-signup a {
       color: #1064fd; }
+  .login-forgot-password {
+    text-align: center;
+    color: #dd8364;
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: 1.6rem; }
+    .login-forgot-password:hover {
+      color: #f3ba7c; }
   .login-copyright {
     text-align: center;
     font-size: 1.6rem;
@@ -1624,9 +1632,10 @@ body {
   color: white !important;
   width: 100%; }
   .banner-pro span {
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     display: inline-block;
-    color: #fde27d; }
+    color: #fde27d;
+    font-weight: 900; }
   .banner-pro-monthly {
     display: flex;
     justify-content: center;
@@ -1640,9 +1649,10 @@ body {
     border-top-right-radius: 3rem; }
     .banner-pro-monthly span {
       margin-left: 1rem;
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       display: inline-block;
-      color: #fde27d; }
+      color: #fde27d;
+      font-weight: 900; }
 
 .option-pro {
   transform: translateY(-2.5rem);
@@ -1675,3 +1685,106 @@ body {
   background-color: #dd8364 !important;
   background-image: none !important;
   color: #f1f1f1; }
+
+.bg-modal {
+  grid-column: 1/-1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  padding: 10rem 0;
+  overflow-y: auto;
+  z-index: 10; }
+  .bg-modal-icon {
+    align-self: start;
+    margin-left: 1rem;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    fill: #dd8364; }
+    .bg-modal-icon:hover {
+      cursor: pointer; }
+  .bg-modal .modal-content {
+    width: 50%;
+    height: min-content;
+    text-align: center;
+    background-color: white;
+    border-radius: 3rem;
+    font-size: 3rem; }
+    .bg-modal .modal-content-heading {
+      background-color: #72bab4;
+      border-top-right-radius: 2rem;
+      border-top-left-radius: 2rem; }
+      .bg-modal .modal-content-heading-breadcrumb {
+        padding: 2rem 10rem;
+        display: flex;
+        align-items: center;
+        color: #72bab4; }
+        .bg-modal .modal-content-heading-breadcrumb svg {
+          height: 2rem;
+          width: 2rem;
+          fill: #72bab4; }
+        .bg-modal .modal-content-heading-breadcrumb span {
+          display: block;
+          font-size: 2rem;
+          margin-left: 1rem;
+          text-transform: capitalize; }
+      .bg-modal .modal-content-heading h2 {
+        font-weight: 300;
+        padding: 0rem 10rem;
+        color: #72bab4;
+        font-size: 2rem; }
+      .bg-modal .modal-content-heading h1 {
+        font-weight: 600;
+        padding: 0rem 10rem;
+        color: #72bab4;
+        font-size: 2.5rem; }
+      .bg-modal .modal-content-heading-date {
+        padding: 1rem 10rem 2rem 10rem;
+        color: #72bab4;
+        font-size: 1.6rem; }
+        .bg-modal .modal-content-heading-date span {
+          font-weight: 800; }
+    .bg-modal .modal-content-change {
+      font-size: 2.5rem; }
+    .bg-modal .modal-content-buttons-cancel {
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      background-color: white;
+      color: #565656;
+      border-radius: 3rem;
+      margin: 3rem 2rem;
+      border: 0.1rem solid black;
+      transition: all 0.5s; }
+      .bg-modal .modal-content-buttons-cancel:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+    .bg-modal .modal-content-buttons-confirm {
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      background-color: #dd8364;
+      color: white;
+      border-radius: 3rem;
+      margin: 3rem 2rem;
+      border: 0.1rem solid black;
+      transition: all 0.5s; }
+      .bg-modal .modal-content-buttons-confirm:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+
+.reset-password {
+  margin: 10rem 0; }
+  .reset-password-heading {
+    font-size: 2rem !important;
+    font-weight: 200 !important; }
+  .reset-password-message {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #dd8364;
+    margin: 1rem 0; }

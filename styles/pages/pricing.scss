@@ -157,9 +157,10 @@
     width: 100%;
 
     span {
-      font-size: 2.4rem;
+      font-size: 2.6rem;
       display: inline-block;
       color: #fde27d;
+      font-weight: 900;
     }
 
     &-monthly {
@@ -176,9 +177,10 @@
 
       span {
         margin-left: 1rem;
-        font-size: 2.4rem;
+        font-size: 2.6rem;
         display: inline-block;
         color: #fde27d;
+        font-weight: 900;
       }
     }
   }

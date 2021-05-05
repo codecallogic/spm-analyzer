@@ -106,6 +106,18 @@
     }
   }
 
+  &-forgot-password {
+    text-align: center;
+    color: $color-light-orange;
+    font-weight: 200;
+    text-decoration: underline;
+    font-size: 1.6rem;
+
+    &:hover {
+      color: $color-light-orange-3;
+    }
+  }
+
   &-copyright {
     text-align: center;
     font-size: 1.6rem;

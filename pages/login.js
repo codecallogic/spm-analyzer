@@ -54,6 +54,9 @@ const Login = ({newUser}) => {
         <h2 className="login-signup">
           Create your account today! <a href="/signup">Sign up</a>
         </h2>
+        <h2 className="login-forgot-password">
+          <a href="/forgot-password">Forgot Password</a>
+        </h2>
         <span className="login-copyright">&copy; 2021 by SPM Analyzer | APPD LLC | All Rights Reserved</span>
       </div>
     </div>

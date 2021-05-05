@@ -40,6 +40,7 @@ const Signup = ({}) => {
   
   return (
     <>
+  
     <Nav></Nav>
     <div className="signup-container">
       <div className="signup">
@@ -68,13 +69,6 @@ const Signup = ({}) => {
           {displayError ? <p className="signup-form-error">{error}</p> : <div className="signup-form-error-height">Dummy text</div>}
 
           <button type="submit" className="signup-form-button">Sign Up</button>
-          <ul className="signup-form-list">
-            <li>Password must have a mininum of 8 characters</li>
-            <li>Must contain a uppercase letter</li>
-            <li>Must contian one lowercase letter</li>
-            <li>Must contain a number</li>
-            <li>Must contain one special character</li>
-          </ul>
           <span className="signup-form-terms">By signing up you agree to our <a href="/terms">Terms of Service</a> and <a href="/privacy-policy">Privacy Policy</a></span>
         </form>
         <h2 className="signup-signup">

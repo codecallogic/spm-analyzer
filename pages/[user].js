@@ -23,14 +23,17 @@ const Pricing = ({newUser}) => {
   }, [])
 
   const popUp = (e, newSubscription) => {
-    console.log(newSubscription)
-    setModal(true)
-    if(newUser) setSubscription(newSubscription)
+    if(e.target.innerText.toLowerCase() == 'downgrade'){
+      setModal(true)
+      if(newUser) setSubscription(newSubscription)
+    }else{
+      if(newUser) setSubscription(newSubscription)
+    }
   }
 
-  const confirm = async (e) => {
+  const confirm = async (e, newSubscription) => {
     let changeUserSubscription = JSON.parse(decodeURIComponent(newUser))
-    let subscriptionValue = subscription
+    let subscriptionValue = subscription !== null ? subscription : newSubscription
 
     try {
       const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})

@@ -28,6 +28,7 @@ const Pricing = ({newUser}) => {
       if(newUser) setSubscription(newSubscription)
     }else{
       if(newUser) setSubscription(newSubscription)
+      confirm(null, newSubscription)
     }
   }
 
@@ -38,7 +39,6 @@ const Pricing = ({newUser}) => {
     try {
       const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
       window.location.href = '/pricing'
-      console.log(responseConfirm)
     } catch (error) {
       console.log(error)
     }

@@ -1515,7 +1515,7 @@ body {
   display: grid;
   width: 100%;
   height: 100%;
-  padding: 5rem 0; }
+  padding: 5rem 2rem; }
   .pricing-heading {
     font-size: 4rem;
     justify-self: center;
@@ -1536,6 +1536,11 @@ body {
     margin: 5rem 0;
     padding: 2rem 10rem; }
     @media only screen and (max-width: 768px) {
+      .pricing-plans {
+        grid-template-columns: 1fr;
+        padding: 2rem 1rem;
+        gap: 5rem; } }
+    @media only screen and (max-width: 992px) {
       .pricing-plans {
         grid-template-columns: 1fr;
         padding: 2rem 1rem;
@@ -1630,7 +1635,11 @@ body {
   background-color: #72bab4;
   margin: 0 0 3rem 0;
   color: white !important;
-  width: 100%; }
+  width: 100%;
+  font-size: 2.4rem !important;
+  padding: 2rem 0;
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem; }
   .banner-pro span {
     font-size: 2.6rem;
     display: inline-block;
@@ -1711,7 +1720,7 @@ body {
     .bg-modal-icon:hover {
       cursor: pointer; }
   .bg-modal .modal-content {
-    width: 50%;
+    width: max-content;
     height: min-content;
     text-align: center;
     background-color: white;
@@ -1752,7 +1761,8 @@ body {
         .bg-modal .modal-content-heading-date span {
           font-weight: 800; }
     .bg-modal .modal-content-change {
-      font-size: 2.5rem; }
+      font-size: 2rem;
+      padding: 1rem 3rem; }
     .bg-modal .modal-content-buttons-cancel {
       font-size: 1.8rem;
       padding: 1rem 2rem;

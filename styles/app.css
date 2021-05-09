@@ -1571,9 +1571,9 @@ body {
         color: #565656;
         text-align: center; }
         .pricing-plans-option span h2 {
-          display: inline-block;
           font-size: 1.8rem !important;
-          font-weight: 200; }
+          font-weight: 200;
+          padding: 1rem 0; }
       .pricing-plans-option-list {
         display: flex;
         flex-direction: column;
@@ -1639,7 +1639,8 @@ body {
   font-size: 2.4rem !important;
   padding: 2rem 0;
   border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem; }
+  border-top-left-radius: 1rem;
+  transition: all 1s ease-in-out; }
   .banner-pro span {
     font-size: 2.6rem;
     display: inline-block;
@@ -1665,7 +1666,10 @@ body {
 
 .option-pro {
   transform: translateY(-2.5rem);
-  transform: scaleY(1.07); }
+  transform: scaleY(1.07);
+  transition: all 0.5s ease-in-out; }
+  .option-pro:hover {
+    transform: scaleY(1.12); }
 
 @keyframes slideInRight {
   0% {

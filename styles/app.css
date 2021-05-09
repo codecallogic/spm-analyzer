@@ -1581,7 +1581,7 @@ body {
         align-items: center;
         width: 100%; }
         .pricing-plans-option-list ul {
-          padding: 0 2rem;
+          padding: 1rem 2rem;
           margin: 0 0 3rem 0;
           text-align: center;
           display: flex;

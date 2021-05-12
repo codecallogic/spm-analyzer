@@ -1672,6 +1672,11 @@ body {
   .option-pro:hover {
     transform: scaleY(1.12); }
 
+.checkout {
+  background-color: #e2e4e5;
+  padding: 5rem 0 !important;
+  overflow-y: hidden; }
+
 @keyframes slideInRight {
   0% {
     transform: translateX(100%); }

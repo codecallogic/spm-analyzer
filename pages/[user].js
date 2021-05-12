@@ -38,7 +38,8 @@ const Pricing = ({newUser}) => {
 
     try {
       const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
-      window.location.href = '/pricing'
+      responseConfirm.data.subscription !== 0 ? window.location.href = '/checkout' : window.location.href = '/sales-estimate'
+
     } catch (error) {
       console.log(error)
     }

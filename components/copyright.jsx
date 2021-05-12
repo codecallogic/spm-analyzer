@@ -8,6 +8,7 @@ const Copy = ({}) => {
       <div className="copyright-links">
         <a href="/terms" className="copyright-links-link">Terms & Conditions</a>
         <a href="/privacy-policy" className="copyright-links-link">Privacy Policy</a>
+        <a href="https://spmanalyzer.thrivecart.com/pro-mode-annual/partner/" className="copyright-links-link">Affiliate</a>
       </div>
     </div>
   )

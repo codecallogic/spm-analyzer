@@ -666,10 +666,9 @@ body {
           justify-content: center;
           text-align: center;
           padding: 0 1rem; } }
-    .app-content img {
-      flex: 1;
-      width: 32rem;
-      height: 50rem;
+    .app-content-image {
+      width: 100%;
+      height: auto;
       padding: 0.5rem 3rem; }
     .app-content-title {
       color: var(--color-light-orange);
@@ -692,6 +691,8 @@ body {
     .app-content-description {
       padding: 2rem 0;
       font-size: 2rem; }
+      .app-content-description ul {
+        padding: 2rem 5rem; }
       @media only screen and (max-width: 685px) {
         .app-content-description {
           font-size: 1.5rem;

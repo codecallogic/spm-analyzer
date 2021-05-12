@@ -34,6 +34,18 @@ const MoreFeatures = ({}) => {
             <div className="app-content-subheading"></div>
             <div className="app-content-description">
               No more ads forever with unlimited searching, faster estimating with category sort options, new trending tab, and much more.
+
+              <ul>
+                <li>All Marketplaces</li>
+                <li>Main Categories</li>
+                <li>Unlimited Uninterrupted Searches</li>
+                <li>No more ads</li>
+                <li>Favorites tab</li>
+                <li>Trending tab</li>
+                <li>Light/dark theme mode</li>
+                <li>+PRO member benefits</li>
+              </ul>
+
             </div>
           </div>
           </div>

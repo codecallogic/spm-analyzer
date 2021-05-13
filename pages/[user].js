@@ -115,7 +115,7 @@ const Pricing = ({newUser}) => {
           {subscription == 1 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro monthly plan?</span></span></p>: null}
           {subscription == 0 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro free plan?</span></span> </p>: null}
           <div className="modal-content-buttons">
-            <button className="modal-content-buttons-cancel" onClick={() => setModel(false)}>Cancel</button>
+            <button className="modal-content-buttons-cancel" onClick={() => setModal(false)}>Cancel</button>
             <button className="modal-content-buttons-confirm" onClick={confirm}>Confirm</button>
           </div>
         </div>

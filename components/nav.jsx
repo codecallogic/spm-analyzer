@@ -65,12 +65,13 @@ const Nav = ({user, sticky, mobileSticky}) => {
           <div className="nav-mobile-background">&nbsp;</div>
           <nav className="nav-mobile-nav">
             <ul className="nav-mobile-list">
+              {activeUser ? <li className={`increase-font-size`}>Hi, {activeUser.username}</li> : null}
               <li className="nav-mobile-list-item"><a href="/#home" className={`nav-mobile-list-link` + (active === 'home' ? ' active' : '')} onClick={executeScroll}>Home</a></li>
               <li className="nav-mobile-list-item"><a href="/#features" className={`nav-mobile-list-link` + (active === 'features' ? ' active' : '')} onClick={executeScroll}>Features</a></li>
               <li className="nav-mobile-list-item"><a href="/#gallery" className={`nav-mobile-list-link` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a></li>
               <li className="nav-mobile-list-item"><a href="/sales-estimate" className={`nav-mobile-list-link` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a></li>
               <li className="nav-mobile-list-item"><a href="/#contact" className={`nav-mobile-list-link` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a></li>
-              <li className="nav-mobile-list-item"><a href="/login" className={`nav-mobile-list-link` + (active === 'login' ? ' active' : '')} onClick={executeScroll}>Login</a></li>
+              {!activeUser && !login ? <li className="nav-mobile-list-item"><a href="/login" className={`nav-mobile-list-link` + (active === 'login' ? ' active' : '')} onClick={executeScroll}>Login</a></li>: null}
               <li className="nav-mobile-list-item"><a href="/#download" className='nav-mobile-list-link' onClick={executeScroll}>Download</a></li>
             </ul>
           </nav>

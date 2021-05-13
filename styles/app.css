@@ -328,6 +328,9 @@ body {
       color: var(--color-primary);
       transform: translateX(1rem); }
 
+.increase-font-size {
+  font-size: 1.8rem; }
+
 .home {
   display: grid;
   grid-template-columns: repeat(8, 1fr); }
@@ -1356,11 +1359,8 @@ body {
       outline: none;
       margin-left: 1rem;
       font-size: 1.6rem;
-      width: 25rem;
+      width: 100%;
       padding: 1rem 1rem; }
-      @media only screen and (max-width: 450px) {
-        .login-form-group input {
-          width: 15rem; } }
   .login-form-button {
     padding: 2rem 1rem;
     margin: 4rem 0 0 0;
@@ -1719,6 +1719,9 @@ body {
   padding: 10rem 0;
   overflow-y: auto;
   z-index: 10; }
+  @media only screen and (max-width: 685px) {
+    .bg-modal {
+      padding: 10rem 2rem; } }
   .bg-modal-icon {
     align-self: start;
     margin-left: 1rem;
@@ -1730,6 +1733,9 @@ body {
     fill: #dd8364; }
     .bg-modal-icon:hover {
       cursor: pointer; }
+    @media only screen and (max-width: 685px) {
+      .bg-modal-icon {
+        display: none; } }
   .bg-modal .modal-content {
     width: max-content;
     height: min-content;

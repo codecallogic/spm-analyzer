@@ -4,18 +4,20 @@ import {useState, useEffect} from 'react'
 
 const Checkout = ({newUser}) => {
 
-  const [user, setUser] = useState(null)
+  const annual = () => {
+    return <div data-thrivecart-account="spmanalyzer" data-thrivecart-tpl="v2" data-thrivecart-product="1" className="thrivecart-embeddable checkout" data-thrivecart-embeddable="tc-spmanalyzer-1-SGJZOP"></div>
+  }
 
-  useEffect(() => {
-    if(newUser) setUser(JSON.parse(decodeURIComponent(newUser)))
-    console.log(newUser)
-  }, [])
+  const monthly = () => {
+    return <div data-thrivecart-account="spmanalyzer" data-thrivecart-tpl="v2" data-thrivecart-product="2" className="thrivecart-embeddable checkout" data-thrivecart-embeddable="tc-spmanalyzer-2-K7QF5W"></div>
+  }
   
   return (
     <>
-      <Nav user={newUser}></Nav>
-      {user ? user.subscription == 2 && <div data-thrivecart-account="spmanalyzer" data-thrivecart-tpl="v2" data-thrivecart-product="1" className="thrivecart-embeddable checkout" data-thrivecart-embeddable="tc-spmanalyzer-1-SGJZOP"></div> : null}
-      {user ? user.subscription == 1 && <div data-thrivecart-account="spmanalyzer" data-thrivecart-tpl="v2" data-thrivecart-product="2" className="thrivecart-embeddable checkout" data-thrivecart-embeddable="tc-spmanalyzer-2-K7QF5W"></div> : null}
+    <Nav user={newUser}></Nav>
+    {JSON.parse(decodeURIComponent(newUser)) ? null : <span>You have no items in cart</span> }
+    {JSON.parse(decodeURIComponent(newUser)) ? JSON.parse(decodeURIComponent(newUser)).subscription == 2 ? annual() : null : null}
+    {JSON.parse(decodeURIComponent(newUser)) ? JSON.parse(decodeURIComponent(newUser)).subscription == 1 ? monthly() : null : null}
     </>
   )
 }

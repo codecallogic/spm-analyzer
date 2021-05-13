@@ -12,6 +12,10 @@
   overflow-y: auto;
   z-index: 10;
 
+  @media only screen and (max-width: $small) {
+    padding: 10rem 2rem;
+  }
+
   &-icon {
     align-self: start;
     margin-left: 1rem;
@@ -26,6 +30,10 @@
     &:hover {
       cursor: pointer;
     }
+
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
   }
 
   .modal-content {
@@ -35,7 +43,6 @@
     background-color: white;
     border-radius: 3rem;
     font-size: 3rem;
-    // animation: fadeIn 1.5s cubic-bezier(0.58, 0.03, 0, 1.66);
 
     &-heading {
       background-color: $color-primary;

@@ -71,7 +71,7 @@ const Nav = ({user, sticky, mobileSticky}) => {
               <li className="nav-mobile-list-item"><a href="/#gallery" className={`nav-mobile-list-link` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a></li>
               <li className="nav-mobile-list-item"><a href="/sales-estimate" className={`nav-mobile-list-link` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a></li>
               <li className="nav-mobile-list-item"><a href="/#contact" className={`nav-mobile-list-link` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a></li>
-              {!activeUser && !login ? <li className="nav-mobile-list-item"><a href="/login" className={`nav-mobile-list-link` + (active === 'login' ? ' active' : '')} onClick={executeScroll}>Login</a></li>: null}
+              {!activeUser && login ? <li className="nav-mobile-list-item"><a href="/login" className={`nav-mobile-list-link` + (active === 'login' ? ' active' : '')} onClick={executeScroll}>Login</a></li>: null}
               <li className="nav-mobile-list-item"><a href="/#download" className='nav-mobile-list-link' onClick={executeScroll}>Download</a></li>
             </ul>
           </nav>

@@ -5,9 +5,11 @@ import {useRouter} from 'next/router'
 
 const Checkout = ({newUser}) => {
 
-  console.log(newUser)
-
   const router = useRouter()
+
+  useEffect(() => {
+    if(newUser == null) window.location.href = '/signup'
+  }, [])
 
   const annual = () => {
     return <div data-thrivecart-account="spmanalyzer" data-thrivecart-tpl="v2" data-thrivecart-product="1" className="thrivecart-embeddable checkout" data-thrivecart-embeddable="tc-spmanalyzer-1-SGJZOP"></div>

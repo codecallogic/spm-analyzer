@@ -1640,8 +1640,6 @@ body {
   width: 100%;
   font-size: 2.4rem !important;
   padding: 2rem 0;
-  border-top-right-radius: 1rem;
-  border-top-left-radius: 1rem;
   transition: all 1s ease-in-out; }
   .banner-pro span {
     font-size: 2.6rem;
@@ -1677,6 +1675,14 @@ body {
   background-color: #e2e4e5;
   padding: 5rem 0 !important;
   overflow-y: hidden; }
+
+.order {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  width: 100%; }
+  .order-pro {
+    font-size: 2.4rem; }
 
 @keyframes slideInRight {
   0% {

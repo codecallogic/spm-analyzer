@@ -18,6 +18,7 @@ const Nav = ({user, sticky, mobileSticky}) => {
   useEffect( () => {
     if(user) setActiveUser(JSON.parse(decodeURIComponent(user)))
     if(router.pathname.substr(1,) == 'sales-estimate') setState({...state, active: 'spm estimator'});
+    if(router.pathname.substr(1,) == 'pricing') setState({...state, active: 'pricing'});
     if(router.pathname.substr(1,) == 'login') setState({...state, active: 'login'});
     if(router.pathname.substr(1,) == 'signup') setState({...state, active: 'signup', login: false});
   }, [user])
@@ -42,6 +43,7 @@ const Nav = ({user, sticky, mobileSticky}) => {
           <a href="/#gallery" className={`nav-menu-list-item` + (active === 'gallery' ? ' active' : '')} onClick={executeScroll}>Gallery</a>
           <a href="/sales-estimate" className={`nav-menu-list-item` + (active === 'spm estimator' ? ' active' : '')} onClick={executeScroll}>SPM Estimator</a>
           <a href="/#contact" className={`nav-menu-list-item` + (active === 'contact' ? ' active' : '')} onClick={executeScroll}>Contact</a>
+          <a href="/pricing" className={`nav-menu-list-item` + (active === 'pricing' ? ' active' : '')} onClick={executeScroll}>Pricing</a>
           {!activeUser && login ? <a href="/signup" className={`nav-menu-list-item`} onClick={executeScroll}>Sign up</a> : null}
           {!activeUser && !login ? <a href="/login" className={`nav-menu-list-item`} onClick={executeScroll}>Login</a> : null}
 

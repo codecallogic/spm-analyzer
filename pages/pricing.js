@@ -6,6 +6,8 @@ import {API} from '../config'
 
 const Pricing = ({newUser}) => {
 
+  console.log(JSON.parse(decodeURIComponent(newUser)))
+
   const [user, setUser] = useState(null)
   const [bgmodal, setModal] = useState(false)
   const [subscription, setSubscription] = useState(null)
@@ -29,6 +31,14 @@ const Pricing = ({newUser}) => {
     }else{
       if(newUser) setSubscription(newSubscription)
       confirm(null, newSubscription)
+    }
+  }
+
+  const goTo = (e, newSubscription) => {
+    if(newSubscription == 0){
+      window.location.href = `/sales-estimate`
+    }else{
+      window.location.href = `/checkout?subscription=${newSubscription}`
     }
   }
 
@@ -64,7 +74,7 @@ const Pricing = ({newUser}) => {
               <ol><svg className="pricing-plans-option-cross"><use xlinkHref="/media/sprite.svg#icon-cross"></use></svg> Light/dark theme modes</ol>
             </ul>
           </div>
-          <button onClick={(e) => popUp(e, 0)} className={`buttons-select ` + (user ? user.subscription == 0 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 0 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
+          <button onClick={(e) => goTo(e, 0)} className={`buttons-select ` + (user ? user.subscription == 0 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 0 ? 'Current plan' : 'Downgrade' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option option-pro">
           <div className="banner-annually">
@@ -85,7 +95,7 @@ const Pricing = ({newUser}) => {
               <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
             </ul>
           </div>
-          <button onClick={(e) => popUp(e, 2)} className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Current plan' : 'Save 50%' : 'Try it for free'}</button>
+          <button onClick={(e) => goTo(e, 2)} className={`buttons-select pro` + (user ? user.subscription == 2 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 2 ? 'Current plan' : 'Save 50%' : 'Try it for free'}</button>
         </div>
         <div className="pricing-plans-option">
           <h1 className="banner-pro-monthly">SPM Analyzer <span>Pro</span></h1>
@@ -101,7 +111,7 @@ const Pricing = ({newUser}) => {
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> Light/dark theme mode</ol>
             <ol><svg className="pricing-plans-option-check"><use xlinkHref="/media/sprite.svg#icon-checkmark"></use></svg> +PRO member benefits</ol>
           </ul>
-          <button onClick={(e) => popUp(e, 1)} className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Current plan' : user.subscription == 0 ? 'Try it for free' : 'Downgrade' : 'Try it for free'}</button>
+          <button onClick={(e) => goTo(e, 1)} className={`buttons-select ` + (user ? user.subscription == 1 ? ' buttons-subscription' : null : null)}>{user ? user.subscription == 1 ? 'Current plan' : user.subscription == 0 ? 'Try it for free' : 'Downgrade' : 'Try it for free'}</button>
           </div>
         </div>
       </div>

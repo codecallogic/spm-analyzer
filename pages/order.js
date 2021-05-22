@@ -7,7 +7,7 @@ import {useEffect} from 'react'
 const Order = ({newUser, order, plan}) => {
 
   useEffect(async () => {
-
+    
     let changeUserSubscription = newUser ? JSON.parse(decodeURIComponent(newUser)) : null
     let subscriptionValue = order ? order == 1 ? 2 : 1 : null
     
@@ -28,6 +28,9 @@ const Order = ({newUser, order, plan}) => {
           You've successfully subscribed for the {plan} plan!
         </div>
         }
+        {order == null && <div className="order-empty">
+          You have no new orders placed.
+        </div>}
       </div>
     </>
   )
@@ -45,8 +48,8 @@ Order.getInitialProps = async ({query, newUser}) => {
   })
   
   return {
-    order: id[0][1],
-    plan: plan[0][1]
+    order: id[0] ? id[0][1] : null ,
+    plan: plan[0] ? plan[0][1] : null
   }
 }
 

@@ -133,3 +133,75 @@
     }
   }
 }
+
+.survey-modal-content {
+  width: max-content;
+  height: min-content;
+  background-color: white;
+  border-radius: 3rem;
+  font-size: 3rem;
+  padding: 2rem 3rem;
+
+  &-title {
+    font-size: 2.8rem;
+
+    @media only screen and (max-width: $large) {
+      font-size: 1.8rem;
+    }
+  }
+
+  &-form {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    box-sizing: border-box;
+
+    @media only screen and (max-width: $large) {
+      font-size: 1.8rem;
+    }
+
+    &-button {
+      background-color: $color-primary;
+      padding: 1rem 5rem;
+      font-size: 2.2rem;
+      width: 40%;
+      outline: none;
+      border: none;
+      color: white;
+      transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+      @media only screen and (max-width: $large) {
+        padding: 1rem 2rem;
+      }
+
+      &-cancel {
+        background-color: $color-gray-light;
+        padding: 1rem 5rem;
+        font-size: 2.2rem;
+        width: 40%;
+        outline: none;
+        border: none;
+        color: white;
+        transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media only screen and (max-width: $large) {
+          padding: 1rem 2rem;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+        background-color: $color-light-orange;
+      }
+
+      &-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}

@@ -4,21 +4,24 @@ import {useEffect, useState, useRef} from 'react'
 import axios from 'axios'
 import {API} from '../config'
 import {useRouter} from 'next/router'
+axios.defaults.withCredentials = true
 
 const Pricing = ({newUser}) => {
-
-  console.log(JSON.parse(decodeURIComponent(newUser)))
   const router = useRouter()
   const [user, setUser] = useState(null)
   const [bgmodal, setModal] = useState(false)
   const [subscription, setSubscription] = useState(null)
-  const [survey, setSurve] = useState(null)
+  const [survey, setSurvey] = useState(false)
+  const [question1, setQuestion1] = useState(null)
+  const [question2, setQuestion2] = useState(null)
+  const [message, setMessage] = useState('')
 
   const ref = useRef()
 
   const handleClickOutside = (e) => {
     if(ref.current && !ref.current.contains(e.target)){
       setModal(false)
+      setSurvey(false)
     }
   }
   
@@ -39,7 +42,7 @@ const Pricing = ({newUser}) => {
 
   const goTo = (e, newSubscription) => {
     if(newSubscription == 0){
-      window.location.href = `/sales-estimate`
+      !newUser ? window.location.href = `/login` : setSurvey(true)
     }else{
       window.location.href = `/checkout?subscription=${newSubscription}`
     }
@@ -53,6 +56,43 @@ const Pricing = ({newUser}) => {
       const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
       responseConfirm.data.subscription !== 0 ? window.location.href = '/checkout' : window.location.href = '/sales-estimate'
 
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const activeOption = (e) => {
+    let els = document.querySelectorAll('.form-group-single-option')
+    els.forEach( (item) => {
+      item.classList.remove('form-group-single-option-active')
+    })
+
+    let el = e.target
+    el.classList.add('form-group-single-option-active')
+    setQuestion1(e.target.innerText)
+  }
+
+  const removeActiveOptions = () => {
+    let els = document.querySelectorAll('.form-group-single-option')
+    els.forEach( (item) => {
+      item.classList.remove('form-group-single-option-active')
+    })
+  }
+
+  const sendSurvey = async (e) => {
+    e.preventDefault()
+    let changeUserSubscription = newUser ? JSON.parse(decodeURIComponent(newUser)) : null
+    let subscriptionValue = 0
+
+    console.log(changeUserSubscription)
+    
+    if(question1 == null) return setMessage('Question 1 is required, please select one or fill out other.')
+
+    try {
+      const responseCancellation = await axios.post(`${API}/survey-cancellation`, {userEmail: changeUserSubscription.username, question1})
+      const responseSuggestion = await axios.post(`${API}/survey-suggestion`, {userEmail: changeUserSubscription.username, question2})
+      const responseChangeSubscription = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
+      window.location.href = '/pricing'
     } catch (error) {
       console.log(error)
     }
@@ -139,17 +179,27 @@ const Pricing = ({newUser}) => {
       }
       {survey && 
       <div className="bg-modal" onClick={handleClickOutside}>
-        <div className="modal-content" ref={ref}>
-          { subscription == 2 ? <h1 className="banner-pro">SPM Analyzer <span>Pro annual plan</span></h1> : null}
-          { subscription == 1 ? <h1 className="banner-pro">SPM Analyzer <span>Pro monthly plan</span></h1> : null}
-          { subscription == 0 ? <h1 className="banner-pro">SPM Analyzer <span>Pro free plan</span></h1> : null}
-          {subscription == 2 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro annual plan?</span></span></p>: null}
-          {subscription == 1 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro monthly plan?</span></span></p>: null}
-          {subscription == 0 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro free plan?</span></span> </p>: null}
-          <div className="modal-content-buttons">
-            <button className="modal-content-buttons-cancel" onClick={() => setModal(false)}>Cancel</button>
-            <button className="modal-content-buttons-confirm" onClick={confirm}>Confirm</button>
-          </div>
+        <div className="survey-modal-content" ref={ref}>
+          <div className="survey-modal-content-title">Sorry to see you leave the PRO family! Take 30 seconds to let us know why.</div>
+          <form className="survey-modal-content-form" onSubmit={(e) => sendSurvey(e)}>
+            <label>1. I downgraded because:</label>
+            <div className="form-group-single">
+              <div className="form-group-single-option" onClick={(e) => activeOption(e)}>No longer needed</div>
+              <div className="form-group-single-option" onClick={(e) => activeOption(e)}>No enough benefits</div>
+              <div className="form-group-single-option" onClick={(e) => activeOption(e)}>Too expensive</div>
+              <label htmlFor="other">Other</label>
+              <textarea name="other" cols="100" rows="5" onChange={(e) => (setQuestion1(e.target.value), removeActiveOptions())}></textarea>
+            </div>
+            <label>2. Any suggestions for updates we can add in the future?</label>
+            <div className="form-group-single">
+              <textarea name="suggestion" cols="100" rows="5" onChange={(e) => setQuestion2(e.target.value)}></textarea>
+            </div>
+            <div className="form-message">{message ? message : ''}</div>
+            <div className="survey-modal-content-form-button-container">
+              <button className="survey-modal-content-form-button-cancel" onClick={() => setSurvey(false)}>Cancel</button>
+              <button className="survey-modal-content-form-button" type="submit">Submit</button>
+            </div>
+          </form>
         </div>
         <svg className="bg-modal-icon">
           <use xlinkHref="/media/sprite.svg#icon-cross"></use>

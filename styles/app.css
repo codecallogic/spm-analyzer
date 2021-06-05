@@ -1673,21 +1673,23 @@ body {
 
 .checkout {
   padding: 5rem 0 !important;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  overflow-y: hidden; }
+  width: 100%; }
   .checkout-empty {
     font-size: 3.2rem;
     text-align: center;
     width: 100%;
     margin: 5rem 0; }
+    .checkout-empty-container {
+      display: flex;
+      justify-content: center;
+      width: 100%; }
 
 .order {
   display: flex;
   justify-content: center;
   margin-top: 15rem;
-  width: 100%; }
+  width: 100%;
+  padding: 0 5rem; }
   .order-pro {
     font-size: 2.8rem; }
   .order-empty {
@@ -1819,6 +1821,87 @@ body {
       .bg-modal .modal-content-buttons-confirm:hover {
         transform: scale(1.1);
         cursor: pointer; }
+
+.survey-modal-content {
+  width: max-content;
+  height: min-content;
+  background-color: white;
+  border-radius: 3rem;
+  font-size: 3rem;
+  padding: 2rem 3rem; }
+  .survey-modal-content-title {
+    font-size: 2.8rem; }
+    @media only screen and (max-width: 992px) {
+      .survey-modal-content-title {
+        font-size: 1.8rem; } }
+  .survey-modal-content-form {
+    font-size: 2.2rem;
+    padding: 1rem 0;
+    box-sizing: border-box; }
+    @media only screen and (max-width: 992px) {
+      .survey-modal-content-form {
+        font-size: 1.8rem; } }
+    .survey-modal-content-form-button {
+      background-color: #72bab4;
+      padding: 1rem 5rem;
+      font-size: 2.2rem;
+      width: 40%;
+      outline: none;
+      border: none;
+      color: white;
+      transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1); }
+      @media only screen and (max-width: 992px) {
+        .survey-modal-content-form-button {
+          padding: 1rem 2rem; } }
+      .survey-modal-content-form-button-cancel {
+        background-color: #e2e2e2;
+        padding: 1rem 5rem;
+        font-size: 2.2rem;
+        width: 40%;
+        outline: none;
+        border: none;
+        color: white;
+        transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1); }
+        .survey-modal-content-form-button-cancel:hover {
+          cursor: pointer; }
+        @media only screen and (max-width: 992px) {
+          .survey-modal-content-form-button-cancel {
+            padding: 1rem 2rem; } }
+      .survey-modal-content-form-button:hover {
+        cursor: pointer;
+        background-color: #dd8364; }
+      .survey-modal-content-form-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: center; }
+
+.form-group-single {
+  padding: 0rem 3rem;
+  box-sizing: border-box; }
+  .form-group-single-option {
+    border: 0.1rem solid #72bab4;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    font-size: 1.6rem; }
+    .form-group-single-option:hover {
+      cursor: pointer; }
+    .form-group-single-option-active {
+      background-color: #e2e2e2; }
+  .form-group-single label {
+    display: block;
+    font-size: 2.2rem; }
+  .form-group-single textarea {
+    width: 100%;
+    font-family: inherit;
+    font-size: 1.6rem;
+    padding: 1rem 2rem; }
+
+.form-message {
+  width: 100%;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.6rem;
+  color: red; }
 
 .reset-password {
   margin: 10rem 0; }

@@ -13,8 +13,6 @@ const withUser = Page => {
       const user = getUser(context.req)
       let newUser = null
 
-      console.log(context.query.email)
-
       if(user){newUser = user.split('=')[1]}
 
       if(context.query.password){

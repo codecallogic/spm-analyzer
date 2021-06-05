@@ -7,12 +7,18 @@ import {useEffect} from 'react'
 const Order = ({newUser, order, plan}) => {
 
   useEffect(async () => {
+
+    newUser ? null : window.location.reload()
     
     let changeUserSubscription = newUser ? JSON.parse(decodeURIComponent(newUser)) : null
     let subscriptionValue = order ? order == 1 ? 2 : 1 : null
     
-    if(newUser && order){
-      const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
+    if(newUser !== undefined && order){
+      try {
+        const responseConfirm = await axios.post(`${API}/auth/change-subscription`, {changeUserSubscription, subscriptionValue})
+      } catch (error) {
+        console.log(error)
+      }
     }
   }, [])
 
@@ -37,11 +43,12 @@ const Order = ({newUser, order, plan}) => {
 }
 
 Order.getInitialProps = async ({query, newUser}) => {
-  
 
   let id = Object.entries(query).filter( (item) => {
     return item.includes('thrivecart[order][0][id]') ? item : null
   })
+
+  console.log(id[0][1])
 
   let plan = Object.entries(query).filter( (item) => {
     return item.includes('thrivecart[order][0][n]') ? item : null

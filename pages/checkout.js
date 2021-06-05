@@ -24,7 +24,7 @@ const Checkout = ({newUser}) => {
   return (
     <>
     <Nav user={newUser}></Nav>
-    {router.query.subscription ? null : <div className="checkout"><span className="checkout-empty">You have no items in cart</span></div>}
+    {router.query.subscription ? null : <div className="checkout-empty-container"><span className="checkout-empty">You have no items in cart</span></div>}
     {router.query.subscription ? router.query.subscription == 2 ? annual() : null : null}
     {router.query.subscription ? router.query.subscription == 1 ? monthly() : null : null}
     </>

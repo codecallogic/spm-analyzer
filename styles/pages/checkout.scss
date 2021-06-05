@@ -1,5 +1,14 @@
 .checkout {
-  background-color: #e2e4e5;
   padding: 5rem 0 !important;
+  width: 100%;
+  display: flex;
+  justify-content: center;
   overflow-y: hidden;
+
+  &-empty {
+    font-size: 3.2rem;
+    text-align: center;
+    width: 100%;
+    margin: 5rem 0;
+  }
 }

@@ -3,14 +3,16 @@ import withUser from './withUser'
 import {useEffect, useState, useRef} from 'react'
 import axios from 'axios'
 import {API} from '../config'
+import {useRouter} from 'next/router'
 
 const Pricing = ({newUser}) => {
 
   console.log(JSON.parse(decodeURIComponent(newUser)))
-
+  const router = useRouter()
   const [user, setUser] = useState(null)
   const [bgmodal, setModal] = useState(false)
   const [subscription, setSubscription] = useState(null)
+  const [survey, setSurve] = useState(null)
 
   const ref = useRef()
 
@@ -21,6 +23,7 @@ const Pricing = ({newUser}) => {
   }
   
   useEffect(() => {
+    router.query.email && router.query.password ? null : newUser == null ? null : setUser(JSON.parse(decodeURIComponent(newUser)))
     if(newUser) setUser(JSON.parse(decodeURIComponent(newUser)))
   }, [])
 
@@ -116,6 +119,25 @@ const Pricing = ({newUser}) => {
         </div>
       </div>
       {bgmodal && 
+      <div className="bg-modal" onClick={handleClickOutside}>
+        <div className="modal-content" ref={ref}>
+          { subscription == 2 ? <h1 className="banner-pro">SPM Analyzer <span>Pro annual plan</span></h1> : null}
+          { subscription == 1 ? <h1 className="banner-pro">SPM Analyzer <span>Pro monthly plan</span></h1> : null}
+          { subscription == 0 ? <h1 className="banner-pro">SPM Analyzer <span>Pro free plan</span></h1> : null}
+          {subscription == 2 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro annual plan?</span></span></p>: null}
+          {subscription == 1 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro monthly plan?</span></span></p>: null}
+          {subscription == 0 ? <p className="modal-content-change">Would you like to change your current subscription to <span>SPM Analyzer <span>Pro free plan?</span></span> </p>: null}
+          <div className="modal-content-buttons">
+            <button className="modal-content-buttons-cancel" onClick={() => setModal(false)}>Cancel</button>
+            <button className="modal-content-buttons-confirm" onClick={confirm}>Confirm</button>
+          </div>
+        </div>
+        <svg className="bg-modal-icon">
+          <use xlinkHref="/media/sprite.svg#icon-cross"></use>
+        </svg>
+      </div>
+      }
+      {survey && 
       <div className="bg-modal" onClick={handleClickOutside}>
         <div className="modal-content" ref={ref}>
           { subscription == 2 ? <h1 className="banner-pro">SPM Analyzer <span>Pro annual plan</span></h1> : null}

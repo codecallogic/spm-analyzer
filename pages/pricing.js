@@ -185,7 +185,7 @@ const Pricing = ({newUser}) => {
             <label>1. I downgraded because:</label>
             <div className="form-group-single">
               <div className="form-group-single-option" onClick={(e) => activeOption(e)}>No longer needed</div>
-              <div className="form-group-single-option" onClick={(e) => activeOption(e)}>No enough benefits</div>
+              <div className="form-group-single-option" onClick={(e) => activeOption(e)}>Not enough benefits</div>
               <div className="form-group-single-option" onClick={(e) => activeOption(e)}>Too expensive</div>
               <label htmlFor="other">Other</label>
               <textarea name="other" cols="100" rows="5" onChange={(e) => (setQuestion1(e.target.value), removeActiveOptions())}></textarea>

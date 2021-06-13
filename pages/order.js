@@ -8,7 +8,7 @@ const Order = ({newUser, order, plan}) => {
 
   useEffect(async () => {
 
-    newUser ? null : window.location.reload()
+    newUser ? null : window.location.href = '/login'
     
     let changeUserSubscription = newUser ? JSON.parse(decodeURIComponent(newUser)) : null
     let subscriptionValue = order ? order == 1 ? 2 : 1 : null
